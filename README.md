@@ -75,3 +75,4 @@ A project to visualize how constellations actually look, given the stars that ar
 - Frontend
   - TypeScript + React or TypeScript Vanilla
   - React Three Fiber or Three.js
+  - MaterialUI?
