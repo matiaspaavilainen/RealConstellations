@@ -47,39 +47,29 @@ The stars viewed from the side, showcasing the difference in distance.
 
 - Location selection, if earth not modelled as sphere
 - Time selection
-- How to simulate light travelling, some stars are dimmer and if position can be selected, some will get brighter and some might become invisible
+  - Just need to implement time calculation in the backend before converting to cartesian
+  - Or translate the proper motion parameters to cartesian as well.
 - How many stars to include?
 - Where to get constellation data?
   - Doesn't really exist, I need to manually do that.
+- Earth modelling? Plane, not at all, or sphere?
 
 
-## How to do some things
-
-- Each constellation should be drawn by calculating the vector projection towards the users location from the actual vectors between stars.
-  - Should be quite future proof and work for everything
-- Position on Earth is illusion, just rotate the camera at a certain angle.
-  - How to set ground, so can't see through it?
-  - Can just be a flat plane, looks like that anyways
-- Should only get the bare minimum amount of data for each star to draw it in a constellation, e.g. location and color, maybe size
-  - When clicking to constellation, would be epic if just zoom in and then somehow seamlessly switch the scene so that only said constellation is visible.
-    - Increase quality of models and query all the info for the constellation when zoomed
-
-
-## Technologies
+## Technologies used
 
 - Backend
   - Python
   - Django or FastAPI
     - MongoDB
     - Star and constellation separated
-  - Astropy for star stuff, GAIA as data source?
+  - Astropy for star stuff, GAIA and SIMBAD as data sources
     - Load data from GAIA only once, store in local DB, which is then used, GAIA doesn't get updated
-  - Main purpose is to store the star data, maybe convert from the celestial coordinate system to Earth centered cartesian for three.js.
-    - If user can't select time, then conversion can be done in the backend
-      - Data apparently from 2016, includes the direction thing
-      - Get the users current time and use that to calculate the locations
-    - If time acceleration etc. requires calculation for each frame to determine the position
-    - If only options like +100 years, +100000 years, then fine to query positions from backend
+    - Need to combine SIMBAD and GAIA
+      - SIMBAD not complete, distance missing quite often, and it is necessary. GAIA should have distance.
+      - Can't search from GAIA with star name, need either ID, or coordinates.
+      - Easy to search from SIMBAD with star name -> get GAIA ID or coords
+  - Main purpose is to store the star data and convert to cartesian for easy use with three.js.
+  - Serve the data as an API to query from the frontend
 - Frontend
   - TypeScript + React or TypeScript Vanilla
   - React Three Fiber or Three.js
