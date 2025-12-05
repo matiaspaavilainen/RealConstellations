@@ -6,8 +6,8 @@ A project to visualize how constellations actually look, given the stars that ar
 
 - View should be atleast relative to Earth, with toggle for hemispheres
   - First person view, how to control
-  - Maybe detect user location from IP
-  - If Earth modelled, user can select the location.
+  - Maybe detect user location from IP <https://dev.maxmind.com/geoip/geolocate-an-ip/databases/>
+  - If Earth simulated, user can select the location <https://github.com/dr5hn/countries-states-cities-database>
   - Possibly user could set viewing position to any star, to see how the constellations would look like from there
 - Possibility to click on the constellation to zoom into it and display information
   - AVG distance from Earth
@@ -24,14 +24,15 @@ A project to visualize how constellations actually look, given the stars that ar
   - Stars
 - Some sort of loading screen maybe needed?
 - Other controls
-  - Select language? Finnish and English
-  - Maybe select other skycultures?
+  - Lanugages?
+  - Maybe other skycultures?
 - Other notes
   - Constellations indexed internally by the scientific name, example: Ursa Major for Big Bear.
 
 ## Potential problems
 
 - Coordinate conversion
+- Location selection, if earth not modelled as sphere
 - Time selection
 - How to simulate light travelling, some stars are dimmer and if position can be selected, some will get brighter and some might become invisible
 - How many stars to support?
@@ -44,12 +45,12 @@ A project to visualize how constellations actually look, given the stars that ar
 
 - Each constellation should be drawn by calculating the vector projection towards the users location from the actual vectors between stars.
   - Should be quite future proof and work for everything
-- Position on Earth is illusion, just set the camera at a certain angle.
+- Position on Earth is illusion, just rotate the camera at a certain angle.
   - How to set ground, so can't see through it?
   - Can just be a flat plane, looks like that anyways
 - Should only get the bare minimum amount of data for each star to draw it in a constellation, e.g. location and color, maybe size
-  - When clicking to constellation, woudl be epic if just zoom in and then somehow seamlessly switch the scene so that only said constellation is visible.
-    - Increase quality of models and query all the info for the constellation
+  - When clicking to constellation, would be epic if just zoom in and then somehow seamlessly switch the scene so that only said constellation is visible.
+    - Increase quality of models and query all the info for the constellation when zoomed
 
 ## MVP
 
@@ -60,13 +61,8 @@ A project to visualize how constellations actually look, given the stars that ar
 
 - Backend
   - Python
-    - Could try OOP type implementation
-    - Star class
-    - Constellation class
-  - Django or FastAPI, DB probably mysql
-    - Could be annoying with mysql
-    - Something like mongo coudl work better, supports object type better.
-    - With mysql can get only some columns from table, surely mongo has that as well
+  - Django or FastAPI
+    - MongoDB
     - Star and constellation separated
   - Astropy for star stuff, GAIA as data source?
     - Load data from GAIA only once, store in local DB, which is then used, GAIA doesn't get updated
@@ -79,4 +75,3 @@ A project to visualize how constellations actually look, given the stars that ar
 - Frontend
   - TypeScript + React or TypeScript Vanilla
   - React Three Fiber or Three.js
-  - MaterialUI?

@@ -1,0 +1,65 @@
+{
+	"constellations": [
+		{
+			"name": "Orion",
+			"shape_stars": [
+				"Betelgeuse",
+				"Bellatrix",
+				"Alnilam",
+				"Alnitak",
+				"Mintaka",
+				"Saiph",
+				"Rigel"
+			],
+			"info": "Orion is one of the most recognizable constellations, depicting a hunter from Greek mythology. It appears in many cultures worldwide, often associated with strength or heroism. The three stars Alnitak, Alnilam, and Mintaka form the famous Orion’s Belt."
+		},
+		{
+			"name": "Ursa Major (Big Dipper Asterism)",
+			"shape_stars": [
+				"Dubhe",
+				"Merak",
+				"Phecda",
+				"Megrez",
+				"Alioth",
+				"Mizar",
+				"Alkaid"
+			],
+			"info": "Ursa Major represents a great bear in Greek mythology, but the Big Dipper—its most famous part—is a widely recognized asterism across many cultures. Various civilizations used it for navigation, including Native American, Polynesian, and Arabic traditions."
+		},
+		{
+			"name": "Cassiopeia",
+			"shape_stars": [
+				"Schedar",
+				"Caph",
+				"Gamma Cassiopeiae",
+				"Ruchbah",
+				"Segin"
+			],
+			"info": "Cassiopeia forms a distinctive W-shaped pattern. In Greek mythology it represents a queen who boasted about her beauty, angering the gods. Its easily recognizable shape has been referenced in navigation and folklore across northern cultures."
+		},
+		{
+			"name": "Scorpius",
+			"shape_stars": [
+				"Antares",
+				"Shaula",
+				"Sargas",
+				"Dschubba",
+				"Larawag",
+				"Acrab",
+				"Jabbah"
+			],
+			"info": "Scorpius represents the scorpion that killed Orion in Greek mythology. It is one of the brightest and most prominent summer constellations, with Antares marking the scorpion’s heart. Variants of the scorpion figure also appear in Middle Eastern and Polynesian sky lore."
+		},
+		{
+			"name": "Cygnus",
+			"shape_stars": [
+				"Deneb",
+				"Albireo",
+				"Gienah",
+				"Sadr",
+				"Delta Cygni"
+			],
+			"info": "Cygnus is known as the Northern Cross and depicts a swan in flight. In Greek mythology it’s linked to several legends involving Zeus. It is also important in Chinese folklore as part of the mythical bridge in the Qixi story."
+		}
+	]
+}
