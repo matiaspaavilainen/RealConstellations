@@ -2,6 +2,20 @@
 
 A project to visualize how constellations actually look, given the stars that are part of constellations are not at the same distance from Earth. This means that what we see is just the projection.
 
+## Proof of concept
+
+I started by querying star data from SIMBAD using astroquery. I chose Cassiopeia as the test constellation, as it had all the data needed for converting spherical coordinates to cartesian for all but one star, which I could add manually.
+I then used the calculated cartesian coordinates to make cubes in Blender, and added an image of the constellation on the background. It was possible to line up the image and the cubes, proving that the calculation works. This was expected as it is included in the Astropy library.
+It also proves that this project has a purpose, as the stars are far away from each other.
+
+<img width="525" height="432" alt="2025-12-05-190057_hyprshot" src="https://github.com/user-attachments/assets/44f3023f-9dc9-4fd4-9cf8-fa707411eeae" />
+
+The stars lined up to form the projection visible from Earth.
+
+<img width="578" height="818" alt="2025-12-05-190327_hyprshot" src="https://github.com/user-attachments/assets/6caac2e8-7e6f-4b45-94b8-f19d6c71cdf7" />
+
+The stars viewed from the side, showcasing the difference in distance.
+
 ## Planned features
 
 - View should be atleast relative to Earth, with toggle for hemispheres
@@ -14,6 +28,7 @@ A project to visualize how constellations actually look, given the stars that ar
   - Names of the stars
   - Short description about the origins and theme
   - Projection outline and 3D shape
+  - Projection as a plane facing earth
   - Can rotate the view to see the actual shape from different angles
   - Click each star
     - Detailed info, what constellation is part of
@@ -24,22 +39,19 @@ A project to visualize how constellations actually look, given the stars that ar
   - Stars
 - Some sort of loading screen maybe needed?
 - Other controls
-  - Lanugages?
   - Maybe other skycultures?
 - Other notes
   - Constellations indexed internally by the scientific name, example: Ursa Major for Big Bear.
 
 ## Potential problems
 
-- Coordinate conversion
 - Location selection, if earth not modelled as sphere
 - Time selection
 - How to simulate light travelling, some stars are dimmer and if position can be selected, some will get brighter and some might become invisible
-- How many stars to support?
-- Performance, probably going to be 1000s of stars. Can be very simple model in the view from Earth.
+- How many stars to include?
 - Where to get constellation data?
-  - Western probably not problem
-  - Other skycultures
+  - Doesn't really exist, I need to manually do that.
+
 
 ## How to do some things
 
@@ -52,10 +64,6 @@ A project to visualize how constellations actually look, given the stars that ar
   - When clicking to constellation, would be epic if just zoom in and then somehow seamlessly switch the scene so that only said constellation is visible.
     - Increase quality of models and query all the info for the constellation when zoomed
 
-## MVP
-
-- At first get only the stars in big dipper, to test and verify that conversion and whatnot works.
-- Use that to test everything, maybe add
 
 ## Technologies
 
