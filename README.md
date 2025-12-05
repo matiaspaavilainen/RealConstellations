@@ -1,8 +1,9 @@
 # RealConstellations
 
-A project to visualize how constellations actually look, given the stars that are part of constellations are not at the same distance from Earth. This means that what we see is just the projection. 
+A project to visualize how constellations actually look, given the stars that are part of constellations are not at the same distance from Earth. This means that what we see is just the projection.
 
 ## Planned features
+
 - View should be atleast relative to Earth, with toggle for hemispheres
   - First person view, how to control
   - Maybe detect user location from IP
@@ -29,6 +30,7 @@ A project to visualize how constellations actually look, given the stars that ar
   - Constellations indexed internally by the scientific name, example: Ursa Major for Big Bear.
 
 ## Potential problems
+
 - Coordinate conversion
 - Time selection
 - How to simulate light travelling, some stars are dimmer and if position can be selected, some will get brighter and some might become invisible
@@ -50,10 +52,12 @@ A project to visualize how constellations actually look, given the stars that ar
     - Increase quality of models and query all the info for the constellation
 
 ## MVP
+
 - At first get only the stars in big dipper, to test and verify that conversion and whatnot works.
-- Use that to test everything, maybe add 
+- Use that to test everything, maybe add
 
 ## Technologies
+
 - Backend
   - Python
     - Could try OOP type implementation
