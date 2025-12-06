@@ -1,6 +1,197 @@
 {
 	"constellations": [
 		{
+			"name": "Andromeda",
+			"shape_stars": [
+				"Almach",
+				"Mirach",
+				"Mu Andromedae",
+				"Nu Andromedae",
+				"Delta Andromedae",
+				"Alphetratz"
+			],
+			"connections": ["0-1", "1-4", "4-5", "1-2", "2-3"],
+			"info": "Andromeda is one of the 48 constellations listed by Ptolemy. The Andromeda Galaxy (M31) is located next to Nu Andromedae, appearing just outside the constellation. It is named after Andromeda, the daughter of Cassiopeia, from Greek mythology."
+		},
+
+		{
+			"name": "Antlia",
+			"shape_stars": ["Alpha Antliae", "Epsilon Antliae", "Iota Antliae"],
+			"connections": ["0-1", "0-2"],
+			"info": "The name means \"pump\" in Latin and Greek; representing an air pump. It is very faint and small. The constellation was established originally by a French astronomer in the 18th century, commemorating the air pump invented by a French physicist."
+		},
+		{
+			"name": "Apus",
+			"shape_stars": [
+				"Alpha Apodis",
+				"Beta Apodis",
+				"Delta1 Apodis",
+				"Delta2 Apodis",
+				"Gamma Apodis"
+			],
+			"connections": ["0-2", "2-3", "3-1", "1-4"],
+			"info": "Apus represents a bird-of-paradise, a type of bird mostly found in New Guinea. The name means \"without feet\", as it was wrongly believed that these birds don't have feet. It was first depicted on a celestial globe in 1598."
+		},
+
+		{
+			"name": "Aquarius",
+			"shape_stars": [
+				"Albali",
+				"Sadalsuud",
+				"Sadalmelik",
+				"Ancha",
+				"Iota Aquarii",
+				"Sigma Aquarii",
+				"Tau Aquarii",
+				"Skat",
+				"88 Aquarii",
+				"Sadachbia",
+				"Zeta Aquarii",
+				"Eta Aquarii",
+				"Lambda Aquarii",
+				"Psi1 Aquarii",
+				"98 Aquarii"
+			],
+			"connections": [
+				"0-1",
+				"1-2",
+				"2-3",
+				"3-4",
+				"3-5",
+				"5-6",
+				"6-7",
+				"7-8",
+				"2-9",
+				"9-10",
+				"10-11",
+				"11-12",
+				"12-13",
+				"13-14"
+			],
+			"info": "Aquarius is one of the zodiacs. In Latin it means \"water-carrier\". It's one of the oldest zodiacs, appearing in the Babylonian star catalogues. Aquarius is one of the 48 constellations listed by Ptolemy."
+		},
+
+		{
+			"name": "Aquila",
+			"shape_stars": [
+				"Altair",
+				"Tarazed",
+				"Alshain",
+				"Delta Aquilae",
+				"Zeta Aquilae",
+				"Epsilon Aquilae",
+				"Eta Equilae",
+				"Theta Aquilae",
+				"Iota Aquilae",
+				"Lambda Aquilae",
+				"12 Aquilae"
+			],
+			"connections": [
+				"0-1",
+				"0-2",
+				"2-3",
+				"3-4",
+				"4-5",
+				"3-6",
+				"6-7",
+				"7-8",
+				"8-9",
+				"9-10",
+				"9-4"
+			],
+			"info": "Aquila means eagle in Latin, and it represents the bird that carried Zeus/Jupiter's thunderbolts. Aquila is one of the 48 constellations listed by Ptolemy. It had been mentioned earlier in the 4th century BC. The Greek Aquila is likely based on the Babylonian constellation of the Eagle."
+		},
+
+		{
+			"name": "Ara",
+			"shape_stars": [
+				"Alpha Arae",
+				"Theta Arae",
+				"Beta Arae",
+				"Gamma Arae",
+				"Delta Arae",
+				"Eta Arae",
+				"Zeta Arae",
+				"Epsilon1 Arae"
+			],
+			"connections": ["0-1", "0-2", "0-7", "3-4", "4-5", "5-6", "6-7"],
+			"info": "Ara means \"altar\" in Latin. In Greek mythology, \"Ara\" meant the altar where the gods formed and alliance to defeat the Titans. Ara is one of the 48 constellations listed by Ptolemy. Within the constellations boundaries is Westerlund 1, a super star cluster, which contains one of the largest know stars, Westerlund 1-26."
+		},
+
+		{
+			"name": "Aries",
+			"shape_stars": [
+				"Gamma1 Arietis",
+				"Sheratan",
+				"Hamal",
+				"41 Arietis"
+			],
+			"connections": ["0-1", "1-2", "2-3"],
+			"info": "Aries is one of the zodiacs, and it means ram (male sheep) in Latin. Aries is one of the 48 constellations listed by Ptolemy. It has represented a ram since late Babylonian times. Before that, it formed a farmhand. Aries is a relatively dim constellation."
+		},
+
+		{
+			"name": "Auriga",
+			"shape_stars": [
+				"Capella",
+				"Menkalinan",
+				"Theta Aurigae",
+				"Elnath",
+				"Hassaleh",
+				"Eta Aurigae",
+				"Epsilon Aurigae",
+				"Zeta Aurigae",
+				"Delta Aurigae"
+			],
+			"connections": [
+				"0-8",
+				"0-1",
+				"0-5",
+				"0-6",
+				"1-8",
+				"1-2",
+				"2-3",
+				"3-4",
+				"4-5",
+				"6-7"
+			],
+			"info": "Auriga is Latin for \"charioteer\". It is one of the 48 constellations listed by Ptolemy. The brightest star Capella, is an unusual multi-star system. The first record of Auriga was in Mesopotamia as a constellation called GAM, depictinga scimitar. It might have represented only Capella, or the whole constellation."
+		},
+
+		{
+			"name": "Boötes",
+			"shape_stars": [
+				"Arcturus",
+				"Muphrid",
+				"Tau Boötis A",
+				"Zeta Boötis",
+				"Izar",
+				"Delta Boötis",
+				"Nekkar",
+				"Seginus",
+				"Rho Boötis",
+				"Lambda Boötis",
+				"Kappa2 Boötis",
+				"Theta Boötis"
+			],
+			"connections": [
+				"0-1",
+				"0-3",
+				"0-4",
+				"0-8",
+				"1-2",
+				"4-5",
+				"5-6",
+				"6-7",
+				"7-9",
+				"9-10",
+				"9-11",
+				"10-11"
+			],
+			"info": "Boötes means ox-driver in Latin and Greek. It is one of the 48 constellations listed by Ptolemy. The constellation was known by the ancient Babylonians, and it is mentioned in Homer's Odyssey."
+		},
+
+		{
 			"name": "Orion",
 			"shape_stars": [
 				"Betelgeuse",
@@ -8,10 +199,22 @@
 				"Alnilam",
 				"Alnitak",
 				"Mintaka",
+				"Meissa",
 				"Saiph",
 				"Rigel"
 			],
-			"info": "Orion is one of the most recognizable constellations, depicting a hunter from Greek mythology. It appears in many cultures worldwide, often associated with strength or heroism. The three stars Alnitak, Alnilam, and Mintaka form the famous Orion’s Belt."
+			"connections": [
+				"0-1",
+				"0-5",
+				"0-3",
+				"1-5",
+				"1-4",
+				"2-4",
+				"2-3",
+				"3-6",
+				"4-7"
+			],
+			"info": "Orion is one of the most recognizable constellations, depicting a hunter from Greek mythology. It appears in many cultures worldwide, often associated with strength or heroism. The three stars Alnitak, Alnilam, and Mintaka form the famous Orion’s Belt. The famous Orion Nebula (M42) is located between the \"legs\" of the hunter."
 		},
 		{
 			"name": "Ursa Major (Big Dipper Asterism)",
