@@ -1,0 +1,29 @@
+{
+	"constellations": [
+		{
+			"name": "Cassiopeia",
+			"shape_stars": [
+				"Caph",
+				"Schedar",
+				"gamma Cassiopeiae",
+				"Ruchbah",
+				"Segin"
+			],
+			"connections": ["0-1", "1-2", "2-3", "3-4"],
+			"info": "Cassiopeia forms a distinctive W-shaped pattern. In Greek mythology it represents a queen who boasted about her beauty, angering the gods. Its easily recognizable shape has been referenced in navigation and folklore across northern cultures."
+		},
+		{
+			"name": "Andromeda",
+			"shape_stars": [
+				"Almach",
+				"Mirach",
+				"mu Andromedae",
+				"nu Andromedae",
+				"delta Andromedae",
+				"Alpheratz"
+			],
+			"connections": ["0-1", "1-4", "4-5", "1-2", "2-3"],
+			"info": "Andromeda is one of the 48 constellations listed by Ptolemy. The Andromeda Galaxy (M31) is located next to Nu Andromedae, appearing just outside the constellation. It is named after Andromeda, the daughter of Cassiopeia, from Greek mythology."
+		}
+	]
+}

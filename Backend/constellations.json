@@ -5,10 +5,10 @@
 			"shape_stars": [
 				"Almach",
 				"Mirach",
-				"Mu Andromedae",
-				"Nu Andromedae",
-				"Delta Andromedae",
-				"Alphetratz"
+				"mu Andromedae",
+				"nu Andromedae",
+				"delta Andromedae",
+				"Alpheratz"
 			],
 			"connections": ["0-1", "1-4", "4-5", "1-2", "2-3"],
 			"info": "Andromeda is one of the 48 constellations listed by Ptolemy. The Andromeda Galaxy (M31) is located next to Nu Andromedae, appearing just outside the constellation. It is named after Andromeda, the daughter of Cassiopeia, from Greek mythology."
@@ -23,11 +23,11 @@
 		{
 			"name": "Apus",
 			"shape_stars": [
-				"Alpha Apodis",
-				"Beta Apodis",
-				"Delta1 Apodis",
-				"Delta2 Apodis",
-				"Gamma Apodis"
+				"alpha Apodis",
+				"beta Apodis",
+				"delta1 Apodis",
+				"delta2 Apodis",
+				"gamma Apodis"
 			],
 			"connections": ["0-2", "2-3", "3-1", "1-4"],
 			"info": "Apus represents a bird-of-paradise, a type of bird mostly found in New Guinea. The name means \"without feet\", as it was wrongly believed that these birds don't have feet. It was first depicted on a celestial globe in 1598."
@@ -46,10 +46,10 @@
 				"Skat",
 				"88 Aquarii",
 				"Sadachbia",
-				"Zeta Aquarii",
-				"Eta Aquarii",
-				"Lambda Aquarii",
-				"Psi1 Aquarii",
+				"zeta Aquarii",
+				"eta Aquarii",
+				"lambda Aquarii",
+				"psi1 Aquarii",
 				"98 Aquarii"
 			],
 			"connections": [
@@ -77,13 +77,13 @@
 				"Altair",
 				"Tarazed",
 				"Alshain",
-				"Delta Aquilae",
-				"Zeta Aquilae",
-				"Epsilon Aquilae",
-				"Eta Equilae",
-				"Theta Aquilae",
-				"Iota Aquilae",
-				"Lambda Aquilae",
+				"delta Aquilae",
+				"zeta Aquilae",
+				"epsilon Aquilae",
+				"eta Aquilae",
+				"theta Aquilae",
+				"iota Aquilae",
+				"lambda Aquilae",
 				"12 Aquilae"
 			],
 			"connections": [
@@ -105,14 +105,14 @@
 		{
 			"name": "Ara",
 			"shape_stars": [
-				"Alpha Arae",
-				"Theta Arae",
-				"Beta Arae",
-				"Gamma Arae",
-				"Delta Arae",
-				"Eta Arae",
-				"Zeta Arae",
-				"Epsilon1 Arae"
+				"alpha Arae",
+				"theta Arae",
+				"beta Arae",
+				"gamma Arae",
+				"delta Arae",
+				"eta Arae",
+				"zeta Arae",
+				"epsilon1 Arae"
 			],
 			"connections": ["0-1", "0-2", "0-7", "3-4", "4-5", "5-6", "6-7"],
 			"info": "Ara means \"altar\" in Latin. In Greek mythology, \"Ara\" meant the altar where the gods formed and alliance to defeat the Titans. Ara is one of the 48 constellations listed by Ptolemy. Within the constellations boundaries is Westerlund 1, a super star cluster, which contains one of the largest know stars, Westerlund 1-26."
@@ -121,7 +121,7 @@
 		{
 			"name": "Aries",
 			"shape_stars": [
-				"Gamma1 Arietis",
+				"gamma1 Arietis",
 				"Sheratan",
 				"Hamal",
 				"41 Arietis"
@@ -135,13 +135,13 @@
 			"shape_stars": [
 				"Capella",
 				"Menkalinan",
-				"Theta Aurigae",
+				"theta Aurigae",
 				"Elnath",
 				"Hassaleh",
-				"Eta Aurigae",
-				"Epsilon Aurigae",
-				"Zeta Aurigae",
-				"Delta Aurigae"
+				"eta Aurigae",
+				"epsilon Aurigae",
+				"zeta Aurigae",
+				"delta Aurigae"
 			],
 			"connections": [
 				"0-8",
@@ -163,16 +163,16 @@
 			"shape_stars": [
 				"Arcturus",
 				"Muphrid",
-				"Tau Boötis A",
-				"Zeta Boötis",
+				"tau Boötis A",
+				"zeta Boötis",
 				"Izar",
-				"Delta Boötis",
+				"delta Boötis",
 				"Nekkar",
 				"Seginus",
-				"Rho Boötis",
-				"Lambda Boötis",
-				"Kappa2 Boötis",
-				"Theta Boötis"
+				"rho Boötis",
+				"lambda Boötis",
+				"kappa2 Boötis",
+				"theta Boötis"
 			],
 			"connections": [
 				"0-1",
@@ -234,7 +234,7 @@
 			"shape_stars": [
 				"Schedar",
 				"Caph",
-				"Gamma Cassiopeiae",
+				"gamma Cassiopeiae",
 				"Ruchbah",
 				"Segin"
 			],
@@ -260,7 +260,7 @@
 				"Albireo",
 				"Gienah",
 				"Sadr",
-				"Delta Cygni"
+				"delta Cygni"
 			],
 			"info": "Cygnus is known as the Northern Cross and depicts a swan in flight. In Greek mythology it’s linked to several legends involving Zeus. It is also important in Chinese folklore as part of the mythical bridge in the Qixi story."
 		}
