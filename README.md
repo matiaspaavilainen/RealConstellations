@@ -1,6 +1,6 @@
 # RealConstellations
 
-A project to visualize how constellations actually look, given the stars that are part of constellations are not at the same distance from Earth. This means that what we see is just the projection.
+A project to visualize how constellations actually look. As the stars that are part of constellations are not at the same distance from Earth, we only see the flat projection.
 
 ## Proof of concept
 
