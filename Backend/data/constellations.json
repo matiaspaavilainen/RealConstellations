@@ -193,6 +193,167 @@
 		},
 
 		{
+			"name": "Caelum",
+			"shape_stars": [
+				"Gamma Caeli",
+				"Beta Caeli",
+				"Alpha Caeli A",
+				"Delta Caeli"
+			],
+			"connections": ["0-1", "1-2", "2-3"],
+			"info": "Caelum means chisel in Latin, which is a rare meaning of the word. Caelum is more commonl associated with \"sky\" or \"heaven\". The constellation was introduced in 1750s. Due to its location away from the plane of the Milky Way, there are few objects of interest. It is also very dim, with the brightest star only reaching magnitude 4.45."
+		},
+
+		{
+			"name": "Camelopardalis",
+			"shape_stars": [
+				"CS Cameleopardalis",
+				"HD 24479",
+				"Alpha Cameleopardalis",
+				"Gamma Cameleopardalis",
+				"HD 33564"
+			],
+			"connections": ["0-1", "0-3", "1-2", "2-3", "3-4"],
+			"info": "Cameleopardalis represents a giraffe, and it comes from Latin, as a romanization of the Greek word for giraffe. It was introduced in 1612 or 1613 by Petrus Plancius. Cameleopardalis is quite dim, with the brightest stars only around the 4th magnitude."
+		},
+
+		{
+			"name": "Cancer",
+			"shape_stars": [
+				"Beta Cancri",
+				"Acubens",
+				"Asellus Australis",
+				"Asellus Borealis",
+				"Chi Cancri",
+				"Iota Cancri"
+			],
+			"connections": ["0-2", "1-2", "2-3", "3-4", "3-5"],
+			"info": "Cancer means \"crab\" in Latin, and is depicted as such. It is one of the 12 zodiacs, and the dimmest of them with only 2 stars above the 3rd magnitude. At the center of the astrum  lies the open cluster Praesepe (M44) or the Beehive Cluster. The constellation also has 10 stars with known planets."
+		},
+
+		{
+			"name": "Canes Venatici",
+			"shape_stars": ["Cor Caroli", "Chara"],
+			"connections": ["0-1"],
+			"info": "Canes Venatici is Latin for \"hunting dogs\". It often depicts the dogs of Boötes the herdsman. The identification as dogs likely came from mistranslations from the Greek word \"club\". When Ptolemy's Almagest was translated to Arabic, the translator didn't know the exact word and used something similar. This was furter mistranslated to Latin, as \"dogs\". The stars were noted by Ptolemy, but not assigned a constellation by him."
+		},
+
+		{
+			"name": "Canis Major",
+			"shape_stars": [
+				"Theta Canis Majoris",
+				"Muliphein",
+				"Iota Canis Majoris",
+				"Sirius",
+				"omi02 Canis Majoris",
+				"Wezen",
+				"Omega Canis Majoris",
+				"Aludra",
+				"Sigma Canis Majoris",
+				"Adhara",
+				"Kappa Canis Majoris",
+				"Furud",
+				"omi01 Canis Majoris",
+				"nu02 Canis Majoris",
+				"Mirzam",
+				"ksi02 Canis Majoris"
+			],
+			"connections": [
+				"0-1",
+				"0-2",
+				"1-2",
+				"2-3",
+				"3-4",
+				"3-13",
+				"4-5",
+				"5-6",
+				"5-8",
+				"6-7",
+				"8-9",
+				"8-12",
+				"9-10",
+				"9-11",
+				"12-13",
+				"13-14",
+				"13-15"
+			],
+			"info": "Canis Major is Latin for \"greater dog\". It is one of the 48 constellations listed by Ptolemy. Along with Canis Minor, they are often depicted following Orion the hunter. Canis Major contains Sirius, the brightest star in the night sky. Sirius and Canis Major were parts of constellations in multiple cultures, from ancient Mesopotamia to the Romans. One of the largest known stars, VY Canis Major, is contained in Canis Major."
+		},
+
+		{
+			"name": "Canis Minor",
+			"shape_stars": ["Procyon", "Gomeisa"],
+			"connections": ["0-1"],
+			"info": "Canis Minor is Latin for \"lesser dog\". It is one of the 48 constellations listed by Ptolemy. Along with Canis Major, they are often depicted following Orion the hunter. In contrast to Canis Major, Canis Minor is quite small, and contains only 2 bright stars, which make up it's asterism. Procyon is the 8th brigtest star in the night sky. Interestingly the stars of the asterism are only 1.12 light years away from each other."
+		},
+
+		{
+			"name": "Capricornus",
+			"shape_stars": [
+				"Algedi",
+				"Dabih",
+				"Psi Capricorni",
+				"Theta Capricorni",
+				"Omega Capricorni",
+				"Zeta Capricorni",
+				"Iota Capricorni",
+				"Nashira",
+				"Deneb Algedi"
+			],
+			"connections": [
+				"0-1",
+				"1-2",
+				"1-3",
+				"3-4",
+				"3-5",
+				"3-6",
+				"6-7",
+				"7-8"
+			],
+			"info": "Capricornus is Latin for \"horned goat\". It is one of the 48 constellations listed by Ptolemy. It is often depicted as a mythical creature sea goat; half goat, half fish."
+		},
+
+		{
+			"name": "Carina",
+			"shape_stars": [
+				"Miaplacidus",
+				"Omega Carinae",
+				"Theta Carinae",
+				"HD 93070",
+				"HD 96918",
+				"HD 95109",
+				"HD 90853",
+				"HD 89388",
+				"Aspidiske",
+				"HD 79351",
+				"HD 74375",
+				"Avior",
+				"Canopus",
+				"Nu Puppis",
+				"Gamma Velorum",
+				"Naos"
+			],
+			"connections": [
+				"0-1",
+				"1-2",
+				"2-3",
+				"3-4",
+				"4-5",
+				"5-6",
+				"6-7",
+				"7-8",
+				"8-9",
+				"9-10",
+				"10-11",
+				"11-12",
+				"11-14",
+				"12-13",
+				"14-15"
+			],
+			"info": "Carina is Latin for the keel of a ship. It was a part of the constellation Argo Navis, the great ship of the mythical Jason. It was introduced in ancient Greece. It was later split into three parts (Carina, Puppis, Vela) in 1763. Carina contains the 2nd brightest star in the night sky, Canopus. The celestial south pole will move to Carina in the year 4700."
+		},
+
+		{
 			"name": "Cassiopeia",
 			"shape_stars": [
 				"Caph",
@@ -202,7 +363,130 @@
 				"Segin"
 			],
 			"connections": ["0-1", "1-2", "2-3", "3-4"],
-			"info": "Cassiopeia forms a distinctive W-shaped pattern. In Greek mythology it represents a queen who boasted about her beauty, angering the gods. Its easily recognizable shape has been referenced in navigation and folklore across northern cultures."
+			"info": "Cassiopeia is named after the queen Cassiopeia, mother of Andromeda, in Greek mythology. It is one of the 48 constellations listed by Ptolemy. Cassiopeia was the wife of King Cepheus, a constellation next to it. Cassiopeia and it's stars have formed constellations in multilple cultures. Cassiopeia also contains numerous deep space objects, such as open clusters and supernova remnants."
+		},
+
+		{
+			"name": "Centaurus",
+			"shape_stars": [
+				"Alpha Centauri",
+				"Hadar",
+				"Epsilon Centauri",
+				"Zeta Centauri",
+				"ups01 Centauri",
+				"Mu Centauri",
+				"Eta Centauri",
+				"Kappa Centauri",
+				"Nu Centauri",
+				"Menkent",
+				"HD 117440",
+				"Iota Centauri",
+				"Gamma Centauri",
+				"Sigma Centauri",
+				"Delta Centauri",
+				"HD 125823",
+				"Lambda Centauri"
+			],
+			"connections": [
+				"0-1",
+				"1-2",
+				"2-3",
+				"3-4",
+				"3-12",
+				"4-5",
+				"5-6",
+				"5-8",
+				"6-7",
+				"8-9",
+				"8-10",
+				"10-11",
+				"12-13",
+				"13-14",
+				"14-15",
+				"15-16"
+			],
+			"info": "Centaurus represents a centaur. It is one of the 48 constellations listed by Ptolemy. Another constellation named after a centaur is Sagittarius. Centaurus contains Alpha Centauri, the nearest star to us. One of the largest stars is also contained in Centaurs, Beta Centauri, and the brightest globular cluster visible from Earth, Omega Centauri. It is listed as one of the stars even though it is a cluster."
+		},
+
+		{
+			"name": "Cepheus",
+			"shape_stars": [
+				"Alderamin",
+				"Alfirk",
+				"Errai",
+				"Iota Cephei",
+				"Zeta Cephei"
+			],
+			"connections": ["0-1", "0-4", "1-2", "1-3", "2-3", "3-4"],
+			"info": "Cepheus represents the king of Aethiopia in Greek Mythology. It is one of the 48 constellations listed by Ptolemy. Cepheus is the husband of Cassiopeia and the father of Cassiopeia. Cepheus contains the hyperluminous quasar S5 0014+81, which hosts one of the largest known supermassive black holes (40 billion solar masses) at it's center. The quasar is said to be one of the most powerful objects in the known universe."
+		},
+
+		{
+			"name": "Cetus",
+			"shape_stars": [
+				"Iota Ceti",
+				"Diphda",
+				"Tau Ceti",
+				"Sigma Ceti",
+				"Pi Ceti",
+				"Eta Ceti",
+				"Theta Ceti",
+				"Baten Kaitos",
+				"Rho Ceti",
+				"Epsilon Ceti",
+				"Mira",
+				"Delta Ceti",
+				"Gamma Ceti",
+				"Menkar",
+				"Lambda Ceti",
+				"Mu Ceti",
+				"Ksi2 Ceti",
+				"Ksi1 Ceti",
+				"Nu Ceti"
+			],
+			"connections": [
+				"0-1",
+				"1-2",
+				"1-5",
+				"2-3",
+				"3-4",
+				"4-9",
+				"5-6",
+				"6-7",
+				"7-8",
+				"8-9",
+				"9-10",
+				"10-11",
+				"11-12",
+				"12-13",
+				"12-16",
+				"13-14",
+				"14-15",
+				"16-17",
+				"16-18"
+			],
+			"info": "Cetus depicts a sea monster from Greek mythology, and both Perseus and Heracles had to slay it. Cetus is sometimes called the whale in English. The star Mira, is the first variable star discovered. It varies from 3 to 10 in apparent magnitude over a period of 332 days. The Pisces-Cetus Supercluster Complex is a galaxy filament, and one of the largest know structures in the observable universe."
+		},
+
+		{
+			"name": "Chamaeleon",
+			"shape_stars": [
+				"Alpha Chamaeleontis",
+				"Gamma Chamaeleontis",
+				"Epsilon Chamaeleontis",
+				"Beta Chamaeleontis",
+				"Delta2 Chameleontis",
+				"HD 93237"
+			],
+			"connections": ["0-1", "1-2", "2-3", "3-4", "4-5", "5-1"],
+			"info": "Chamaeleon is named after the chameleon, defined in the 16th century by Petrus Plancius. It is classified as the Little Dipper (小斗) in Chinese astronomy, and often called the frying pan in modern day Australia."
+		},
+
+		{
+			"name": "Circinus",
+			"shape_stars": ["Beta Circini", "Xami", "Gamma Circini"],
+			"connections": ["0-1", "1-2"],
+			"info": "Circinus is Latin for compass the drafting tool to draw circles. It was defined by Nicolas-Louis de Lacaille in 1756. Circinus is quite dim, with it's brightest star reaching a magnitude of 3.19. "
 		},
 
 		{

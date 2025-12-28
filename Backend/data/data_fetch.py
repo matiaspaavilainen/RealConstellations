@@ -97,6 +97,9 @@ def name_processing(simbad_id: str, star_name: str):
     name = ""
     # NAME name
     # NAME -IAU Larawag
+
+    # 2 part names: Canis Majoris??
+
     if simbad_id.startswith("NAME"):
         split = simbad_id.split()
         # return the last part of the name
@@ -118,6 +121,8 @@ def name_processing(simbad_id: str, star_name: str):
             return f"{GREEK_ALPHABET[greek_abrv]} {constellation}"
 
         # there are numbers in the string
+
+        # nu.XX Const??????????
 
         # *  XX Const
         _, designation, _ = simbad_id.split()
