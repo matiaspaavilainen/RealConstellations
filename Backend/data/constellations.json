@@ -490,6 +490,221 @@
 		},
 
 		{
+			"name": "Columba",
+			"shape_stars": [
+				"Epsilon Columbae",
+				"Phact",
+				"Wazn",
+				"Eta Columbae",
+				"Gamma Columbae",
+				"Kappa Columbae",
+				"Delta Columbae"
+			],
+			"connections": ["0-1", "1-2", "2-3", "2-4", "4-5", "5-6"],
+			"info": "Columba is Latin for dove. The constellation was designated in the 16th century. The stars that make up Columba were mentioned in Ptolemy's Almagest. It is quite uninteresting as a constellation, being small and faint, with only one globular cluster within it."
+		},
+
+		{
+			"name": "Coma Berenices",
+			"shape_stars": [
+				"Gamma Comae Berenices",
+				"Beta Comae Berenices",
+				"Alpha Comae Berenices"
+			],
+			"connections": ["0-1", "1-2"],
+			"info": "Comae Berenices is Latin for Berenice's hair. It refers to Queen Berenices II of Egypt, who sacrificed her long hair as a votive offering. It is the only modern constellation named after a historic person. It was introduced in the 3rd century BC by Conon of Samos, and corraborated as a constellation by Geradus Mercator and Tycho Brahe."
+		},
+
+		{
+			"name": "Corona Australis",
+			"shape_stars": [
+				"HD 175219",
+				"Zeta Coronae Australis",
+				"Delta Coronae Australis",
+				"Beta Coronae Australis",
+				"Meridiana",
+				"Gamma Coronae Australis A",
+				"Epsilon Coronae Australis",
+				"V686 Coronae Australis",
+				"Lambda Coronae Australis",
+				"HD 170642"
+			],
+			"connections": [
+				"0-1",
+				"1-2",
+				"2-3",
+				"3-4",
+				"4-5",
+				"5-6",
+				"6-7",
+				"7-8",
+				"8-9"
+			],
+			"info": "Corona Australis is Latin for \"Southern Crown\". It is one of the 48 constellations listed by Ptolemy. It is the southern counterpart to <Corona Borealis>. It has been depicted as a turtle, ostrich nest and a tent in other cultures. Corona Australis contains one of the closest star forming region in the Milkyway, at 430 lightyears."
+		},
+
+		{
+			"name": "Corona Borealis",
+			"shape_stars": [
+				"Theta Coronae Borealis",
+				"Nusakan",
+				"Alphecca",
+				"Gamma Coronae Borealis",
+				"Delta Coronae Borealis",
+				"Epsilon Coronae Borealis",
+				"Iota Coronae Borealis"
+			],
+			"connections": ["0-1", "1-2", "2-3", "3-4", "4-5", "5-6"],
+			"info": "Corona Borealis is Latin for \"Northern Crown\". It is one of the 48 constellations listed by Ptolemy. It is the northen counterpart to <Corona Australis>. It has been depicted as a circle of elders, an eagle's nest or bear's den in other cultures. Alphecca is the brightest star, a yellow supergiant, and the prototype of its rare class."
+		},
+
+		{
+			"name": "Corvus",
+			"shape_stars": ["Kraz", "Algorab", "Gienah", "Minkar", "Alchiba"],
+			"connections": ["0-1", "0-3", "1-2", "2-3", "3-4"],
+			"info": "Corvus is Latin for \"crow\". It is one of the 48 constellations listed by Ptolemy. It was called the Raven in the Babylonian star catalogues. It was also recognized in Polynesian cultures, and was use for astronavigation. Superman's home planet Krypton canonically belongs to the star LHS 2520 in Corvus, selected by Neil deGrasse Tyson."
+		},
+
+		{
+			"name": "Crater",
+			"shape_stars": [
+				"Alkes",
+				"Beta Crateris",
+				"Gamma Crateris",
+				"Delta Crateris",
+				"Epsilon Crateris",
+				"Theta Crateris",
+				"Eta Crateris",
+				"Zeta Crateris"
+			],
+			"connections": [
+				"0-1",
+				"0-3",
+				"1-2",
+				"2-3",
+				"2-7",
+				"3-4",
+				"4-5",
+				"5-6",
+				"6-7"
+			],
+			"info": "Crater is the Latinization of the Greek krater, meaning a type of cup used to water down wine. It is one of the 48 constellations listed by Ptolemy. The cup it depicts is associated with Apollo and it is positioned on the back of Hydra. In Babylonian star catalogues the star's of Crater were possibly incorporated with those of Corvus in the Babylonian Raven. Crovus also contains the quasar RXJ1131, and the supermassive black hole in its center is the first one whose spin was directly measured."
+		},
+
+		{
+			"name": "Crux",
+			"shape_stars": ["Gacrux", "Acrux", "Mimosa", "Delta Crucis"],
+			"connections": ["0-1", "2-3"],
+			"info": "Crux is Latin for \"cross\", and the asterism is commonly known as the Southern Cross. It is the smallest of the modern constellations, but is one of the easiest to recognize. It has attained great cultural importance in the Southern Hemisphere. Crux was considered a part of Centaurus by Ptolemy. It is frequently used in navigation like Polaris is used in the Northern Hemisphere. Continuing the line from Gacrux to Acrux points very close to the Southern Celestial Pole."
+		},
+
+		{
+			"name": "Cygnus",
+			"shape_stars": [
+				"Mu Cygni",
+				"Zeta Cygni",
+				"Epsilon Cygni",
+				"Sadr",
+				"Deneb",
+				"Eta Cygni",
+				"Albireo",
+				"Delta Cygni",
+				"Iota Cygni",
+				"Kappa Cygni"
+			],
+			"connections": [
+				"0-1",
+				"1-2",
+				"2-3",
+				"3-4",
+				"3-5",
+				"3-7",
+				"4-5",
+				"5-6",
+				"7-8",
+				"8-9"
+			],
+			"info": "Cygnus is Latinized Greek meaning \"swan\". It is one of the 48 constellations listed by Ptolemy. Part of the main asterism of swan is recognized as the Northern Cross, contrasting with <Crux>. The constellation contains Cygnus X-1, a binary system of a supergiant star and a massive unseen companion, which was the first object that was considered to be a black hole. The constellation also has the most known planets, thanks to the Kepler mission which identified about 100 stars to have planets. The famous North America Nebula is also located inside Cygnus."
+		},
+
+		{
+			"name": "Delphinus",
+			"shape_stars": [
+				"Epsilon Delfini",
+				"Rotanev",
+				"Sualocin",
+				"Gamma2 Delphini",
+				"Delta Delphini"
+			],
+			"connections": ["0-1", "1-2", "1-4", "2-3", "3-4"],
+			"info": "Delphinus is the Latinized Greek word for \"dolphin\". It is one of the 48 constellations listed by Ptolemy. Delphinus is associated with two stories in Greek Mythology. The stars of Delphinus correspond to constellations in Hindu and Polynesian cultures. It is a dim constellation, with only 2 stars above the 4th magnitude. "
+		},
+
+		{
+			"name": "Dorado",
+			"shape_stars": [
+				"Gamma Doradus",
+				"Alpha Doradus",
+				"Beta Doradus",
+				"HD 40409",
+				"Delta Doradus"
+			],
+			"connections": ["0-1", "1-2", "2-3", "2-4", "3-4"],
+			"info": "Dorado is Spanish for \"golden\", and it referst to mahi-mahi or dolphinfish. It was named in the late 16th century by Petrus Plancius. Most of the Large Magellanic Cloud is within Dorado's borders. Even though the name isn't Latin it is treated as such when naming it's stars, using the genitive Doradus."
+		},
+
+		{
+			"name": "Draco",
+			"shape_stars": [
+				"Giausar",
+				"Kappa Draconis",
+				"Thuban",
+				"Edasich",
+				"Theta Draconis",
+				"Eta Draconis",
+				"Zeta Draconis",
+				"Chi Draconis",
+				"Tau Draconis",
+				"Epsilon Draconis",
+				"Altais",
+				"Gruminum",
+				"Kuma",
+				"Rastaban",
+				"Eltanin"
+			],
+			"connections": [
+				"0-1",
+				"1-2",
+				"2-3",
+				"3-4",
+				"4-5",
+				"5-6",
+				"6-7",
+				"7-8",
+				"8-9",
+				"9-10",
+				"10-11",
+				"11-12",
+				"11-14",
+				"12-13",
+				"13-14"
+			],
+			"info": "Draco is Latin for \"dragon\". It is one of the 48 constellations listed by Ptolemy. Thuban was the northern pole star from 3942 BC to 1793 BC. The Egyptian Pyramids were designed to have their entrances aligned such that Thuban would be visible. Draco has been identfied with many different dragons in Greek mythology, such as Gigantes who fought the Olympian gods for ten years, before being killed by Athena."
+		},
+
+		{
+			"name": "Equuleus",
+			"shape_stars": [
+				"Gamma Equulei",
+				"Delta Equulei",
+				"Beta Equulei",
+				"Kitalpha"
+			],
+			"connections": ["0-1", "1-2", "2-3", "3-0"],
+			"info": "Equuleus is Latin for \"little horse\", a foal. It is one of the 48 constellations listed by Ptolemy. It is very faint, with no stars above the 4th magnitude. It is associated in Greek mythology as the foal Celeris, offspring of Pegasus."
+		},
+
+		{
 			"name": "Orion",
 			"shape_stars": [
 				"Betelgeuse",
