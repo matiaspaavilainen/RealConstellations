@@ -1,29 +1,383 @@
 {
 	"constellations": [
 		{
-			"name": "Cassiopeia",
+			"name": "Fornax",
+			"shape_stars": ["Alpha Fornacis", "Beta Fornacis"],
+			"connections": ["0-1"],
+			"info": "Fornax is Latin for \"furnace\". It was named by Nicolas-Louis de Lacaille in 1756, and originally called \"the Chemical Furnace\". Hubble Space Telescope's Ultra-Deep Field is located in Fornax. Six star systems have been found to have planets."
+		},
+
+		{
+			"name": "Gemini",
 			"shape_stars": [
-				"Caph",
-				"Schedar",
-				"gamma Cassiopeiae",
-				"Ruchbah",
-				"Segin"
+				"Alzirr",
+				"Lambda Geminorum",
+				"Wasat",
+				"Mekbuda",
+				"Alhena",
+				"Upsilon Geminorum",
+				"Kappa Geminorum",
+				"Pollux",
+				"Iota Geminorum",
+				"Tau Geminorum",
+				"Castor",
+				"Theta Geminorum",
+				"Mebsuta",
+				"nu Geminorum",
+				"Tejat",
+				"Propus",
+				"1 Geminorum"
+			],
+			"connections": [
+				"0-1",
+				"1-2",
+				"2-3",
+				"2-5",
+				"3-4",
+				"5-6",
+				"5-7",
+				"5-8",
+				"8-9",
+				"9-10",
+				"9-11",
+				"9-12",
+				"12-13",
+				"12-14",
+				"14-15",
+				"15-16"
+			],
+			"info": "Gemini is Latin for \"twins\", and is one of the 12 zodiacs. The twins it is associated are Castor and Pollux, which are also the brightest stars in the constellation. It is one of the 48 constellations listed by Ptolemy. The stars Pollux and Castor were also known in Babylon as the Great Twins, depicting minor gods Meshlamtaea and Lugalirra."
+		},
+
+		{
+			"name": "Grus",
+			"shape_stars": [
+				"Aldhanab",
+				"Lambda Gruis",
+				"Alnair",
+				"del01 Gruis",
+				"Theta Gruis",
+				"Iota Gruis",
+				"Beta Gruis",
+				"Epsilon Gruis",
+				"Zeta Gruis"
+			],
+			"connections": [
+				"0-1",
+				"1-2",
+				"2-3",
+				"2-6",
+				"3-4",
+				"4-5",
+				"5-6",
+				"6-7",
+				"6-8"
+			],
+			"info": "Grus is Latin for the bird crane. It is one of the 12 constellations conceived by Petrus Plancius. It first appeared in 1598. Together with <Pavo>, <Phoenix> and <Tucana>, they are known as the Southern Birds. 6 star systems have been found to have planets."
+		},
+
+		{
+			"name": "Hercules",
+			"shape_stars": [
+				"Omicron Herculis",
+				"Xi Herculis",
+				"Mu Herculis",
+				"Maasym",
+				"Sarin",
+				"Epsilon Herculis",
+				"Zeta Herculis",
+				"Kornephoros",
+				"Gamma Herculis",
+				"Eta Herculis",
+				"Sigma Herculis",
+				"Tau Herculis",
+				"Chi Herculis",
+				"Pi Herculis",
+				"69 Herculis",
+				"Rho Herculis",
+				"Theta Herculis",
+				"Iota Herculis"
+			],
+			"connections": [
+				"0-1",
+				"1-2",
+				"2-3",
+				"3-4",
+				"3-5",
+				"5-6",
+				"6-7",
+				"7-8",
+				"6-9",
+				"9-10",
+				"10-11",
+				"11-12",
+				"9-13",
+				"13-14",
+				"14-15",
+				"15-16",
+				"16-17"
+			],
+			"info": "Hercules is a Roman mythology hero, adapted from the Greek hero Heracles. Hercules is the son of Jupiter. One of Hercules' 12 labours was killing the multi-headed monster <Hydra>. It is one of the 48 constellations listed by Ptolemy. Hercules could be a distorted version of the Babyloninan constellation Standing Gods. Hercules is the largest constellation with no 1st or 2nd magnitude stars, and there are 15 stars known to have planets."
+		},
+
+		{
+			"name": "Horologium",
+			"shape_stars": [
+				"Alpha Horologii",
+				"Zeta Horologii",
+				"mu Horologii"
+			],
+			"connections": ["0-1", "1-2"],
+			"info": "Horologium is Latin for \"pendulum clock\" derived from ancient Greek. It was described by Nicolas-Louis de Lacaille in 1756. It is quite a dim constellation, with only 1 star above magnitude 4. 4 star systems are known to have planets."
+		},
+
+		{
+			"name": "Hydra",
+			"shape_stars": [
+				"Gamma Hydrae",
+				"Psi Hydrae",
+				"Beta Hydrae",
+				"Xi Hydrae",
+				"Nu Hydrae",
+				"Mu Hydrae",
+				"Lambda Hydrae",
+				"ups01 Hydrae",
+				"Alphard",
+				"tau01 Hydrae",
+				"tau02 Hydrae",
+				"Theta Hydrae",
+				"Zeta Hydrae",
+				"Rho Hydrae",
+				"Epsilon Hydrae",
+				"Delta Hydrae",
+				"Minchir",
+				"Eta Hydrae"
+			],
+			"connections": [
+				"0-1",
+				"1-2",
+				"2-3",
+				"3-4",
+				"4-5",
+				"5-6",
+				"6-7",
+				"7-8",
+				"8-9",
+				"9-10",
+				"10-11",
+				"11-12",
+				"12-13",
+				"13-14",
+				"13-17",
+				"14-15",
+				"15-16",
+				"16-17"
+			],
+			"info": "Hydra represents a female water snake in opposition to the small <Hydrus>, the male water snake. It is the largest and also the longest of the 88 constellations. It is one of the 48 constellations listed by Ptolemy. It is likely an adaptation of the Babylonian constellation \"serpent\". It is also associated with the monster Hydra, which was killed by <Hercules>. Despite it's size, it only contains two stars brighter than the 3rd magnitude."
+		},
+
+		{
+			"name": "Hydrus",
+			"shape_stars": [
+				"Alpha Hydri",
+				"Delta Hydris",
+				"Epsilon Hydri",
+				"Gamma Hydri",
+				"Beta Hydri"
 			],
 			"connections": ["0-1", "1-2", "2-3", "3-4"],
-			"info": "Cassiopeia forms a distinctive W-shaped pattern. In Greek mythology it represents a queen who boasted about her beauty, angering the gods. Its easily recognizable shape has been referenced in navigation and folklore across northern cultures."
+			"info": "Hydrus represents a male water snake in opposition to the massive <Hydra>, the female water snake. It was created by Petrus Plancius in the late 1500s. The brightest star is Beta Hydri, which is also the closest reasonably bright star to the south celestial pole, making it useful for navigation. 4 star systems have been fouind to have planets."
 		},
+
 		{
-			"name": "Andromeda",
+			"name": "Indus",
+			"shape_stars": ["Alpha Indi", "Theta Indi", "Beta Indi"],
+			"connections": ["0-1", "1-2", "0-2"],
+			"info": "Indus is generally translated to \"the Indian\", but it isn't clear which indigenous people it was originally supposed to represent. It was mapped by Petrus Plancius in the late 1500s. Epsilon Indi is one of the closest stars to Earth, 11.8 light years away."
+		},
+
+		{
+			"name": "Lacerta",
 			"shape_stars": [
-				"Almach",
-				"Mirach",
-				"mu Andromedae",
-				"nu Andromedae",
-				"delta Andromedae",
-				"Alpheratz"
+				"1 Lacertae",
+				"6 Lacertae",
+				"5 Lacertae",
+				"4 Lacertae",
+				"Beta Lacertae",
+				"Alpha Lacertae"
 			],
-			"connections": ["0-1", "1-4", "4-5", "1-2", "2-3"],
-			"info": "Andromeda is one of the 48 constellations listed by Ptolemy. The Andromeda Galaxy (M31) is located next to Nu Andromedae, appearing just outside the constellation. It is named after Andromeda, the daughter of Cassiopeia, from Greek mythology."
+			"connections": ["0-1", "1-2", "2-3", "2-5", "3-4", "4-5"],
+			"info": "Lacerta is Latin for \"lizard\". It was defined in 1687 by Johannes Hevelius. The constellation is small and dim, which probably explains why it wasn't of interest to the ancient western astronomers. It's stars were included in a Chinese constellation \"Flying Serpent\"."
+		},
+
+		{
+			"name": "Leo",
+			"shape_stars": [
+				"Denebola",
+				"Zosma",
+				"Chertan",
+				"Regulus",
+				"Eta Leonis",
+				"Algieba",
+				"Adhafera",
+				"Rasalas",
+				"Epsilon Leonis"
+			],
+			"connections": [
+				"0-1",
+				"0-2",
+				"1-2",
+				"1-5",
+				"2-3",
+				"3-4",
+				"4-5",
+				"5-6",
+				"6-7",
+				"7-8"
+			],
+			"info": "Leo is Latin for \"Lion\", and is one of the 12 zodiacs. In ancient Greece, it represented the Nemean Lion, which was killed by Heracles (<Hercules>) as one of his 12 labours. It is one of the 48 constellations listed by Ptolemy. Leo contains many bright stars, and the 9 main stars were named in the ancient times. Leo also contains many bright galaxies, such as Messier objects 65, 66, 95, 96 and 105."
+		},
+
+		{
+			"name": "Leo Minor",
+			"shape_stars": [
+				"10 Leonis Minoris",
+				"21 Leonis Minoris",
+				"Beta Leonis Minoris",
+				"Praecipua"
+			],
+			"connections": ["0-1", "1-2", "1-3", "2-3"],
+			"info": "Leo Minor is Latin for \"the smaller lion\", in contrast to <Leo>. It is located above or north of <Leo>. It was designated by Johannes Hevelius in 1687. It is small and very dim, with only 3 stars brighter than magnitude 4.5."
+		},
+
+		{
+			"name": "Lepus",
+			"shape_stars": [
+				"Theta Leporis",
+				"Eta Leporis",
+				"Zeta Leporis",
+				"Arneb",
+				"Delta Leporis",
+				"Gamma Leporis",
+				"Nihal",
+				"Epsilon Leporis",
+				"mu Leporis",
+				"Lambda Leporis",
+				"nu Leporis",
+				"Kappa Leporis",
+				"Iota Leporis"
+			],
+			"connections": [
+				"0-1",
+				"1-2",
+				"2-3",
+				"3-4",
+				"3-6",
+				"3-8",
+				"4-5",
+				"5-6",
+				"6-7",
+				"7-8",
+				"8-9",
+				"8-11",
+				"9-10",
+				"11-12"
+			],
+			"info": "Lepus is Latin for \"hare\". It is one of the 48 constellations listed by Ptolemy. It is sometimes represented as a hare being chased by <Orion>. It is also associated with the Moon rabbit from East Asian mythology."
+		},
+
+		{
+			"name": "Libra",
+			"shape_stars": [
+				"Theta Librae",
+				"Gamma Librae",
+				"Zubeneschamali",
+				"Zubenelgenubi",
+				"Brachium"
+			],
+			"connections": ["0-1", "1-2", "1-4", "2-3", "3-4"],
+			"info": "Libra is Latin for \"weighing scales\", and one of the 12 zodiacs. It was known in Babylonian astronomy as the scales or balance. It was alternatively seen as a scorpion's claws, in Babylon and ancient Greece. 3 star systems are known to have planets."
+		},
+
+		{
+			"name": "Lupus",
+			"shape_stars": [
+				"Chi Lupi",
+				"Theta Lupi",
+				"Eta Lupi",
+				"Gamma Lupi",
+				"Omega Lupi",
+				"Zeta Lupi",
+				"Rho Lupi",
+				"Alpha Lupi",
+				"tau02 Lupi",
+				"Beta Lupi",
+				"Delta Lupi",
+				"phi01 Lupi"
+			],
+			"connections": [
+				"0-1",
+				"0-2",
+				"1-2",
+				"2-3",
+				"3-4",
+				"3-10",
+				"4-5",
+				"5-6",
+				"5-7",
+				"7-8",
+				"7-9",
+				"9-10",
+				"10-11"
+			],
+			"info": "Lupus is Latin for \"wolf\". It is one of the 48 constellations listed by Ptolemy. It was considered an asterism belonging to <Centaurus> by the ancient Greeks, and was considered to be an arbitrary animal killed or about to be killed by <Centaurus>. It is probably based on a Babylonian figure known as Mad Dog."
+		},
+
+		{
+			"name": "Lynx",
+			"shape_stars": [
+				"Alpha Lynchis",
+				"38 Lynchis",
+				"HD 77912",
+				"10 Ursae Majoris",
+				"Alsciaukat",
+				"21 Lyncis",
+				"15 Lyncis",
+				"2 Lyncis"
+			],
+			"connections": ["0-1", "1-2", "2-3", "3-4", "4-5", "5-6", "6-7"],
+			"info": "Lynx is named after the animal Lynx. It was introduced by Johannes Hevelius in 1687. It was named Lynx because of its faintness, because one would need to be \"lynx-eyed\"(good sight) to see it. Lynx has multiple double stars, and there have been planets found on 6 star systems."
+		},
+
+		{
+			"name": "Lyra",
+			"shape_stars": [
+				"Vega",
+				"zet01 Lyrae",
+				"delta02 Lyrae",
+				"Sulafat",
+				"Sheliak"
+			],
+			"connections": ["0-1", "1-2", "1-4", "2-3", "3-4"],
+			"info": "Lyra is Latin for \"lyre\". It is one of the 48 constellations listed by Ptolemy. It was often represented as a vulture or and eagle carrying a lyre. In Greek mythology Lyra represents the lyre of Orpheus. The brightest star Vega, is also one of the brightest on the night sky and overall one of the most important stars. Vega was the pole star in 12 000 BCE and will become the pole again in 14000 CE. Lyra also hosts the Ring Nebula, the best known planetary nebula."
+		},
+
+		{
+			"name": "Mensa",
+			"shape_stars": ["Gamma Mensae", "mu Mensae"],
+			"connections": ["0-1"],
+			"info": "Mensa is Latin for \"table\", though it was originally named Mons Mensae (Table Mountain). It was created by Nicolas-Louis de Lacaille in the 18th century. There are 2 star systems with known planets. The Large Magellanic Cloud is partially within Mensa's boundaries. This feature was one of the reasons for the name, as it refers to the Table Mountain, on top of which Lacaille's observatory was. It was often surrounded with clouds, so he decided that the table should be close to the clouds in the sky."
+		},
+
+		{
+			"name": "Microscopium",
+			"shape_stars": [
+				"Alpha Microscopii",
+				"Gamma Microscopii",
+				"Epsilon Microscopii"
+			],
+			"connections": ["0-1", "1-2"],
+			"info": "Microscopium is Latin for \"microscope\" named by Nicolas-Louis de Lacaille in the 18th century. It is small and dim, with it's brightest star having the apparent magnitude of 4.68. There aren't really any deep sky objects in it either, and it was described as \"totally unremarkable\" by Sir Patrick Alfred Caldwell-Moore."
 		}
 	]
 }
