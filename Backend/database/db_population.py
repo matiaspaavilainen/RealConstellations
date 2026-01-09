@@ -41,6 +41,7 @@ def create_constellation_object(constellation: ConstellationJSON):
     for star in constellation["shape_stars"]:
         star_dict = get_star_data(star)
         astronomical_data.append(star_dict)
+        # maybe paranoid but avoid getting timed out from simbad
         time.sleep(2)
 
     constellation_object: Constellation = {
@@ -54,14 +55,16 @@ def create_constellation_object(constellation: ConstellationJSON):
 
 
 if __name__ == "__main__":
-    DB_URI = "mongodb://192.168.1.226:27017/"
+
+    # RUN WITH python -m database.db_population from Backend dir because python
     load_dotenv(".env")
     db_user = os.getenv("MONGO_DEV_USER")
     db_pass = os.getenv("MONGO_DEV_PASS")
+    db_url = os.getenv("MONGO_DB_URL_LOCAL")
 
     print(f"Logging in as {db_user}:{db_pass}")
 
-    CLIENT = MongoClient(DB_URI, username=db_user, password=db_pass)
+    CLIENT = MongoClient(db_url, username=db_user, password=db_pass)
     CLIENT.admin.command("ping")
     print("Success")
     collection = init_db(CLIENT)

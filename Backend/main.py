@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Request
 from typing import Optional, List
-from fastapi.responses import FileResponse, HTMLResponse
+from fastapi.responses import FileResponse
 from fastapi.templating import Jinja2Templates
 from pymongo import AsyncMongoClient
 from pydantic import BaseModel, Field
@@ -31,10 +31,10 @@ templates = Jinja2Templates(directory="templates")
 load_dotenv(".env")
 db_user = os.getenv("MONGO_PROD_USER")
 db_pass = os.getenv("MONGO_PROD_PASS")
-db_uri = os.getenv("MONGO_DB_URI")
+db_url = os.getenv("MONGO_DB_URL_LOCAL")
 print(f"Logging in as {db_user}:{db_pass}")
 
-client = AsyncMongoClient(db_uri, username=db_user, password=db_pass)
+client = AsyncMongoClient(db_url, username=db_user, password=db_pass)
 database = client.get_database("constellations")
 collection = database.get_collection("constellations")
 
