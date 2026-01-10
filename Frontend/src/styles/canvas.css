@@ -1,0 +1,9 @@
+.canvas-container {
+    height: calc(100vh - 7em);
+
+}
+
+#canvas {
+    background-color: black;
+    border-radius: 1em;
+}
