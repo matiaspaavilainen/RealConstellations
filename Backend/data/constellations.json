@@ -893,7 +893,7 @@
 			"shape_stars": [
 				"Alpha Horologii",
 				"Zeta Horologii",
-				"Mu Horologii"
+				"mu Horologii"
 			],
 			"connections": ["0-1", "1-2"],
 			"info": "Horologium is Latin for \"pendulum clock\" derived from ancient Greek. It was described by Nicolas-Louis de Lacaille in 1756. It is quite a dim constellation, with only 1 star above magnitude 4. 4 star systems are known to have planets."
@@ -914,7 +914,7 @@
 				"tau01 Hydrae",
 				"tau02 Hydrae",
 				"Theta Hydrae",
-				"Hydrobius",
+				"Zeta Hydrae",
 				"Rho Hydrae",
 				"Epsilon Hydrae",
 				"Delta Hydrae",
