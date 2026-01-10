@@ -1,11 +1,9 @@
 import json
 import re
-from typing import TypedDict, NotRequired
+from typing import TypedDict
 from astroquery.simbad import Simbad
-from astroquery.gaia import Gaia
 from astropy.coordinates import SkyCoord, Distance
 from astropy import units as u
-from astropy.table import Table
 
 
 class Star(TypedDict):
@@ -16,8 +14,8 @@ class Star(TypedDict):
     pm_dec: float | None
     distance: float | None
     distance_estimated: bool
-    cartesian: NotRequired[list[float]]
-    cartesian_velocity: NotRequired[list[float]]
+    cartesian: list[float] | None
+    cartesian_velocity: list[float] | None
 
 
 class ConstellationJSON(TypedDict):
@@ -41,7 +39,7 @@ GREEK_ALPHABET = {
     "lam": "Lambda",
     "mu": "Mu",
     "nu": "Nu",
-    "xi": "Xi",
+    "ksi": "Xi",
     "omi": "Omicron",
     "pi": "Pi",
     "rho": "Rho",
@@ -70,6 +68,7 @@ def load_constellations_json(
         data = json.load(file)
     number_of_constellations = 0
     for index, constellation in enumerate(data["constellations"]):
+        # quick "check" to see that all the data is there
         try:
             print(constellation["name"])
             constellation["shape_stars"]
@@ -94,35 +93,39 @@ def name_processing(simbad_id: str, star_name: str):
     :param star_name: The original name used in the JSON
     :type star_name: str
     """
-    name = ""
-    # NAME name
-    # NAME -IAU Larawag
 
-    # 2 part names: Canis Majoris??
+    # NAME name
+    # NAME name name
+    # NAME -IAU Larawag
 
     if simbad_id.startswith("NAME"):
         split = simbad_id.split()
+        try:
+            split.remove("-IAU")
+        except ValueError:
+            pass
         # return the last part of the name
-        return split[len(split) - 1]
+        return " ".join(split[1:])
 
     if simbad_id.startswith("*"):
-        constellation = star_name.split(" ")[1].strip()
+        constellation = " ".join(star_name.split(" ")[1:])
         # * alf Const
         # * nu. Const
         # * tau Boötis A
+        # * tet Coronae Borealis
 
-        # are there numbers in the string
         if not bool(re.search(r"\d", simbad_id)):
+            # no numbers in the string
             split = simbad_id.split()
             greek_abrv = split[1]
             greek_abrv = greek_abrv.strip(".").lower()
-            if len(split) > 3:
-                return f"{GREEK_ALPHABET[greek_abrv]} {constellation} {split[3]}"
-            return f"{GREEK_ALPHABET[greek_abrv]} {constellation}"
+            try:
+                return f"{GREEK_ALPHABET[greek_abrv]} {constellation}"
+            except KeyError:
+                print("No processing done, using the name from JSON")
+                return star_name
 
         # there are numbers in the string
-
-        # nu.XX Const??????????
 
         # *  XX Const
         _, designation, _ = simbad_id.split()
@@ -136,117 +139,70 @@ def name_processing(simbad_id: str, star_name: str):
 
         return f"{GREEK_ALPHABET[greek_abrv]} {num} {constellation}"
 
-    return name
+    print("No processing done, using the name from JSON")
+
+    return star_name
 
 
-def get_gaia_id(star_name: str) -> int:
+def get_simbad_data(
+    star_dict: Star,
+):
     """
-    Find the GAIA DR3 id for a given star. Queries simbad with the name of the star,
-    to find either the GAIA id directly.
+    Queries SIMBAD for the star. Attempts to find the RA, DEC, PM_RA, PM_DEC, and distance.
+    If distance isn't in SIMBAD, queries again without distance. The dictionary is modified directly.
+    SIMBAD search is case sensitive, and as such there are likely mistakes where for example Mu and mu result
+    in different stars.
 
-    :param star: Name of a star
-    :type star: str
-    :return: GAIA DR3 id
-    :rtype: str
+    :param star_name: Description
+    :type star_name: str
     """
+
+    star_name = star_dict["name"]
+
+    # attempt to query with distance first, more often than not distance exists
     result = Simbad.query_tap(
         f"""
-        SELECT ident.id, ids.ids
+        SELECT ident.id, basic.ra, mesPM.pmra, basic.dec, mesPM.pmde, mesDistance.dist
         FROM basic
-        JOIN ids ON ids.oidref = basic.oid
         JOIN ident ON ident.oidref = basic.oid
+        JOIN mesPM ON mesPM.oidref = basic.oid
+        JOIN mesDistance ON mesDistance.oidref = ident.oidref
         WHERE ident.id = '{star_name}'
+        AND mesPM.mespos = 1
+        AND mesDistance.mespos = 1
         """
     )
 
-    try:
-        gaia_id = [
-            int(str(id).split(" ")[2])
-            for id in result["ids"][0].split("|")
-            if str(id).startswith("Gaia DR3")
-        ][0]
-
-    except (KeyError, IndexError):
-        gaia_id = 0
-
-    return gaia_id
-
-
-def get_gaia_dist(gaia_id: int) -> float | None:
-    """
-    Get distance from GAIA if there is no distance in SIMBAD. 99.99% of time,
-    if Gaia id is in SIMBAD, it also has the distance. So basically never needed.
-
-    :param gaia_id: Gaia DR 3 ID
-    :type gaia_id: int
-    :return: Distance or None if not found
-    :rtype: float | None
-    """
-    Gaia.ROW_LIMIT = 1
-    job = Gaia.launch_job(
-        f"""
-        SELECT
-        distance_gspphot
-        FROM gaiadr3.gaia_source
-        WHERE source_id = '{gaia_id}'
-        """
-    )
-
-    result: Table = job.get_results()  # type: ignore
-
-    try:
-        if str(result["distance_gspphot"][0]).isdigit():
-            print(f"Found distance from GAIA for {gaia_id}")
-            return float(result["distance_gspphot"][0])  # type: ignore
-    except IndexError:
+    if len(result) > 0:
+        star_dict["name"] = name_processing(result["id"][0], star_dict["name"])
+        star_dict["ra"] = float(result["ra"][0])
+        star_dict["dec"] = float(result["dec"][0])
+        star_dict["pm_ra"] = float(result["pmra"][0])
+        star_dict["pm_dec"] = float(result["pmde"][0])
+        star_dict["distance"] = float(result["dist"][0])
+        print(f"Found distance from SIMBAD for {star_name}")
         return
 
-
-def get_simbad_data(star_dict: Star):
-    """
-    First finds the correct star from SIMBAD, and gets the most basic data for it.
-    Then attempts to get the distance as well. Modifies the star_dict directly.
-
-    :param star_dict: Star dictionary
-    :type star_dict: Star
-    """
-    result_basic = Simbad.query_tap(
+    # Most common reason to fail a query is missing distance
+    result = Simbad.query_tap(
         f"""
         SELECT ident.id, basic.ra, mesPM.pmra, basic.dec, mesPM.pmde
         FROM basic
         JOIN ident ON ident.oidref = basic.oid
         JOIN mesPM ON mesPM.oidref = basic.oid
-        WHERE ident.id = '{star_dict["name"]}' AND mesPM.mespos = 1
+        WHERE ident.id = '{star_name}' AND mesPM.mespos = 1
         """
     )
 
-    if len(result_basic) < 1:
-        print(f"Failed to fetch simbad data for {star_dict["name"]}")
+    if len(result) > 0:
+        star_dict["name"] = name_processing(result["id"][0], star_dict["name"])
+        star_dict["ra"] = float(result["ra"][0])
+        star_dict["dec"] = float(result["dec"][0])
+        star_dict["pm_ra"] = float(result["pmra"][0])
+        star_dict["pm_dec"] = float(result["pmde"][0])
         return
 
-    star_dict["ra"] = float(result_basic["ra"][0])
-    star_dict["dec"] = float(result_basic["dec"][0])
-    star_dict["pm_ra"] = float(result_basic["pmra"][0])
-    star_dict["pm_dec"] = float(result_basic["pmde"][0])
-
-    # need a second query, if one of the items doesn't exist, nothing is returned
-    result_dist = Simbad.query_tap(
-        f"""
-        SELECT mesDistance.dist
-        FROM ident
-        JOIN mesDistance ON mesDistance.oidref = ident.oidref
-        WHERE ident.id = '{star_dict["name"]}' AND mesDistance.mespos = 1
-        """,
-    )
-
-    # set the name after the second query
-    star_dict["name"] = name_processing(
-        str(result_basic["id"][0]), str(star_dict["name"])
-    )
-
-    if len(result_dist) > 0:
-        star_dict["distance"] = float(result_dist["dist"][0])
-        print(f"Found distance from SIMBAD for {star_dict["name"]}")
+    print(f"No data found for {star_name} from SIMBAD.")
 
 
 def estimate_dist_with_parallax(star: str) -> float | None:
@@ -288,8 +244,8 @@ def manual_data_entry(star_dict: Star):
     star_dict["ra"] = float(c.ra.degree)  # type: ignore
     star_dict["dec"] = float(c.dec.degree)  # type: ignore
 
-    star_dict["pm_ra"] = float(input("PM_RA: "))
-    star_dict["pm_dec"] = float(input("PM_DEC: "))
+    star_dict["pm_ra"] = float(input("PM_RA (float): "))
+    star_dict["pm_dec"] = float(input("PM_DEC (float): "))
     star_dict["distance"] = float(input("Distance in pc: "))
     star_dict["distance_estimated"] = True
 
@@ -325,7 +281,8 @@ def calculate_cartesian(star_dict: Star):
 
 def get_star_data(star_name: str):
     """
-    Find the data for a star, fills out the dictionary specified by Star class.
+    Finds the data for a star and fills out the dictionary specified by the Star class. A "star" in a constellation can be a multi-star system,
+    in which case the name for that is used, and the average of the values is used.
 
     :param star_name: Star name
     :type star_name: str
@@ -338,34 +295,33 @@ def get_star_data(star_name: str):
         "pm_dec": None,
         "distance": None,
         "distance_estimated": False,
+        "cartesian": None,
+        "cartesian_velocity": None,
     }
 
     get_simbad_data(star_dict)
 
-    # if simbad doesn't have data, example acrab, do manual data entry
+    # If simbad doesn't have data, example Acrab, do manual data entry
+    # Same applies for multi-star systems like Kuma
+    # Very rare
     if not star_dict["ra"]:
         manual_data_entry(star_dict)
 
-    # If simbad doesn't have distance, fall back to gaia
+    # If simbad doesn't have distance, try GAIA
+    # Basically never has data that isn't in SIMBAD
     if not star_dict["distance"]:
-        gaia_3_id = get_gaia_id(star_name)
-        dist = get_gaia_dist(gaia_3_id)
+        print(f"Distance estimated with parallax for {star_dict["name"]}")
+        dist = estimate_dist_with_parallax(star_dict["name"])
+        star_dict["distance_estimated"] = True
 
-        # If there GAIA doesn't have it, estimate with parallax
+        # Finally if there is no parallax get user input
         if not dist:
-            print(f"Distance estimated with parallax for {star_dict["name"]}")
-            dist = estimate_dist_with_parallax(star_name)
-            star_dict["distance_estimated"] = True
-
-        # Finally if there is no parallax get input
-        if not dist:
-            print("NO DISTANCE ANYWHERE")
+            print(f"No distance anywhere for {star_dict["name"]}")
             dist = input("Distance in pc: ")
 
         star_dict["distance"] = float(dist)
 
     # calculate the cartesian coordinates
-    if star_dict["distance"]:
-        calculate_cartesian(star_dict)
+    calculate_cartesian(star_dict)
 
     return star_dict

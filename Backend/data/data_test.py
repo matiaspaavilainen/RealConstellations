@@ -1,24 +1,24 @@
 import time
 
-from ..data.data_fetch import (
+from data_fetch import (
     get_star_data,
     load_constellations_json,
 )
 
 
 def main():
-    filename = "constellations.json"
+    filepath = "data/constellations.json"
 
-    constellations = load_constellations_json(filename=filename)
+    constellations = load_constellations_json(filepath=filepath)
 
     for constellation in constellations:
+        print(constellation["name"])
         for star in constellation["shape_stars"]:
             star_dict = get_star_data(star)
             print(
                 star_dict["name"],
                 star_dict["distance"],
-                star_dict["pm_ra"],
-                star_dict["pm_dec"],
+                star_dict["cartesian"],
             )
             print(
                 "-----------------------------------------------------------------------------------------------"
