@@ -41,8 +41,8 @@ def create_constellation_object(constellation: ConstellationJSON):
     for star in constellation["shape_stars"]:
         star_dict = get_star_data(star)
         astronomical_data.append(star_dict)
-        # maybe paranoid but avoid getting timed out from simbad
-        time.sleep(2)
+        # avoid getting timed out from simbad
+        time.sleep(1)
 
     constellation_object: Constellation = {
         "name": constellation["name"],

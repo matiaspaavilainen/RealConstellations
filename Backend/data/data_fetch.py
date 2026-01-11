@@ -122,7 +122,7 @@ def name_processing(simbad_id: str, star_name: str):
             try:
                 return f"{GREEK_ALPHABET[greek_abrv]} {constellation}"
             except KeyError:
-                print("No processing done, using the name from JSON")
+                print(f"No processing done, using the name from JSON: {star_name}")
                 return star_name
 
         # there are numbers in the string
@@ -139,7 +139,7 @@ def name_processing(simbad_id: str, star_name: str):
 
         return f"{GREEK_ALPHABET[greek_abrv]} {num} {constellation}"
 
-    print("No processing done, using the name from JSON")
+    print(f"No processing done, using the name from JSON: {star_name}")
 
     return star_name
 
@@ -180,7 +180,7 @@ def get_simbad_data(
         star_dict["pm_ra"] = float(result["pmra"][0])
         star_dict["pm_dec"] = float(result["pmde"][0])
         star_dict["distance"] = float(result["dist"][0])
-        print(f"Found distance from SIMBAD for {star_name}")
+        print(f"Found distance from SIMBAD for {star_dict["name"]}")
         return
 
     # Most common reason to fail a query is missing distance
@@ -202,7 +202,7 @@ def get_simbad_data(
         star_dict["pm_dec"] = float(result["pmde"][0])
         return
 
-    print(f"No data found for {star_name} from SIMBAD.")
+    print(f"No data found for {star_dict["name"]} from SIMBAD.")
 
 
 def estimate_dist_with_parallax(star: str) -> float | None:
@@ -255,6 +255,11 @@ def calculate_cartesian(star_dict: Star):
     Calculates the cartesian (x,y,z) coordinates and velocities for a given star.
     Requires proper motions, and a distance.
 
+    Coordinates are transformed from ICRS to a system suitable for Three.js:
+    - ICRS X -> Three.js X
+    - ICRS Y -> Three.js Z (negated for correct handedness)
+    - ICRS Z -> Three.js Y (celestial north becomes "up")
+
     :param star_dict: Star dictionary
     :type star_dict: Star
     """
@@ -269,13 +274,13 @@ def calculate_cartesian(star_dict: Star):
 
     star_dict["cartesian"] = [
         float(sc.cartesian.x.to_value()),  # type: ignore
-        float(sc.cartesian.y.to_value()),  # type: ignore
         float(sc.cartesian.z.to_value()),  # type: ignore
+        float(-sc.cartesian.y.to_value()),  # type: ignore
     ]
     star_dict["cartesian_velocity"] = [
         float(sc.velocity.d_x.to_value()),  # type: ignore
-        float(sc.velocity.d_y.to_value()),  # type: ignore
         float(sc.velocity.d_z.to_value()),  # type: ignore
+        float(-sc.velocity.d_y.to_value()),  # type: ignore
     ]
 
 
@@ -310,8 +315,9 @@ def get_star_data(star_name: str):
     # If simbad doesn't have distance, try GAIA
     # Basically never has data that isn't in SIMBAD
     if not star_dict["distance"]:
-        print(f"Distance estimated with parallax for {star_dict["name"]}")
-        dist = estimate_dist_with_parallax(star_dict["name"])
+        print(f"Estimating distance with parallax for {star_dict["name"]}")
+        # use the unformatted version which works with simbad
+        dist = estimate_dist_with_parallax(star_name)
         star_dict["distance_estimated"] = True
 
         # Finally if there is no parallax get user input

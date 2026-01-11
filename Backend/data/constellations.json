@@ -1143,6 +1143,21 @@
 		},
 
 		{
+			"name": "Monoceros",
+			"shape_stars": [
+				"HD 42111",
+				"Epsilon Monocerotis A",
+				"Delta Monocerotis",
+				"Beta Monocerotis",
+				"Gamma Monocerotis",
+				"Zeta Monocerotis",
+				"Alpha Monocerotis"
+			],
+			"connections": ["0-1", "1-2", "2-3", "2-4", "3-4", "4-5", "5-6"],
+			"info": "Monoceros is Latinized Greek for \"unicorn\". Its definition is attributed to Petrus Plancius. It is a dim constellations, and hard to see with the naked eye. There is a star system with 2 Super-Earth exoplanets. Monoceros also hosts one of the nearest black holes to the Solar System. It with its star companion form the A0620-00 binary system."
+		},
+
+		{
 			"name": "Orion",
 			"shape_stars": [
 				"Betelgeuse",
