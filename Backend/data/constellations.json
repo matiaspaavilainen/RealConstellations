@@ -83,22 +83,17 @@
 				"epsilon Aquilae",
 				"eta Aquilae",
 				"theta Aquilae",
-				"iota Aquilae",
-				"lambda Aquilae",
-				"12 Aquilae"
+				"lambda Aquilae"
 			],
 			"connections": [
 				"0-1",
 				"0-2",
-				"2-3",
+				"0-3",
 				"3-4",
 				"4-5",
 				"3-6",
 				"6-7",
-				"7-8",
-				"8-9",
-				"9-10",
-				"9-4"
+				"3-8"
 			],
 			"info": "Aquila means eagle in Latin, and it represents the bird that carried Zeus/Jupiter's thunderbolts. Aquila is one of the 48 constellations listed by Ptolemy. It had been mentioned earlier in the 4th century BC. The Greek Aquila is likely based on the Babylonian constellation of the Eagle."
 		},
@@ -184,6 +179,7 @@
 				"4-5",
 				"5-6",
 				"6-7",
+				"7-8",
 				"7-9",
 				"9-10",
 				"9-11",
@@ -307,6 +303,7 @@
 				"3-4",
 				"3-5",
 				"3-6",
+				"5-6",
 				"6-7",
 				"7-8"
 			],
@@ -319,18 +316,17 @@
 				"Miaplacidus",
 				"Omega Carinae",
 				"Theta Carinae",
-				"w Carinae",
-				"x Carinae",
-				"u Carinae",
-				"s Carinae",
-				"q Carinae",
+				"V520 Carinae",
+				"V382 Carinae",
+				"HD 94510",
+				"HD 90853",
+				"V337 Carinae",
 				"Aspidiske",
-				"a Carinae",
-				"d Carinae",
+				"V357 Carinae",
+				"V343 Carinae",
 				"Avior",
 				"Canopus",
-				"Nu Puppis",
-				"Gamma Velorum",
+				"nu Puppis",
 				"Naos"
 			],
 			"connections": [
@@ -347,8 +343,7 @@
 				"10-11",
 				"11-12",
 				"11-14",
-				"12-13",
-				"14-15"
+				"12-13"
 			],
 			"info": "Carina is Latin for the keel of a ship. It was a part of the constellation Argo Navis, the great ship of the mythical Jason. It was introduced in ancient Greece. It was later split into three parts (Carina, Puppis, Vela) in 1763. Carina contains the 2nd brightest star in the night sky, Canopus. The celestial south pole will move to Carina in the year 4700."
 		},
@@ -374,17 +369,17 @@
 				"Epsilon Centauri",
 				"Zeta Centauri",
 				"ups01 Centauri",
-				"Mu Centauri",
+				"mu Centauri",
 				"Eta Centauri",
 				"Kappa Centauri",
-				"Nu Centauri",
+				"nu Centauri",
 				"Menkent",
 				"d Centauri",
 				"Iota Centauri",
 				"Gamma Centauri",
 				"Sigma Centauri",
 				"Delta Centauri",
-				"a Centauri",
+				"HD 100673",
 				"Lambda Centauri"
 			],
 			"connections": [
@@ -601,7 +596,7 @@
 		{
 			"name": "Cygnus",
 			"shape_stars": [
-				"Mu Cygni",
+				"mu Cygni",
 				"Zeta Cygni",
 				"Epsilon Cygni",
 				"Sadr",
@@ -619,7 +614,6 @@
 				"3-4",
 				"3-5",
 				"3-7",
-				"4-5",
 				"5-6",
 				"7-8",
 				"8-9"
@@ -711,7 +705,7 @@
 				"Chi Eridani",
 				"Phi Eridani",
 				"Kappa Eridani",
-				"s Eridani",
+				"HD 16754",
 				"Iota Eridani",
 				"Acamar",
 				"82 Eridani",
@@ -729,8 +723,8 @@
 				"Zibal",
 				"Epsilon Eridani",
 				"Rana",
-				"Nu Eridani",
-				"Mu Eridani",
+				"nu Eridani",
+				"mu Eridani",
 				"Omega Eridani",
 				"Cursa",
 				"Lambda Eridani",
@@ -849,7 +843,7 @@
 			"shape_stars": [
 				"Omicron Herculis",
 				"Xi Herculis",
-				"Mu Herculis",
+				"mu Herculis",
 				"Maasym",
 				"Sarin",
 				"Epsilon Herculis",
@@ -906,8 +900,8 @@
 				"Psi Hydrae",
 				"Beta Hydrae",
 				"Xi Hydrae",
-				"Nu Hydrae",
-				"Mu Hydrae",
+				"nu Hydrae",
+				"mu Hydrae",
 				"Lambda Hydrae",
 				"ups01 Hydrae",
 				"Alphard",
@@ -1132,7 +1126,7 @@
 
 		{
 			"name": "Mensa",
-			"shape_stars": ["Gamma Mensae", "Mu Mensae"],
+			"shape_stars": ["Gamma Mensae", "mu Mensae"],
 			"connections": ["0-1"],
 			"info": "Mensa is Latin for \"table\", though it was originally named Mons Mensae (Table Mountain). It was created by Nicolas-Louis de Lacaille in the 18th century. There are 2 star systems with known planets. The Large Magellanic Cloud is partially within Mensa's boundaries. This feature was one of the reasons for the name, as it refers to the Table Mountain, on top of which Lacaille's observatory was. It was often surrounded with clouds, so he decided that the table should be close to the clouds in the sky."
 		},
