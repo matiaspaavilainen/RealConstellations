@@ -14,7 +14,7 @@ A project to visualize how constellations actually look. As the stars that are p
 
 ## Current features
 
-- Visualizes 55/88 constellations
+- Visualizes all 88 constellations
 - Decent orbital controls
 - Current view is based at the barycenter of the solar system. It shouldn't affect the shapes basically at all (a few million km vs. lightyears)
 
