@@ -69,7 +69,7 @@
 				"12-13",
 				"13-14"
 			],
-			"info": "Aquarius is one of the 12 zodiacs. In Latin it means \"water-carrier\". It's one of the oldest zodiacs, appearing in the Babylonian star catalogues. Aquarius is one of the 48 constellations listed by Ptolemy."
+			"info": "Aquarius is one of the 12 zodiacs. In Latin it means \"water-carrier\". It's one of the oldest zodiacs, appearing in the Babylonian star catalogues. In Babylonia it was known as \"The Great One\", depicting the god Ea. Aquarius is one of the 48 constellations listed by Ptolemy. It is found in the region often called the \"Sea\", due to its profusion of water associated constellations, such as <Cetus>, <Pisces> and <Eridanus>."
 		},
 
 		{
@@ -224,7 +224,7 @@
 				"Iota Cancri"
 			],
 			"connections": ["0-2", "1-2", "2-3", "3-4", "3-5"],
-			"info": "Cancer means \"crab\" in Latin, and is depicted as such. It is one of the 12 zodiacs, and the dimmest of them with only 2 stars above the 3rd magnitude. At the center of the astrum  lies the open cluster Praesepe (M44) or the Beehive Cluster. The constellation also has 10 stars with known planets."
+			"info": "Cancer means \"crab\" in Latin, and is depicted as such. It is one of the 12 zodiacs, and the dimmest of them with only two stars above the 3rd magnitude. At the center of the astrum  lies the open cluster Praesepe (M44) or the Beehive Cluster. The constellation also has 10 stars with known planets."
 		},
 
 		{
@@ -280,7 +280,7 @@
 			"name": "Canis Minor",
 			"shape_stars": ["Procyon", "Gomeisa"],
 			"connections": ["0-1"],
-			"info": "Canis Minor is Latin for \"lesser dog\". It is one of the 48 constellations listed by Ptolemy. Along with Canis Major, they are often depicted following Orion the hunter. In contrast to Canis Major, Canis Minor is quite small, and contains only 2 bright stars, which make up it's asterism. Procyon is the 8th brigtest star in the night sky. Interestingly the stars of the asterism are only 1.12 light years away from each other."
+			"info": "Canis Minor is Latin for \"lesser dog\". It is one of the 48 constellations listed by Ptolemy. Along with Canis Major, they are often depicted following Orion the hunter. In contrast to Canis Major, Canis Minor is quite small, and contains only two bright stars, which make up it's asterism. Procyon is the 8th brigtest star in the night sky. Interestingly the stars of the asterism are only 1.12 light years away from each other."
 		},
 
 		{
@@ -345,7 +345,7 @@
 				"11-14",
 				"12-13"
 			],
-			"info": "Carina is Latin for the keel of a ship. It was a part of the constellation Argo Navis, the great ship of the mythical Jason. It was introduced in ancient Greece. It was later split into three parts (Carina, Puppis, Vela) in 1763. Carina contains the 2nd brightest star in the night sky, Canopus. The celestial south pole will move to Carina in the year 4700."
+			"info": "Carina is Latin for the keel of a ship. It was a part of the ancient Greek constellation Argo Navis, the great ship of the mythical Jason. Argo Navis was one of the 48 constellations listed by Ptolemy. It was split into three parts in 1752: Carina, <Puppis> and <Vela>. Carina contains the 2nd brightest star in the night sky, Canopus. The celestial south pole will move to Carina in the year 4700."
 		},
 
 		{
@@ -400,7 +400,7 @@
 				"14-15",
 				"15-16"
 			],
-			"info": "Centaurus represents a centaur. It is one of the 48 constellations listed by Ptolemy. Another constellation named after a centaur is Sagittarius. Centaurus contains Alpha Centauri, the nearest star to us. One of the largest stars is also contained in Centaurs, Beta Centauri, and the brightest globular cluster visible from Earth, Omega Centauri. It is listed as one of the stars even though it is a cluster."
+			"info": "Centaurus represents a centaur. It is one of the 48 constellations listed by Ptolemy. Another constellation depicting a centaur is <Sagittarius>. Centaurus contains Alpha Centauri, the nearest star to us. One of the largest stars is also contained in Centaurs, Beta Centauri, and the brightest globular cluster visible from Earth, Omega Centauri. It is listed as one of the stars even though it is a cluster."
 		},
 
 		{
@@ -535,7 +535,7 @@
 				"7-8",
 				"8-9"
 			],
-			"info": "Corona Australis is Latin for \"Southern Crown\". It is one of the 48 constellations listed by Ptolemy. It is the southern counterpart to <Corona Borealis>. It has been depicted as a turtle, ostrich nest and a tent in other cultures. Corona Australis contains one of the closest star forming region in the Milkyway, at 430 lightyears."
+			"info": "Corona Australis is Latin for \"Southern Crown\". It is one of the 48 constellations listed by Ptolemy. It is the southern counterpart to <Corona Borealis>. It has been depicted as a turtle, ostrich nest and a tent in other cultures. Corona Australis contains one of the closest star forming region in the Milkyway, at 430 light-years."
 		},
 
 		{
@@ -631,7 +631,7 @@
 				"Delta Delphini"
 			],
 			"connections": ["0-1", "1-2", "1-4", "2-3", "3-4"],
-			"info": "Delphinus is the Latinized Greek word for \"dolphin\". It is one of the 48 constellations listed by Ptolemy. Delphinus is associated with two stories in Greek Mythology. The stars of Delphinus correspond to constellations in Hindu and Polynesian cultures. It is a dim constellation, with only 2 stars above the 4th magnitude. "
+			"info": "Delphinus is the Latinized Greek word for \"dolphin\". It is one of the 48 constellations listed by Ptolemy. Delphinus is associated with two stories in Greek Mythology. The stars of Delphinus correspond to constellations in Hindu and Polynesian cultures. It is a dim constellation, with only two stars above the 4th magnitude. "
 		},
 
 		{
@@ -835,7 +835,7 @@
 				"6-7",
 				"6-8"
 			],
-			"info": "Grus is Latin for the bird crane. It is one of the 12 constellations conceived by Petrus Plancius. It first appeared in 1598. Together with <Pavo>, <Phoenix> and <Tucana>, they are known as the Southern Birds. 6 star systems have been found to have planets."
+			"info": "Grus is Latin for the bird crane. It is one of the 12 constellations conceived by Petrus Plancius. It first appeared in 1598. Together with <Pavo>, <Phoenix> and <Tucana>, the four constellations are known as the Southern Birds. Six star systems have been found to have planets."
 		},
 
 		{
@@ -890,7 +890,7 @@
 				"mu Horologii"
 			],
 			"connections": ["0-1", "1-2"],
-			"info": "Horologium is Latin for \"pendulum clock\" derived from ancient Greek. It was described by Nicolas-Louis de Lacaille in 1756. It is quite a dim constellation, with only 1 star above magnitude 4. 4 star systems are known to have planets."
+			"info": "Horologium is Latin for \"pendulum clock\" derived from ancient Greek. It was described by Nicolas-Louis de Lacaille in 1756. It is quite a dim constellation, with only one star above magnitude 4. Four star systems are known to have planets."
 		},
 
 		{
@@ -948,7 +948,7 @@
 				"Beta Hydri"
 			],
 			"connections": ["0-1", "1-2", "2-3", "3-4"],
-			"info": "Hydrus represents a male water snake in opposition to the massive <Hydra>, the female water snake. It was created by Petrus Plancius in the late 1500s. The brightest star is Beta Hydri, which is also the closest reasonably bright star to the south celestial pole, making it useful for navigation. 4 star systems have been fouind to have planets."
+			"info": "Hydrus represents a male water snake in opposition to the massive <Hydra>, the female water snake. It was created by Petrus Plancius in the late 1500s. The brightest star is Beta Hydri, which is also the closest reasonably bright star to the south celestial pole, making it useful for navigation. Four star systems have been fouind to have planets."
 		},
 
 		{
@@ -997,7 +997,7 @@
 				"6-7",
 				"7-8"
 			],
-			"info": "Leo is Latin for \"Lion\", and is one of the 12 zodiacs. In ancient Greece, it represented the Nemean Lion, which was killed by Heracles (<Hercules>) as one of his 12 labours. It is one of the 48 constellations listed by Ptolemy. Leo contains many bright stars, and the 9 main stars were named in the ancient times. Leo also contains many bright galaxies, such as Messier objects 65, 66, 95, 96 and 105."
+			"info": "Leo is Latin for \"Lion\", and is one of the 12 zodiacs. In ancient Greece, it represented the Nemean Lion, which was killed by Heracles (<Hercules>) as one of his 12 labours. It is one of the 48 constellations listed by Ptolemy. Leo contains many bright stars, and the nine main stars were named in the ancient times. Leo also contains many bright galaxies, such as Messier objects 65, 66, 95, 96 and 105."
 		},
 
 		{
@@ -1009,7 +1009,7 @@
 				"Praecipua"
 			],
 			"connections": ["0-1", "1-2", "1-3", "2-3"],
-			"info": "Leo Minor is Latin for \"the smaller lion\", in contrast to <Leo>. It is located above or north of <Leo>. It was designated by Johannes Hevelius in 1687. It is small and very dim, with only 3 stars brighter than magnitude 4.5."
+			"info": "Leo Minor is Latin for \"the smaller lion\", in contrast to <Leo>. It is located above or north of <Leo>. It was designated by Johannes Hevelius in 1687. It is small and very dim, with only three stars brighter than magnitude 4.5."
 		},
 
 		{
@@ -1058,7 +1058,7 @@
 				"Brachium"
 			],
 			"connections": ["0-1", "1-2", "1-4", "2-3", "3-4"],
-			"info": "Libra is Latin for \"weighing scales\", and one of the 12 zodiacs. It was known in Babylonian astronomy as the scales or balance. It was alternatively seen as a scorpion's claws, in Babylon and ancient Greece. 3 star systems are known to have planets."
+			"info": "Libra is Latin for \"weighing scales\", and one of the 12 zodiacs. It was known in Babylonian astronomy as the scales or balance. It was alternatively seen as a scorpion's claws, in Babylon and ancient Greece. Three star systems are known to have planets."
 		},
 
 		{
@@ -1108,7 +1108,7 @@
 				"2 Lyncis"
 			],
 			"connections": ["0-1", "1-2", "2-3", "3-4", "4-5", "5-6", "6-7"],
-			"info": "Lynx is named after the animal Lynx. It was introduced by Johannes Hevelius in 1687. It was named Lynx because of its faintness, because one would need to be \"lynx-eyed\"(good sight) to see it. Lynx has multiple double stars, and there have been planets found on 6 star systems."
+			"info": "Lynx is named after the animal Lynx. It was introduced by Johannes Hevelius in 1687. It was named Lynx because of its faintness, because one would need to be \"lynx-eyed\"(good sight) to see it. Lynx has multiple double stars, and there have been planets found on six star systems."
 		},
 
 		{
@@ -1128,7 +1128,7 @@
 			"name": "Mensa",
 			"shape_stars": ["Gamma Mensae", "mu Mensae"],
 			"connections": ["0-1"],
-			"info": "Mensa is Latin for \"table\", though it was originally named Mons Mensae (Table Mountain). It was created by Nicolas-Louis de Lacaille in the 18th century. There are 2 star systems with known planets. The Large Magellanic Cloud is partially within Mensa's boundaries. This feature was one of the reasons for the name, as it refers to the Table Mountain, on top of which Lacaille's observatory was. It was often surrounded with clouds, so he decided that the table should be close to the clouds in the sky."
+			"info": "Mensa is Latin for \"table\", though it was originally named Mons Mensae (Table Mountain). It was created by Nicolas-Louis de Lacaille in the 18th century. There are two star systems with known planets. The Large Magellanic Cloud is partially within Mensa's boundaries. This feature was one of the reasons for the name, as it refers to the Table Mountain, on top of which Lacaille's observatory was. It was often surrounded with clouds, so he decided that the table should be close to the clouds in the sky."
 		},
 
 		{
@@ -1153,8 +1153,54 @@
 				"Zeta Monocerotis",
 				"Alpha Monocerotis"
 			],
-			"connections": ["0-1", "1-2", "2-3", "2-4", "3-4", "4-5", "5-6"],
-			"info": "Monoceros is Latinized Greek for \"unicorn\". Its definition is attributed to Petrus Plancius. It is a dim constellations, and hard to see with the naked eye. There is a star system with 2 Super-Earth exoplanets. Monoceros also hosts one of the nearest black holes to the Solar System. It with its star companion form the A0620-00 binary system."
+			"connections": ["0-1", "1-2", "2-3", "2-5", "3-4", "5-6"],
+			"info": "Monoceros is Latinized Greek for \"unicorn\". Its definition is attributed to Petrus Plancius. It is a dim constellations, and hard to see with the naked eye. There is a star system with two Super-Earth exoplanets. Monoceros also hosts one of the nearest black holes to the Solar System. It with its star companion form the A0620-00 binary system."
+		},
+
+		{
+			"name": "Musca",
+			"shape_stars": [
+				"Lambda Muscae",
+				"Gamma Muscae",
+				"Alpha Muscae",
+				"Beta Muscae"
+			],
+			"connections": ["0-1", "1-2", "2-3", "0-3"],
+			"info": "Musca us Latin for \"fly\" (insect). It was created by Petrus Plancius, and first appeared on a celestial globe in 1597. It was also known as \"Apis\", \"the bee\" for 200 years. Some of the stars were also known in Brazil as the \"Ornate Hawk-Eagle's double flutes\", and in Australia multiple peoples had definitions for them. Three star systems have been found to have exoplanets. "
+		},
+
+		{
+			"name": "Norma",
+			"shape_stars": [
+				"Kappa Normae",
+				"gam02 Normae",
+				"Epsilon Normae",
+				"Eta Normae"
+			],
+			"connections": ["0-1", "1-2", "1-3", "2-3", "0-3"],
+			"info": "Norma is Latin for \"normal\" referring to a right angle or a carpenter's square. It was drawn by Nicolas-Louis de Lacaille in the 18th century. Mu Normae, a blue supergiant, is one of the most luminous stars known. It as bright as 339 000 suns, and weighs 40 solar masses. But given it's distance at 3260 light years, it only has an apparent magnitude of approximately 4.94. There are four stars with known exoplanets."
+		},
+
+		{
+			"name": "Octans",
+			"shape_stars": ["Delta Octantis", "Beta Octantis", "nu Octantis"],
+			"connections": ["0-1", "1-2", "0-2"],
+			"info": "Octans is Latin for \"the eight part of a circle\", but it is named after the octant, a navigational instrument. It was drawn by Nicolas-Louis de Lacaille in the 1752. The celestial pole star, Polaris Australis, is located within the boundaries of Octans. It is very faint, so it isn't practical for navigation. Saturn's celestial pole star, Delta Octantis, is also within Octantis."
+		},
+
+		{
+			"name": "Ophiuchus",
+			"shape_stars": [
+				"51 Ophiuchi",
+				"Sabik",
+				"Zeta Ophiuchi",
+				"Yed Posterior",
+				"Kappa Ophiuchi",
+				"Rasalhague",
+				"Cebalrai"
+			],
+			"connections": ["0-1", "1-2", "1-6", "2-3", "3-4", "4-5", "5-6"],
+			"info": "Ophiuchus comes from Ancient Greek, meaning \"serpent-bearer\". It is often depicted as a man grasping a snake, <Serpens>. It is one of the 48 constellations listed by Ptolemy. On the 9th of October 1604, a supernova was observed within Ophiuchus. It was studied extensively by Johannes Kepler, and was also called Kepler's Supernova. It is the most recent supernova, confirmed to be observed with the naked eye. Galileo used its appearance to counter the Aristotelian Dogma that heavens are changeless. The 3rd nearest star, Barnard's Star at 5.96 light-years, is also within Ophiuchus."
 		},
 
 		{
@@ -1181,6 +1227,621 @@
 				"4-7"
 			],
 			"info": "Orion is one of the most recognizable constellations, depicting a hunter from Greek mythology. It appears in many cultures worldwide, often associated with strength or heroism. The three stars Alnitak, Alnilam, and Mintaka form the famous Orion’s Belt. The famous Orion Nebula (M42) is located between the \"legs\" of the hunter."
+		},
+
+		{
+			"name": "Pavo",
+			"shape_stars": [
+				"Peacock",
+				"Gamma Pavonis",
+				"Beta Pavonis",
+				"Delta Pavonis",
+				"Epsilon Pavonis",
+				"Zeta Pavonis",
+				"Kappa Pavonis",
+				"Lambda Pavonis",
+				"ksi Pavonis",
+				"Pi Pavonis",
+				"Eta Pavonis"
+			],
+			"connections": [
+				"0-1",
+				"0-3",
+				"1-2",
+				"2-3",
+				"3-4",
+				"3-6",
+				"4-5",
+				"5-6",
+				"6-7",
+				"7-8",
+				"7-9",
+				"8-9",
+				"9-10"
+			],
+			"info": "Pavo is Latin for \"Peacock\". It was created by Petrus Plancius, and published in 1598. Together with <Grus>, <Phoenix> and <Tucana>, the four constellations are known as the Southern Birds. The stars were known as Argos, the builder of the ship Argo. Goddess Juno turned him into a peacock, so it is possible that it was known as Pavo by the ancient Greeks. Part of the constellation is known as \"the Saucepan\" in Australia, and it can be used to locate the southern celestial pole."
+		},
+
+		{
+			"name": "Pegasus",
+			"shape_stars": [
+				"Alpheratz",
+				"Algenib",
+				"Markab",
+				"ksi Pegasi",
+				"Homam",
+				"Biham",
+				"Enif",
+				"Scheat",
+				"Sadalbari",
+				"Lambda Pegasi",
+				"Iota Pegasi",
+				"Kappa Pegasi",
+				"Matar",
+				"Pi Pegasi"
+			],
+			"connections": [
+				"0-1",
+				"0-7",
+				"1-2",
+				"2-3",
+				"2-7",
+				"3-4",
+				"4-5",
+				"5-6",
+				"7-8",
+				"7-12",
+				"8-9",
+				"9-10",
+				"10-11",
+				"12-13"
+			],
+			"info": "Pegasus is named after the winged horse \"Pegasus\" in Greek mythology. It is one of the 48 constellations listed by Ptolemy. It was called \"Hippos\" in ancient Greece, and one myth says that his hooves dug out a spring, Hippocrene. This spring gace those who drank from it the ability to write poetry. In medieval Persia, Pegasus was depicted as a complete horse facing east, instead of half a horse, like most other uranographers. 12 star systems have been found to have exoplanets. 51 Pegasi is also the first Sun-like star discovered to have an exoplanet."
+		},
+
+		{
+			"name": "Perseus",
+			"shape_stars": [
+				"Omicron Persei A",
+				"Zeta Persei",
+				"Menkib",
+				"Epsilon Persei",
+				"Delta Persei",
+				"Mirfak",
+				"Algol",
+				"Gorgonea Tertia",
+				"16 Persei",
+				"Gamma Persei",
+				"Miram"
+			],
+			"connections": [
+				"0-1",
+				"1-2",
+				"2-3",
+				"3-4",
+				"4-5",
+				"5-6",
+				"5-9",
+				"6-7",
+				"7-8",
+				"9-10"
+			],
+			"info": "Perseus is named after the Greek mythological hero Perseus. It is one of the 48 constellations listed by Ptolemy. Perseus was tasked with killing Medusa the Gorgon, the star Gorgonea Tertia being a reference to the Gorgons. Perseus was succesfull, and <Pegasus> and Chrysaor appeared from her body. After this, Perseus went to the realm of <Cepheus> to save <Andromeda> from the sea monster <Cetus>. The constellation of Perseus was known as the \"Old Man\" in the Neo-Assyrian Babylonia. The Perseids is a famous meteor shower that radiates from Perseus from mid-July to August. They have been observed for about 2000 years."
+		},
+
+		{
+			"name": "Phoenix",
+			"shape_stars": [
+				"Epsilon Phoenicis",
+				"Ankaa",
+				"Kappa Phoenicis",
+				"Gamma Phoenicis",
+				"Beta Phoenicis",
+				"Psi Phoenicis",
+				"Delta Phoenicis",
+				"Zeta Phoenicis"
+			],
+			"connections": [
+				"0-1",
+				"0-2",
+				"1-2",
+				"2-3",
+				"2-4",
+				"2-7",
+				"3-4",
+				"4-5",
+				"4-6",
+				"4-7",
+				"5-6"
+			],
+			"info": "Phoenix is named after the mythical bird phoenix. It was created by Petrus Plancius and appeared on a celestial globe in 1597. Together with <Grus>, <Pavo> and <Tucana>, the four constellations are known as the Southern Birds. Unlike other constellations introduced by Plancius and Lacaille, Phoenix has precedent in ancient astronomy. Arabs saw it representing young ostriches, or a griffin or an eagle. The brightest star Ankaa, is derived from the Arabic word meaning \"the phoenix\"."
+		},
+
+		{
+			"name": "Pictor",
+			"shape_stars": [
+				"Alpha Pictoris",
+				"Gamma Pictoris",
+				"Beta Pictoris"
+			],
+			"connections": ["0-1", "1-2"],
+			"info": "Pictor is Latin for \"painter\". It was named by Nicolas-Louis de Lacaille in the 18th century. It is usually represented as an easel, and was named the painter's easel (Equuleus Pictoris) in the past. Pictor's second brightest star Beta Pictoris is interesting, as it has an unusual carbon-rich dust disk, and two exoplanets."
+		},
+
+		{
+			"name": "Pisces",
+			"shape_stars": [
+				"Sigma Piscium",
+				"Upsilon Piscium",
+				"Phi Piscium",
+				"Alpherg",
+				"Torcular",
+				"Alrescha",
+				"Ksi Piscium",
+				"nu Piscium",
+				"mu Piscium",
+				"Epsilon Piscium",
+				"Delta Piscium",
+				"41 Piscium",
+				"Omega Piscium",
+				"Iota Piscium",
+				"Lambda Piscium",
+				"Kappa Piscium",
+				"Gamma Piscium",
+				"Theta Piscium"
+			],
+			"connections": [
+				"0-1",
+				"0-2",
+				"1-2",
+				"2-3",
+				"3-4",
+				"4-5",
+				"5-6",
+				"6-7",
+				"7-8",
+				"8-9",
+				"9-10",
+				"11-12",
+				"12-13",
+				"13-14",
+				"13-17",
+				"14-15",
+				"15-16",
+				"16-17"
+			],
+			"info": "Pisces is Latin for \"fishes\". It is one of the 12 zodiacs and the counterpart of <Piscis Austrinus>. Even though it is a large constellation, there are only two stars brighter than magnitude 4, and none brighter the 3rd magnitude. Pisces originates from the Babylonina constellations \"the great swallow\" and \"Lady of the Heaven\". In Greek mythology it is associated with Aphrodite and Eros, who either shape-shifted into fish, or were helped by two fishes to escape the monster Typhon. In the Roman version, it is Venus and Cupid, who get carried away by two fishes."
+		},
+
+		{
+			"name": "Piscis Austrinus",
+			"shape_stars": [
+				"Fomalhaut",
+				"Epsilon Piscis Austrini",
+				"Eta Piscis Austrini",
+				"Theta Piscis Austrini",
+				"Tau Piscis Austrini",
+				"Beta Piscis Austrini",
+				"Delta Piscis Austrini"
+			],
+			"connections": ["0-1", "1-2", "2-3", "3-4", "4-5", "5-6"],
+			"info": "Piscis Austrinus is Latin for \"southern fishes\" and it is the counterpart of <Pisces>. It is one of the 48 constellations listed by Ptolemy. It originated from the Babylonian constellation, known as the \"Fish\". In Greek mythology it is known as the \"Great Fish\" and is depicted swallowing the water poured by <Aquarius>. In Egyptian mythology this fish saved the life of the goddess Isis. It is a faint constellation, and has only one star brighter than the 4th magnitude: Fomalhaut, which is 1st magnitude and the 18th-brightest star in the night sky. "
+		},
+
+		{
+			"name": "Puppis",
+			"shape_stars": [
+				"Naos",
+				"Tureis",
+				"Asmidiske",
+				"Ahadi",
+				"nu Puppis",
+				"Tau Puppis",
+				"Sigma Puppis"
+			],
+			"connections": ["0-1", "0-6", "1-2", "2-3", "3-4", "4-5", "5-6"],
+			"info": "Puppis is Latin for \"Stern\". It was a part of the ancient Greek constellation Argo Navis, the great ship of the mythical Jason. Argo Navis was one of the 48 constellations listed by Ptolemy. It was split into three parts in 1752: <Carina>, Puppis and <Vela>. Seven star systems have been found to have planets."
+		},
+
+		{
+			"name": "Pyxis",
+			"shape_stars": ["Gamma Pyxidis", "Alpha Pyxidis", "Beta Pyxidis"],
+			"connections": ["0-1", "1-2"],
+			"info": "Pyxis, abbreviated from Pyxis Nautica, is Latin for a \"mariner's compass\". It contrasts with <Circinus>, which represents a draftsman's compasses. Both were introduced by Nicolas-Louis de Lacaille in the 18th century. In ancient China, its stars along with some from <Antlia> formed a part of \"Tianmiao\", a celestial temple honouring the emperor's ancestors. Three stars have confirmed planetary systems."
+		},
+
+		{
+			"name": "Reticulum",
+			"shape_stars": [
+				"Epsilon Reticuli",
+				"Delta Reticuli",
+				"Beta Reticuli",
+				"Alpha Reticuli"
+			],
+			"connections": ["0-1", "0-3", "1-2", "2-3"],
+			"info": "Reticulum is Latin for a \"small net\" or \"reticle\", a net of crosshairs at the focus of a telescope eyepiece. A constellation in this area was first introduced by Isaac Habrecht II in 1621, which was called \"Rhombus\". It was replaced by the current one by Nicolas-Louis de Lacaille in the 18th century. It was named to commerate the reticle of his telescope eyepiece. It is a small and faint constellation, wiht no stars brighter than 3rd magnitude."
+		},
+
+		{
+			"name": "Sagitta",
+			"shape_stars": [
+				"Eta Sagittae",
+				"Gamma Sagittae",
+				"Delta Sagittae",
+				"Beta Sagittae",
+				"Sham"
+			],
+			"connections": ["0-1", "1-2", "2-3", "2-4"],
+			"info": "Sagitta is Latin for \"arrow\", not to be confused with <Sagittarius>. It is one of the 48 constellations listed by Ptolemy. Even though it is ancient, it doesn't have any stars brighter than 3rd magnitude. It was regarded as the the weapon that <Hercules> used to kill <Aquila> by the ancient Greeks. Sagitta is the 3rd smallest constellation by area, and three stars are known to have planets."
+		},
+
+		{
+			"name": "Sagittarius",
+			"shape_stars": [
+				"bet02 Sagittarii",
+				"Rukbat",
+				"Iota Sagittarii",
+				"tet01 Sagittarii",
+				"62 Sagittarii",
+				"52 Sagittarii",
+				"Tau Sagittarii",
+				"Ascella",
+				"Kaus Australis",
+				"Eta Sagittarii",
+				"Alnasl",
+				"3 Sagittarii",
+				"Kaus Media",
+				"Kaus Borealis",
+				"Polis",
+				"Phi Sagittarii",
+				"Nunki",
+				"ksi02 Sagittarii",
+				"Omicron Sagittarii",
+				"43 Sagittarii",
+				"rho01 Sagittarii"
+			],
+			"connections": [
+				"0-2",
+				"1-2",
+				"2-3",
+				"3-4",
+				"4-5",
+				"5-6",
+				"6-7",
+				"6-16",
+				"7-8",
+				"7-15",
+				"8-9",
+				"8-10",
+				"8-12",
+				"10-11",
+				"10-12",
+				"12-13",
+				"12-15",
+				"13-14",
+				"13-15",
+				"15-16",
+				"16-17",
+				"17-18",
+				"18-19",
+				"19-20"
+			],
+			"info": "Sagittarius is Latin for \"archer\", and it is one of the 12 zodiacs. It is one of the 48 constellations listed by Ptolemy. It was already identified in Babylonia as the god Nergal, a centaur with a bow. In Greek mythology it was also identified as a centaur. There are two centaurs in the night sky Sagittarius and <Centaurus>, and both are associated with the centaur Chiron. The arrow of Sagittarius points at the heart of <Scorpius>, Antares, to avenge <Scorpius>'s slaying of <Orion> or to stop <Scorpius> from attacking <Hercules>. The supermassive black hole at the center of the Milky Way, Sagittarius A*, lies in Sagittarius."
+		},
+
+		{
+			"name": "Scoripus",
+			"shape_stars": [
+				"Shaula",
+				"Kappa Scorpii",
+				"iot01 Scorpii",
+				"Sargas",
+				"Eta Scorpii",
+				"zet02 Scorpii",
+				"mu01 Scorpii",
+				"Epsilon Scorpii",
+				"Paikauhale",
+				"Antares",
+				"Pi Scorpii",
+				"Dschubba",
+				"Acrab"
+			],
+			"connections": [
+				"0-1",
+				"1-2",
+				"2-3",
+				"3-4",
+				"4-5",
+				"5-6",
+				"6-7",
+				"7-8",
+				"8-9",
+				"9-10",
+				"9-11",
+				"9-12"
+			],
+			"info": "Scorpius is Latin for \"scorpion\", and it is one of the 12 zodiacs. However the astrological sign Scropio differs from the constellation, unlike other zodiacs. It is one of the 48 constellations listed by Ptolemy. It was already called the \"Scorpion\" by the Babylonians. In Greek mythology Scorpius is often associated with <Orion>, having been sent to kill him by either Artemis and Leto or Apollo. Scorpius contains many bright stars, the most prominent of which is Antares \"rival of Mars\". It is the 15th brightest star in the night sky, and has a reddish hue similar to the planet Mars."
+		},
+
+		{
+			"name": "Sculptor",
+			"shape_stars": [
+				"Alpha Sculptoris",
+				"Beta Sculptoris",
+				"Gamma Sculptoris"
+			],
+			"connections": ["0-1", "1-2", "0-2"],
+			"info": "Sculptor was originally named Apparatus Sculptoris, Latin for \"the sculptor's studio\". It was introduced by Nicolas-Louis de Lacaille in the 18th century. It is small and faint, with the brightest star having a magnitude of 4.3. This is explained by the fact that Sculptor contains the south galactic pole, where stellar density is very low. Six planets have been found to have planets."
+		},
+
+		{
+			"name": "Scutum",
+			"shape_stars": [
+				"HD 175156",
+				"R Scuti",
+				"Beta Scuti",
+				"Alpha Scuti",
+				"Gamma Scuti"
+			],
+			"connections": ["0-1", "1-2", "2-3", "3-4", "0-4"],
+			"info": "Scutum is Latin for \"shield\". It was originally named Scutum Sobiescianum by Johannes Havelius in 1684. It is not a bright constellation, with only one star brighter than 4th magnitude. One of the largest known stars, UY Scuti with a radius over 900 times that of the sun, is located in Scutum. The space probe Pioneer 11 is moving towards Scutum, but won't get close to the nearest star in at least a million years."
+		},
+
+		{
+			"name": "Serpens",
+			"shape_stars": [
+				"Alya",
+				"Eta Serpentis",
+				"Omicron Serpentis",
+				"Ksi Serpentis",
+				"nu Serpentis",
+				"mu Serpentis",
+				"Epsilon Serpentis",
+				"Unukalhai",
+				"Delta Serpentis",
+				"Beta Serpentis",
+				"Gamma Serpentis",
+				"Kappa Serpentis"
+			],
+			"connections": [
+				"0-1",
+				"1-2",
+				"2-3",
+				"3-4",
+				"5-6",
+				"6-7",
+				"7-8",
+				"8-9",
+				"9-10",
+				"10-11",
+				"9-11"
+			],
+			"info": "Serpens comes from the Greek word \"Óphis\", meaning \"the Serpent\". It is unique among the modern constellation, for being split in two parts, the serpent's head and tail. It is depicted passing behind <Ophiuchus>, the Serpent-Bearer. In Greek mythology Serpens represents a snake held by the healer Asclepius. The famous Eagle Nebule, which contains the Pillars of Creation, is located in the tail part."
+		},
+		{
+			"name": "Sextans",
+			"shape_stars": [
+				"Delta Sextantis",
+				"Alpha Sextantis",
+				"Beta Sextantis",
+				"Gamma Sextantis"
+			],
+			"connections": ["0-1", "1-2", "2-3"],
+			"info": "Sextans is Latin for the astronomical sextant. It was introduced by Johannes Hevelius in 1687. It is very faint, with only one star above the 5th magnitude. Sextans is the location of the field that Hubble Scape Telescope studied for the COSMOS project."
+		},
+
+		{
+			"name": "Taurus",
+			"shape_stars": [
+				"Omicron Tauri",
+				"Lambda Tauri",
+				"Gamma Tauri",
+				"Secunda Hyadum",
+				"Atlas",
+				"del03 Tauri",
+				"Ain",
+				"tet02 Tauri",
+				"Aldebaran",
+				"Zeta Tauri",
+				"Tau Tauri",
+				"Elnath"
+			],
+			"connections": [
+				"0-1",
+				"1-2",
+				"2-3",
+				"2-7",
+				"3-4",
+				"3-5",
+				"5-6",
+				"6-8",
+				"6-10",
+				"7-8",
+				"8-9",
+				"10-11"
+			],
+			"info": "Taurus is Latin for \"Bull\", and it is one of the 12 zodiacs. It is one of the 48 constellations listed by Ptolemy. Taurus is one of the oldest constellations, dating back to at least the Early Bronze Age, possibly even the Upper Paleolithic. Taurus is possibly depicted in a cave painting at Lascaux, dated to roughly 15 000 BC. The best known open cluster Pleiades (Seven Sisters) is located in Taurus, and is often connected to the constellation. Pleiades was possibly also depicted in the aforementioned cave paintings. It was defined by the Babylonians as the Bull of Heaven, who was sent to kill Gilgamesh. Taurus was also important to the Egyptians, ancient Greeks, Druids and Inuit."
+		},
+
+		{
+			"name": "Telescopium",
+			"shape_stars": ["Alpha Telescopii", "Zeta Telescopii"],
+			"connections": ["0-1"],
+			"info": "Telescopium is the Latinized form of the Greek word for \"telescope\". It was defined by Nicolas-Louis de Lacaille in the 18th century. Telescopium hosts two unusal stars with very little hydrogen. While the asterism is small, the constellation area is moderately sized. It is still faint, with no stars above 3rd magnitude."
+		},
+
+		{
+			"name": "Triangulum",
+			"shape_stars": ["Gamma Trianguli", "Beta Trianguli", "Mothallah"],
+			"connections": ["0-1", "1-2", "0-2"],
+			"info": "Triangulum is Latin for \"triangle\". It is one of the 48 constellations listed by Ptolemy, and was known by the Babylonias and Greeks. In Babylon, it was known as \"the Plough\" and also included Gamma Andromedae. The Triangulum Galaxu (Messier 33) is in Triangulum. It is the 3rd largest of the galaxies in the Local Group, behind Andromeda and Milky Way. It is likely a satellite of Andromeda. The constellation itself is faint, with no stars above 3rd magnitude."
+		},
+
+		{
+			"name": "Triangulum Australe",
+			"shape_stars": [
+				"Atria",
+				"Beta Trianguli Australis",
+				"Gamma Trianguli Australis"
+			],
+			"connections": ["0-1", "1-2", "0-2"],
+			"info": "Triangulum Australe is Latin for \"the southern triangle\", distinguishing from <Triangulum>. Its shape is that of an acute triangle, and it was depicted by Petrus Plancius in 1589 as Triangulus Antarcticus. Triangulum Australe may have been catalogued by Amerigo Vespucci, but the triangle he saw could also have been <Apus>. The constellation appears on the flag of Brazil."
+		},
+
+		{
+			"name": "Tucana",
+			"shape_stars": [
+				"Alpha Tucanae",
+				"Gamma Tucanae",
+				"Zeta Tucanae",
+				"bet01 Tucanae"
+			],
+			"connections": ["0-1", "1-2", "1-3"],
+			"info": "Tucana is named after toucan, a South American bird. It was introduced by Petrus Plancius in 1589. Together with <Grus>, <Pavo> and <Phoenix>, the four constellations are known as the Southern Birds. Tucana is not prominent, with only one star above 3rd magnitude. The Small Magellanic Cloud, on of the closest galaxies at 210 000 light-years, is located in Tucana."
+		},
+
+		{
+			"name": "Ursa Major",
+			"shape_stars": [
+				"Alkaid",
+				"Mizar",
+				"Alioth",
+				"Megrez",
+				"Phecda",
+				"Chi Ursae Majoris",
+				"Psi Ursae Majoris",
+				"Tania Borealis",
+				"Tania Australis",
+				"Merak",
+				"Dubhe",
+				"Phi Ursae Majoris",
+				"Theta Ursae Majoris",
+				"Alkaphrah",
+				"Iota Ursae Majoris A",
+				"Upsilon Ursae Majoris",
+				"Muscida",
+				"23 Ursae Majoris"
+			],
+			"connections": [
+				"0-1",
+				"1-2",
+				"2-3",
+				"3-4",
+				"3-10",
+				"4-5",
+				"4-9",
+				"5-6",
+				"6-7",
+				"6-8",
+				"9-10",
+				"9-11",
+				"10-17",
+				"11-12",
+				"12-13",
+				"12-14",
+				"11-15",
+				"15-16",
+				"16-17"
+			],
+			"info": "Ursa Major is Latin for \"greater bear\". It is one of the 48 constellations listed by Ptolemy. The bear shape might stem from a common oral tradition fo Cosmic Hunt, from over 13 000 years ago. The asterism Big Dipper might be even more famous than the constellation itself. Either one has been and still is prominent in multiple cultures, and is the symbol of the north. It is mentioned in Arabian folklore, Greco-Roman mythology and Hindu tradition. In China, Korea and Japan, the seven brightest stars were important. In Shinto, they belong to the oldest and most powerful god, and in China each of the stars had their specific names. The stars are also noted in native American traditions and in Uralic traditions, including the ancient Finns and the Sámi. In Finnish the asterism is called Otava, meaning a salmon weir."
+		},
+
+		{
+			"name": "Ursa Minor",
+			"shape_stars": [
+				"Polaris",
+				"Yildun",
+				"Epsilon Ursae Minoris",
+				"Zeta Ursae Minoris",
+				"Eta Ursae Minoris",
+				"Pherkad",
+				"Kochab"
+			],
+			"connections": ["0-1", "1-2", "2-3", "3-4", "4-5", "5-6", "3-6"],
+			"info": "Ursa Minor is Latin for \"Lesser Bear\", contrasting with <Ursa Major>. It is also known as the Little Dipper, given its similar shape to the Big Dipper in <Ursa Major>. It is one of the 48 constellations listed by Ptolemy. In Babylonia it was known as the \"Wagon of Heaven\". Polaris, the brightest star in the constellation, is also the north pole star. It as been important for navigation. The ancient Greeks also called Ursa Minor the dog's tail. Because Ursa Minor has seven stars, the Latin word for north is \"septentrio\". In Inuit astronomy  the three brightest stars were known as \"Nuutuittut\" meaning \"never moving\"."
+		},
+
+		{
+			"name": "Vela",
+			"shape_stars": [
+				"Regor",
+				"Suhail",
+				"Psi Velorum",
+				"HD 88955",
+				"p Velorum",
+				"mu Velorum",
+				"Phi Velorum",
+				"Markeb",
+				"Delta Velorum",
+				"Omicron Velorum"
+			],
+			"connections": [
+				"0-1",
+				"1-2",
+				"2-3",
+				"3-4",
+				"4-5",
+				"5-6",
+				"6-7",
+				"7-8",
+				"8-9",
+				"0-9"
+			],
+			"info": "Vela is Latin for the sails of a ship. It was a part of the ancient Greek constellation Argo Navis, the great ship of the mythical Jason. Argo Navis was one of the 48 constellations listed by Ptolemy. It was split into three parts in 1752: <Carina>, <Puppis> and Vela. Gamma Valorum is a multi-star system, which includes the closest and brightest example of the very rare Wolf-Rayet star. Vela also contains the Vela Supercluster, one of the largest structures in the known universe."
+		},
+
+		{
+			"name": "Virgo",
+			"shape_stars": [
+				"109 Virginis",
+				"Tau Virginis",
+				"Heze",
+				"Spica",
+				"Kappa Virginis",
+				"Syrma",
+				"mu Virginis",
+				"Porrima",
+				"Zaniah",
+				"nu Virginis",
+				"Minelauva",
+				"Vindemiatrix"
+			],
+			"connections": [
+				"0-1",
+				"1-2",
+				"2-3",
+				"2-10",
+				"3-4",
+				"4-5",
+				"5-6",
+				"3-7",
+				"7-8",
+				"7-10",
+				"8-9",
+				"10-11"
+			],
+			"info": "Virgo is Latin for \"maiden\", and it is the largest of the 12 zodiacs. It is one of the 48 constellations listed by Ptolemy. It was also known in Babylonia as \"The Furrow\". There are 35 verified exoplanets orbiting 29 stars. The Virgo galaxy cluster is located inside it. The central supermasssive black hole at the center of the M87 galaxy, was the subject of the first direct image of a black hole. It has a mass of at least 7.2 billion solar masses, making it the largest black hole in the immediate vicinity of the Milky Way."
+		},
+
+		{
+			"name": "Volans",
+			"shape_stars": [
+				"Delta Volantis",
+				"Epsilon Volantis A",
+				"Beta Volantis",
+				"Alpha Volantis",
+				"Zeta Volantis",
+				"gam02 Volantis"
+			],
+			"connections": ["0-1", "1-2", "1-3", "1-4", "1-5", "2-3", "4-5"],
+			"info": "Volans represents a flying fish; its name is shortened from the original Latin \"Piscis Volanis\". It was created by Petrus Plancius and published on a celestial globe in 1597. The first exoplanet in the conservative habitable zone was discovered in Volans in 2023."
+		},
+
+		{
+			"name": "Vulpecula",
+			"shape_stars": ["15 Vulpeculae", "Anser"],
+			"connections": ["0-1"],
+			"info": "Vulpecula is Latin for \"little fox\". It was created by Johannes Hevelius in the 17th century. It is faint, with no stars brighter than 4th magnitude. The first pulsar was discovered in Vulpecula in 1967. It also hosts one of the closest exoplanets, where water vapor was confirmed. However, the surface temperature of the planet rises above 1000 °C. Vulpecula is also the home to the Dumbbell Nebula (M27), a large and bright planetary Nebula."
 		}
 	]
 }

@@ -7,7 +7,7 @@ from data_fetch import (
 
 
 def main():
-    filepath = "data/constellations.json"
+    filepath = "data/constellations_test.json"
 
     constellations = load_constellations_json(filepath=filepath)
 
