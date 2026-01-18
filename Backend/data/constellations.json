@@ -1626,7 +1626,7 @@
 				"Beta Sextantis",
 				"Gamma Sextantis"
 			],
-			"connections": ["0-1", "1-2", "2-3"],
+			"connections": ["0-2", "1-2", "1-3"],
 			"info": "Sextans is Latin for the astronomical sextant. It was introduced by Johannes Hevelius in 1687. It is very faint, with only one star above the 5th magnitude. Sextans is the location of the field that Hubble Scape Telescope studied for the COSMOS project."
 		},
 
