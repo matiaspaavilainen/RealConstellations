@@ -162,14 +162,13 @@ def get_simbad_data(
     # attempt to query with distance first, more often than not distance exists
     result = Simbad.query_tap(
         f"""
-        SELECT ident.id, basic.ra, mesPM.pmra, basic.dec, mesPM.pmde, mesDistance.dist
+        SELECT ident.id, basic.ra, mesPM.pmra, basic.dec, mesPM.pmde, mesDistance.dist, mesDistance.bibcode as distbib, mesPM.bibcode as pmbib
         FROM basic
         JOIN ident ON ident.oidref = basic.oid
         JOIN mesPM ON mesPM.oidref = basic.oid
         JOIN mesDistance ON mesDistance.oidref = ident.oidref
         WHERE ident.id = '{star_name}'
-        AND mesPM.mespos = 1
-        AND mesDistance.mespos = 1
+        ORDER BY pmbib DESC, distbib DESC
         """
     )
 
@@ -190,7 +189,8 @@ def get_simbad_data(
         FROM basic
         JOIN ident ON ident.oidref = basic.oid
         JOIN mesPM ON mesPM.oidref = basic.oid
-        WHERE ident.id = '{star_name}' AND mesPM.mespos = 1
+        WHERE ident.id = '{star_name}'
+        ORDER BY bibcode DESC
         """
     )
 
@@ -215,17 +215,19 @@ def estimate_dist_with_parallax(star: str) -> float | None:
     :return: distance or None
     :rtype: float | None
     """
+
     result = Simbad.query_tap(
         f"""
-        SELECT basic.plx_value
-        FROM basic
-        JOIN ident ON ident.oidref = basic.oid
+        SELECT mesPLX.plx
+        FROM mesPLX
+        JOIN ident ON ident.oidref = mesPLX.oidref
         WHERE ident.id = '{star}'
+        ORDER BY bibcode DESC
         """
     )
 
     if len(result) > 0:
-        return Distance(parallax=result["plx_value"][0] * u.mas).value
+        return Distance(parallax=result["plx"][0] * u.mas).value
 
 
 def manual_data_entry(star_dict: Star):

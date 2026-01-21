@@ -1,3 +1,4 @@
+import json
 import os
 import time
 from pymongo import MongoClient
@@ -54,6 +55,23 @@ def create_constellation_object(constellation: ConstellationJSON):
     return constellation_object
 
 
+def generate_constellations_json(
+    constellations: list[ConstellationJSON],
+    output_path: str = "data/constellations_output.json",
+):
+    constellation_objects = []
+
+    for constellation in constellations:
+        constellation_object = create_constellation_object(constellation)
+        constellation_objects.append(constellation_object)
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(constellation_objects, f, indent=2, ensure_ascii=False)
+
+    print(f"Generated JSON file at: {output_path}")
+    return constellation_objects
+
+
 if __name__ == "__main__":
 
     # RUN WITH python -m database.db_population from Backend dir because python
@@ -71,6 +89,7 @@ if __name__ == "__main__":
 
     jsonpath = "data/constellations.json"
     constellations = load_constellations_json(filepath=jsonpath)
+    # generate_constellations_json(constellations, "data/constellations_output.json")
 
     for constellation in constellations:
         constellation_object = create_constellation_object(constellation)
