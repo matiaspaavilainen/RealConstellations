@@ -53,15 +53,12 @@ async def home(request: Request):
 
 @app.get(
     "/api/constellations/",
-    response_description="Get the info for a constellation by name",
+    response_description="Get all the info for a constellation by name",
     response_model=ConstellationModel,
-    response_model_include={"general_info"},
     response_model_by_alias=False,
 )
 async def get_info_by_name(name: str):
-    if (
-        constellation := await collection.find_one({"name": name}, {"general_info": 1})
-    ) is not None:
+    if (constellation := await collection.find_one({"name": name})) is not None:
         return constellation
 
     raise HTTPException(status_code=404, detail=f"Constellation {name} not found")

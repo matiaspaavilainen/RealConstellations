@@ -454,9 +454,10 @@
 				"10-11",
 				"11-12",
 				"12-13",
-				"12-16",
+				"12-18",
 				"13-14",
 				"14-15",
+				"15-16",
 				"16-17",
 				"16-18"
 			],
@@ -1296,7 +1297,7 @@
 				"10-11",
 				"12-13"
 			],
-			"info": "Pegasus is named after the winged horse \"Pegasus\" in Greek mythology. It is one of the 48 constellations listed by Ptolemy. It was called \"Hippos\" in ancient Greece, and one myth says that his hooves dug out a spring, Hippocrene. This spring gace those who drank from it the ability to write poetry. In medieval Persia, Pegasus was depicted as a complete horse facing east, instead of half a horse, like most other uranographers. 12 star systems have been found to have exoplanets. 51 Pegasi is also the first Sun-like star discovered to have an exoplanet."
+			"info": "Pegasus is named after the winged horse \"Pegasus\" in Greek mythology. It is one of the 48 constellations listed by Ptolemy. It was called \"Hippos\" in ancient Greece, and one myth says that his hooves dug out a spring, Hippocrene. This spring gave those who drank from it the ability to write poetry. In medieval Persia, Pegasus was depicted as a complete horse facing east, instead of half a horse, like most other uranographers. 12 star systems have been found to have exoplanets. 51 Pegasi is also the first Sun-like star discovered to have an exoplanet."
 		},
 
 		{
@@ -1531,7 +1532,7 @@
 		},
 
 		{
-			"name": "Scoripus",
+			"name": "Scorpius",
 			"shape_stars": [
 				"Shaula",
 				"Kappa Scorpii",
@@ -1759,7 +1760,7 @@
 				"Kochab"
 			],
 			"connections": ["0-1", "1-2", "2-3", "3-4", "4-5", "5-6", "3-6"],
-			"info": "Ursa Minor is Latin for \"Lesser Bear\", contrasting with <Ursa Major>. It is also known as the Little Dipper, given its similar shape to the Big Dipper in <Ursa Major>. It is one of the 48 constellations listed by Ptolemy. In Babylonia it was known as the \"Wagon of Heaven\". Polaris, the brightest star in the constellation, is also the north pole star. It as been important for navigation. The ancient Greeks also called Ursa Minor the dog's tail. Because Ursa Minor has seven stars, the Latin word for north is \"septentrio\". In Inuit astronomy  the three brightest stars were known as \"Nuutuittut\" meaning \"never moving\"."
+			"info": "Ursa Minor is Latin for \"Lesser Bear\", contrasting with <Ursa Major>. It is also known as the Little Dipper, given its similar shape to the Big Dipper in <Ursa Major>. It is one of the 48 constellations listed by Ptolemy. In Babylonia it was known as the \"Wagon of Heaven\". Polaris, the brightest star in the constellation, is also the north pole star. It has been important for navigation. The ancient Greeks also called Ursa Minor the dog's tail. Because Ursa Minor has seven stars, the Latin word for north is \"septentrio\". In Inuit astronomy  the three brightest stars were known as \"Nuutuittut\" meaning \"never moving\"."
 		},
 
 		{
@@ -1842,7 +1843,7 @@
 			"name": "Vulpecula",
 			"shape_stars": ["15 Vulpeculae", "Anser"],
 			"connections": ["0-1"],
-			"info": "Vulpecula is Latin for \"little fox\". It was created by Johannes Hevelius in the 17th century. It is faint, with no stars brighter than 4th magnitude. The first pulsar was discovered in Vulpecula in 1967. It also hosts one of the closest exoplanets, where water vapor was confirmed. However, the surface temperature of the planet rises above 1000 °C. Vulpecula is also the home to the Dumbbell Nebula (M27), a large and bright planetary Nebula."
+			"info": "Vulpecula is Latin for \"little fox\". It was created by Johannes Hevelius in the 17th century. It is faint, with no stars brighter than 4th magnitude. The first pulsar was discovered in Vulpecula in 1967. It also hosts one of the closest exoplanets, where water vapor was confirmed. However, the surface temperature of the planet rises above 1000 °C. Vulpecula is also home to the Dumbbell Nebula (M27), a large and bright planetary Nebula."
 		}
 	]
 }
