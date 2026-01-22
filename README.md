@@ -20,11 +20,7 @@ A project to visualize how constellations look in 3D space. As the stars that ar
 
 ## Necessary features
 
-- Add the rest of the constellations
-- Possibility to click on the constellation to zoom into it and display information
-  - AVG distance from Earth
-  - Names of the stars
-  - Short description about the origins and theme
+- Possibility to click on the constellation to zoom into it
   - Projection outline and 3D shape
   - Projection as a plane facing earth
   - Can rotate the view to see the actual shape from different angles
@@ -40,6 +36,6 @@ A project to visualize how constellations look in 3D space. As the stars that ar
   - If Earth simulated, user can select the location <https://github.com/dr5hn/countries-states-cities-database>
 - Or view from other stars
 
-- Other skycultures, realtively simple from a technical standpoint, just need the data
-- Better models for the stars in the constellation
-- Realistic size for the star, not sure how possible in terms of making it visible
+- Other skycultures, should be relatively simple from a technical standpoint, just need the data
+- Better models for the stars in the detailed view
+- Realistic size for the star, not sure how possible in terms of making it visible, based on apparent magnitude maybe
