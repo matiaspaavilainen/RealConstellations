@@ -1,10 +1,11 @@
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type Dispatch, type SetStateAction } from "react";
 
-import { ConstellationObject } from "./3dObjects";
-import type { Constellation } from "./3dObjects";
+import { ConstellationObject } from "./constellationObject";
+import { MOUSE, Vector3 } from "three";
+import type { Constellation } from "../types/types";
 
 const getConstellations = async () => {
 	try {
@@ -23,9 +24,12 @@ const getConstellations = async () => {
 	}
 };
 
-const ConstellationCanvas = () => {
+const ConstellationCanvas = ({
+	setSelectedConstellation,
+}: {
+	setSelectedConstellation: Dispatch<SetStateAction<string>>;
+}) => {
 	const [constellations, setConstellations] = useState(Array<Constellation>);
-	//const [selectedConstellation, setSelectedConstellation] = useState(null);
 
 	useEffect(() => {
 		getConstellations().then((constellations) => {
@@ -35,21 +39,19 @@ const ConstellationCanvas = () => {
 		});
 	}, []);
 
+	//distance to sun - sun diameter = approx distance to solar system barycenter in pc
+	const approxEarthLocation = new Vector3(0.000004861 - 0.000000045, 0, 0);
+
 	return (
 		<div className="canvas-container">
 			<Canvas
 				id="canvas"
-				// camera={{
-				// 	fov: 75,
-				// 	near: 0.01,
-				// 	far: 10000,
-				// 	position: [0, 0, 0.1],
-				// }}
 				frameloop="demand">
 				{constellations.map((constellation) => (
 					<ConstellationObject
 						key={constellation.name}
 						constellation={constellation}
+						setSelectedConstellation={setSelectedConstellation}
 					/>
 				))}
 
@@ -57,15 +59,20 @@ const ConstellationCanvas = () => {
 					name="camera"
 					makeDefault
 					near={0.01}
-					far={10000}
-					position={[0, 0, 0.00000000001]}
+					fov={60}
+					far={20000}
+					position={[0, 0, 0]}
 				/>
 
 				<OrbitControls
 					reverseOrbit={true}
+					enablePan={false}
 					enableZoom={false}
 					rotateSpeed={0.185}
-					target={[0, 0, 0]}
+					target={approxEarthLocation}
+					mouseButtons={{
+						MIDDLE: MOUSE.ROTATE,
+					}}
 				/>
 			</Canvas>
 		</div>

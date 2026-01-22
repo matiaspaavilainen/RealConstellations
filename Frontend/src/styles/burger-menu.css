@@ -1,0 +1,25 @@
+#burger-menu {
+    height: 3.5em;
+    width: 3.5em;
+    margin: 1em;
+    top: 0;
+    z-index: 2;
+    transition: all 0.3s;
+    position: absolute;
+
+    background-color: transparent;
+    backdrop-filter: blur(1em);
+    border-radius: 1em;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+}
+
+#burger-menu:hover {
+    transition: all 0.3s;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border-color: transparent;
+    border-radius: 0;
+}
+
+#burger-menu--open {}

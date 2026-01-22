@@ -1,0 +1,12 @@
+#search-bar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 2;
+}
+
+#search-bar__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

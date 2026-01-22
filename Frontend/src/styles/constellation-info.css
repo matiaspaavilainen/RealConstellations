@@ -1,0 +1,73 @@
+#constellation-info {
+    position: absolute;
+    top: 0;
+    width: 20%;
+    right: 0;
+    z-index: 2;
+    margin: 1em;
+    padding: 0 1em;
+    transition: all 0.3s;
+    border: 1px solid var(--text-color);
+    border-radius: 1em;
+    border-color: var(--text-color);
+    background-color: transparent;
+    color: var(--text-color);
+    backdrop-filter: blur(1em);
+}
+
+#constellation-info:hover {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    border-radius: 0;
+    transition: all 0.3s;
+}
+
+#constellation-info__text {
+    text-wrap: pretty;
+}
+
+#constellation-info__text button {
+    all: unset;
+    color: inherit;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: attr(color);
+}
+
+#constellation-info__text button:hover {
+    cursor: pointer;
+    text-decoration-style: solid;
+}
+
+.constellation-info__star {
+    position: relative;
+}
+
+#constellation-info__star--estimated {
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    &::after {
+        content: "Estimated from parallax, large distances are likely inaccurate.";
+        background-color: var(--background-color);
+        color: var(--text-color);
+        padding: 0.5em;
+        border-radius: 0.25em;
+        position: absolute;
+        width: max-content;
+        max-width: 200px;
+        top: -200%;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s;
+        z-index: 3;
+    }
+
+    &:hover::after {
+        opacity: 1;
+        visibility: visible;
+    }
+}
