@@ -51,17 +51,18 @@ const embedButtonsToText = (
 			buttonsEmbedded.push(<span>{textParts.shift()}</span>);
 		} else {
 			const name = buttonWords.shift()?.slice(1, -1);
-			if (name) {
-				buttonsEmbedded.push(
-					<button onClick={() => setSelectedConstellation(name)}>
-						{name}
-					</button>,
-				);
+			if (!name) {
+				continue;
 			}
+			buttonsEmbedded.push(
+				<button onClick={() => setSelectedConstellation(name)}>
+					{name}
+				</button>,
+			);
 		}
 	}
 
-	return <div>{...buttonsEmbedded}</div>;
+	return buttonsEmbedded;
 };
 
 const getConstellationInfo = async (constellationName: string) => {
@@ -110,7 +111,7 @@ const ConstellationInfo = ({
 				<p>Farthest star: {distanceToLyFormat(farthestStar)}</p>
 
 				<span id="constellation-info__text">
-					{embedButtonsToText(
+					{...embedButtonsToText(
 						constellation.general_info,
 						setSelectedConstellation,
 					)}
@@ -127,6 +128,14 @@ const ConstellationInfo = ({
 						</p>
 					);
 				})}
+				<p>
+					Source:{" "}
+					<a
+						href={`https://en.wikipedia.org/wiki/${currentConstellation}_(constellation)`}
+						target="_blank">
+						Wikipedia
+					</a>
+				</p>
 			</div>
 		);
 	} else {
