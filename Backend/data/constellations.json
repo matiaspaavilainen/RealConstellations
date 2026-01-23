@@ -11,7 +11,7 @@
 				"Alpheratz"
 			],
 			"connections": ["0-1", "1-4", "4-5", "1-2", "2-3"],
-			"info": "Andromeda is one of the 48 constellations listed by Ptolemy. The Andromeda Galaxy (M31) is located next to Nu Andromedae, appearing just outside the constellation. It is named after Andromeda, the daughter of Cassiopeia, from Greek mythology."
+			"info": "Andromeda is one of the 48 constellations listed by Ptolemy. The Andromeda Galaxy (M31) is located next to Nu Andromedae, appearing just outside the constellation. It is named after Andromeda, the daughter of <Cassiopeia>, from Greek mythology."
 		},
 
 		{
@@ -210,7 +210,7 @@
 				"HD 33564"
 			],
 			"connections": ["0-1", "0-3", "1-2", "2-3", "3-4"],
-			"info": "Cameleopardalis represents a giraffe, and it comes from Latin, as a romanization of the Greek word for giraffe. It was introduced in 1612 or 1613 by Petrus Plancius. Cameleopardalis is quite dim, with the brightest stars only around the 4th magnitude."
+			"info": "Camelopardalis represents a giraffe, and it comes from Latin, as a romanization of the Greek word for giraffe. It was introduced in 1612 or 1613 by Petrus Plancius. Cameleopardalis is quite dim, with the brightest stars only around the 4th magnitude."
 		},
 
 		{
@@ -231,7 +231,7 @@
 			"name": "Canes Venatici",
 			"shape_stars": ["Cor Caroli", "Chara"],
 			"connections": ["0-1"],
-			"info": "Canes Venatici is Latin for \"hunting dogs\". It often depicts the dogs of Boötes the herdsman. The identification as dogs likely came from mistranslations from the Greek word \"club\". When Ptolemy's Almagest was translated to Arabic, the translator didn't know the exact word and used something similar. This was furter mistranslated to Latin, as \"dogs\". The stars were noted by Ptolemy, but not assigned a constellation by him."
+			"info": "Canes Venatici is Latin for \"hunting dogs\". It often depicts the dogs of <Boötes> the herdsman. The identification as dogs likely came from mistranslations from the Greek word \"club\". When Ptolemy's Almagest was translated to Arabic, the translator didn't know the exact word and used something similar. This was furter mistranslated to Latin, as \"dogs\". The stars were noted by Ptolemy, but not assigned a constellation by him."
 		},
 
 		{
@@ -273,14 +273,14 @@
 				"13-14",
 				"13-15"
 			],
-			"info": "Canis Major is Latin for \"greater dog\". It is one of the 48 constellations listed by Ptolemy. Along with Canis Minor, they are often depicted following Orion the hunter. Canis Major contains Sirius, the brightest star in the night sky. Sirius and Canis Major were parts of constellations in multiple cultures, from ancient Mesopotamia to the Romans. One of the largest known stars, VY Canis Major, is contained in Canis Major."
+			"info": "Canis Major is Latin for \"greater dog\". It is one of the 48 constellations listed by Ptolemy. Along with <Canis Minor>, they are often depicted following <Orion> the hunter. Canis Major contains Sirius, the brightest star in the night sky. Sirius and Canis Major were parts of constellations in multiple cultures, from ancient Mesopotamia to the Romans. One of the largest known stars, VY Canis Major, is contained in Canis Major."
 		},
 
 		{
 			"name": "Canis Minor",
 			"shape_stars": ["Procyon", "Gomeisa"],
 			"connections": ["0-1"],
-			"info": "Canis Minor is Latin for \"lesser dog\". It is one of the 48 constellations listed by Ptolemy. Along with Canis Major, they are often depicted following Orion the hunter. In contrast to Canis Major, Canis Minor is quite small, and contains only two bright stars, which make up it's asterism. Procyon is the 8th brigtest star in the night sky. Interestingly the stars of the asterism are only 1.12 light years away from each other."
+			"info": "Canis Minor is Latin for \"lesser dog\". It is one of the 48 constellations listed by Ptolemy. Along with <Canis Major>, they are often depicted following <Orion> the hunter. In contrast to <Canis Major>, Canis Minor is quite small, and contains only two bright stars, which make up it's asterism. Procyon is the 8th brigtest star in the night sky. Interestingly the stars of the asterism are only 1.12 light years away from each other."
 		},
 
 		{
@@ -358,7 +358,7 @@
 				"Segin"
 			],
 			"connections": ["0-1", "1-2", "2-3", "3-4"],
-			"info": "Cassiopeia is named after the queen Cassiopeia, mother of Andromeda, in Greek mythology. It is one of the 48 constellations listed by Ptolemy. Cassiopeia was the wife of King Cepheus, a constellation next to it. Cassiopeia and it's stars have formed constellations in multilple cultures. Cassiopeia also contains numerous deep space objects, such as open clusters and supernova remnants."
+			"info": "Cassiopeia is named after the queen Cassiopeia, mother of <Andromeda>, in Greek mythology. It is one of the 48 constellations listed by Ptolemy. Cassiopeia was the wife of King <Cepheus>, a constellation next to it. Cassiopeia and it's stars have formed constellations in multilple cultures. Cassiopeia also contains numerous deep space objects, such as open clusters and supernova remnants."
 		},
 
 		{
@@ -413,7 +413,7 @@
 				"Zeta Cephei"
 			],
 			"connections": ["0-1", "0-4", "1-2", "1-3", "2-3", "3-4"],
-			"info": "Cepheus represents the king of Aethiopia in Greek Mythology. It is one of the 48 constellations listed by Ptolemy. Cepheus is the husband of Cassiopeia and the father of Cassiopeia. Cepheus contains the hyperluminous quasar S5 0014+81, which hosts one of the largest known supermassive black holes (40 billion solar masses) at it's center. The quasar is said to be one of the most powerful objects in the known universe."
+			"info": "Cepheus represents the king of Aethiopia in Greek Mythology. It is one of the 48 constellations listed by Ptolemy. Cepheus is the husband of <Cassiopeia> and the father of <Andromeda>. Cepheus contains the hyperluminous quasar S5 0014+81, which hosts one of the largest known supermassive black holes (40 billion solar masses) at it's center. This quasar is said to be one of the most powerful objects in the known universe."
 		},
 
 		{
@@ -461,7 +461,7 @@
 				"16-17",
 				"16-18"
 			],
-			"info": "Cetus depicts a sea monster from Greek mythology, and both Perseus and Heracles had to slay it. Cetus is sometimes called the whale in English. The star Mira, is the first variable star discovered. It varies from 3 to 10 in apparent magnitude over a period of 332 days. The Pisces-Cetus Supercluster Complex is a galaxy filament, and one of the largest know structures in the observable universe."
+			"info": "Cetus depicts a sea monster from Greek mythology, and both <Perseus> and Heracles (<Hercules>) had to slay it. Cetus is sometimes called the whale in English. The star Mira, is the first variable star discovered. It varies from 3 to 10 in apparent magnitude over a period of 332 days. The Pisces-Cetus Supercluster Complex is a galaxy filament, and one of the largest know structures in the observable universe."
 		},
 
 		{
@@ -471,7 +471,7 @@
 				"Gamma Chamaeleontis",
 				"Epsilon Chamaeleontis",
 				"Beta Chamaeleontis",
-				"Delta2 Chameleontis",
+				"Delta2 Chamaeleontis",
 				"HD 93237"
 			],
 			"connections": ["0-1", "1-2", "2-3", "3-4", "4-5", "5-1"],
@@ -508,7 +508,7 @@
 				"Alpha Comae Berenices"
 			],
 			"connections": ["0-1", "1-2"],
-			"info": "Comae Berenices is Latin for Berenice's hair. It refers to Queen Berenices II of Egypt, who sacrificed her long hair as a votive offering. It is the only modern constellation named after a historic person. It was introduced in the 3rd century BC by Conon of Samos, and corraborated as a constellation by Geradus Mercator and Tycho Brahe."
+			"info": "Coma Berenices is Latin for Berenice's hair. It refers to Queen Berenices II of Egypt, who sacrificed her long hair as a votive offering. It is the only modern constellation named after a historic person. It was introduced in the 3rd century BC by Conon of Samos, and corraborated as a constellation by Geradus Mercator and Tycho Brahe."
 		},
 
 		{
@@ -584,14 +584,14 @@
 				"5-6",
 				"6-7"
 			],
-			"info": "Crater is the Latinization of the Greek krater, meaning a type of cup used to water down wine. It is one of the 48 constellations listed by Ptolemy. The cup it depicts is associated with Apollo and it is positioned on the back of Hydra. In Babylonian star catalogues the star's of Crater were possibly incorporated with those of Corvus in the Babylonian Raven. Crovus also contains the quasar RXJ1131, and the supermassive black hole in its center is the first one whose spin was directly measured."
+			"info": "Crater is the Latinization of the Greek krater, meaning a type of cup used to water down wine. It is one of the 48 constellations listed by Ptolemy. The cup it depicts is associated with Apollo and it is positioned on the back of <Hydra>. In Babylonian star catalogues the star's of Crater were possibly incorporated with those of <Corvus> in the Babylonian Raven. Crater also contains the quasar RXJ1131, and the supermassive black hole in its center is the first one whose spin was directly measured."
 		},
 
 		{
 			"name": "Crux",
 			"shape_stars": ["Gacrux", "Acrux", "Mimosa", "Delta Crucis"],
 			"connections": ["0-1", "2-3"],
-			"info": "Crux is Latin for \"cross\", and the asterism is commonly known as the Southern Cross. It is the smallest of the modern constellations, but is one of the easiest to recognize. It has attained great cultural importance in the Southern Hemisphere. Crux was considered a part of Centaurus by Ptolemy. It is frequently used in navigation like Polaris is used in the Northern Hemisphere. Continuing the line from Gacrux to Acrux points very close to the Southern Celestial Pole."
+			"info": "Crux is Latin for \"cross\", and the asterism is commonly known as the Southern Cross. It is the smallest of the modern constellations, but is one of the easiest to recognize. It has attained great cultural importance in the Southern Hemisphere. Crux was considered a part of <Centaurus> by Ptolemy. It is frequently used in navigation like Polaris is used in the Northern Hemisphere. Continuing the line from Gacrux to Acrux points very close to the Southern Celestial Pole."
 		},
 
 		{
@@ -696,7 +696,7 @@
 				"Kitalpha"
 			],
 			"connections": ["0-1", "1-2", "2-3", "3-0"],
-			"info": "Equuleus is Latin for \"little horse\", a foal. It is one of the 48 constellations listed by Ptolemy. It is very faint, with no stars above the 4th magnitude. It is associated in Greek mythology as the foal Celeris, offspring of Pegasus."
+			"info": "Equuleus is Latin for \"little horse\", a foal. It is one of the 48 constellations listed by Ptolemy. It is very faint, with no stars above the 4th magnitude. It is associated in Greek mythology as the foal Celeris, offspring of <Pegasus>."
 		},
 
 		{
@@ -880,7 +880,7 @@
 				"15-16",
 				"16-17"
 			],
-			"info": "Hercules is a Roman mythology hero, adapted from the Greek hero Heracles. Hercules is the son of Jupiter. One of Hercules' 12 labours was killing the multi-headed monster <Hydra>. It is one of the 48 constellations listed by Ptolemy. Hercules could be a distorted version of the Babyloninan constellation Standing Gods. Hercules is the largest constellation with no 1st or 2nd magnitude stars, and there are 15 stars known to have planets."
+			"info": "Hercules is a Roman mythology hero, adapted from the Greek hero Heracles, and he is the son of Jupiter. It is one of the 48 constellations listed by Ptolemy. One of Hercules' 12 labours was killing the multi-headed monster <Hydra>. Hercules could be a distorted version of the Babyloninan constellation Standing Gods. Hercules is the largest constellation with no 1st or 2nd magnitude stars, and there are 15 stars known to have planets."
 		},
 
 		{
@@ -1227,7 +1227,7 @@
 				"3-6",
 				"4-7"
 			],
-			"info": "Orion is one of the most recognizable constellations, depicting a hunter from Greek mythology. It appears in many cultures worldwide, often associated with strength or heroism. The three stars Alnitak, Alnilam, and Mintaka form the famous Orion’s Belt. The famous Orion Nebula (M42) is located between the \"legs\" of the hunter."
+			"info": "Orion is a prominent constellation, and it has myths associated with it in many cultures. It is one of the 48 constellations listed by Ptolemy. It was known to the Babylonians as \"The Heavenly Shepherd\", and in ancient Egypt the stars were regarded as a god, Sah. In Greek mythology Orion was a supernaturally strong hunter. Orion is related to <Scorpius>, as Gaia sent the scorpion to kill him, but Orion was revived by <Ophiuchus> with an antidote. Orion's stars were also known in medieval Muslim astronomy, China, India, multiple European countries, Americas and south-east Asia. The famous Orion Nebula (M42) is located on Orion's Sword, between his \"legs\"."
 		},
 
 		{
@@ -1618,7 +1618,7 @@
 				"10-11",
 				"9-11"
 			],
-			"info": "Serpens comes from the Greek word \"Óphis\", meaning \"the Serpent\". It is unique among the modern constellation, for being split in two parts, the serpent's head and tail. It is depicted passing behind <Ophiuchus>, the Serpent-Bearer. In Greek mythology Serpens represents a snake held by the healer Asclepius. The famous Eagle Nebule, which contains the Pillars of Creation, is located in the tail part."
+			"info": "Serpens comes from the Greek word \"Óphis\", meaning \"the Serpent\". It is unique among the modern constellation, for being split in two parts, the serpent's head and tail. It is depicted passing behind <Ophiuchus>, the Serpent-Bearer. In Greek mythology Serpens represents a snake held by the healer Asclepius. The famous Eagle Nebula, which contains the Pillars of Creation, is located in the tail part."
 		},
 		{
 			"name": "Sextans",
@@ -1745,7 +1745,7 @@
 				"15-16",
 				"16-17"
 			],
-			"info": "Ursa Major is Latin for \"greater bear\". It is one of the 48 constellations listed by Ptolemy. The bear shape might stem from a common oral tradition fo Cosmic Hunt, from over 13 000 years ago. The asterism Big Dipper might be even more famous than the constellation itself. Either one has been and still is prominent in multiple cultures, and is the symbol of the north. It is mentioned in Arabian folklore, Greco-Roman mythology and Hindu tradition. In China, Korea and Japan, the seven brightest stars were important. In Shinto, they belong to the oldest and most powerful god, and in China each of the stars had their specific names. The stars are also noted in native American traditions and in Uralic traditions, including the ancient Finns and the Sámi. In Finnish the asterism is called Otava, meaning a salmon weir."
+			"info": "Ursa Major is Latin for \"greater bear\". It is one of the 48 constellations listed by Ptolemy. The bear shape might stem from a common oral tradition fo Cosmic Hunt, from over 13 000 years ago. The asterism Big Dipper might be even more famous than the constellation itself. Either one has been and still is prominent in multiple cultures, and is the symbol of the north. It is mentioned in Arabian folklore, Greco-Roman mythology and Hindu tradition. In China, Korea and Japan, the seven brightest stars were important. In Shinto, they belong to the oldest and most powerful god, and in China each of the stars had their specific names. The stars are also noted in native American traditions and in Uralic traditions, including the ancient Finns and the Sámi."
 		},
 
 		{
