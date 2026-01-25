@@ -1,25 +1,33 @@
 #constellation-info {
-    position: absolute;
-    top: 0;
-    width: 20%;
-    right: 0;
-    z-index: 2;
-    margin: 1em;
     padding: 0 1em;
-    transition: all 0.3s;
-    border: 1px solid var(--text-color);
-    border-radius: 1em;
-    border-color: var(--text-color);
-    background-color: transparent;
-    color: var(--text-color);
-    backdrop-filter: blur(1em);
+    justify-self: end;
+    height: fit-content;
+    max-height: 80%;
+    overflow: scroll;
+    anchor-name: --constellation-info;
+    position: relative;
 }
 
-#constellation-info:hover {
-    color: var(--background-color);
-    background-color: var(--text-color);
-    border-radius: 0;
-    transition: all 0.3s;
+#constellation-info__close {
+    all: unset;
+    position: absolute;
+    top: 0.5em;
+    right: 0;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 0.5em;
+    height: 2.5em;
+    width: 2.5em;
+    margin: 0 0.5em;
+    border-color: var(--text-color);
+    transition: all 0.4s;
+
+    &:hover {
+        background-color: var(--background-color);
+        border-radius: 0;
+        color: var(--text-color);
+        transition: all 0.4s;
+    }
 }
 
 #constellation-info__text {
@@ -69,5 +77,15 @@
     &:hover::after {
         opacity: 1;
         visibility: visible;
+    }
+}
+
+
+#constellation-info__source a {
+    color: inherit;
+    text-decoration-style: dashed;
+
+    &:hover {
+        text-decoration-style: solid;
     }
 }

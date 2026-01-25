@@ -95,7 +95,7 @@ const ConstellationInfo = ({
 		}
 	}, [currentConstellation]);
 
-	if (constellation?.general_info) {
+	if (constellation?.general_info && currentConstellation) {
 		const stars: Star[] = constellation.astronomical_data;
 
 		const [averageDistance, nearestStar, farthestStar] = [
@@ -104,18 +104,26 @@ const ConstellationInfo = ({
 
 		return (
 			<div id="constellation-info">
-				<h2 id="constellation-info__name">{constellation.name}</h2>
+				<h1 id="constellation-info__name">{constellation.name}</h1>
+
+				<button
+					id="constellation-info__close"
+					onClick={() => {
+						setSelectedConstellation("");
+					}}>
+					X
+				</button>
 
 				<p>Average distance: {distanceToLyFormat(averageDistance)}</p>
 				<p>Nearest star: {distanceToLyFormat(nearestStar)}</p>
 				<p>Farthest star: {distanceToLyFormat(farthestStar)}</p>
 
-				<span id="constellation-info__text">
+				<div id="constellation-info__text">
 					{...embedButtonsToText(
 						constellation.general_info,
 						setSelectedConstellation,
 					)}
-				</span>
+				</div>
 				{stars.toSorted(sortByName).map((star) => {
 					return (
 						<p
@@ -128,18 +136,24 @@ const ConstellationInfo = ({
 						</p>
 					);
 				})}
-				<p>
-					Source:{" "}
+				<p id="constellation-info__source">
+					Sources:{" "}
 					<a
 						href={`https://en.wikipedia.org/wiki/${currentConstellation}_(constellation)`}
 						target="_blank">
 						Wikipedia
 					</a>
+					{", "}
+					<a
+						href="https://stellarium-web.org/"
+						target="_blank">
+						Stellarium
+					</a>
 				</p>
 			</div>
 		);
 	} else {
-		return <div id="constellation-info__empty"></div>;
+		return <div style={{ all: "unset" }}></div>;
 	}
 };
 

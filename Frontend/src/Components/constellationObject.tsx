@@ -1,10 +1,11 @@
-import { Billboard, Line, Text } from "@react-three/drei";
+import { Billboard, CameraControls, Line, Text } from "@react-three/drei";
 
-import { Vector3 } from "three";
+import { Scene, Vector3 } from "three";
 import { useMemo, useState, type Dispatch, type SetStateAction } from "react";
 
 import { calculateProjectedCenter } from "../utils/utils";
 import type { Constellation, Star } from "../types/types";
+import { useThree } from "@react-three/fiber";
 
 const StarObject = ({
 	name,
@@ -43,20 +44,46 @@ const ConnectingLine = ({ start, end }: { start: Vector3; end: Vector3 }) => {
 const ConstellationMarker = ({
 	name,
 	starDataArray,
+	selectedConstellation,
 	setSelectedConstellation,
 }: {
 	name: string;
 	starDataArray: Star[];
+	selectedConstellation: Constellation;
 	setSelectedConstellation: Dispatch<SetStateAction<string>>;
 }) => {
 	// the point where the text should be at
-	const center = calculateProjectedCenter(starDataArray);
-
+	const projectedCenter: Vector3 = calculateProjectedCenter(starDataArray);
+	const {
+		controls,
+		scene,
+	}: {
+		controls: CameraControls;
+		scene: Scene;
+	} = useThree();
 	const [hovered, setHovered] = useState(false);
+
+	const handleConstellationClick = () => {
+		setSelectedConstellation(name);
+		const nextConstPos: Vector3 | undefined =
+			scene.getObjectByName(name)?.position;
+
+		if (nextConstPos) {
+			controls.setTarget(
+				nextConstPos.x,
+				nextConstPos.y,
+				nextConstPos.z,
+				true,
+			);
+
+			controls.setOrbitPoint(0, 0, 0);
+		}
+	};
 
 	return (
 		<Billboard
-			position={center}
+			name={name}
+			position={projectedCenter}
 			onPointerEnter={() => {
 				setHovered(true);
 			}}
@@ -66,11 +93,11 @@ const ConstellationMarker = ({
 			<Text
 				fontSize={0.018}
 				outlineWidth={hovered ? "20%" : "0%"}
-				outlineColor={hovered ? "white" : "transparent"}
+				outlineColor={hovered ? "white" : "none"}
 				outlineBlur={hovered ? "50%" : "0%"}
 				outlineOpacity={hovered ? 0.8 : 0}
 				color={hovered ? "black" : "white"}
-				onClick={() => setSelectedConstellation(name)}>
+				onClick={handleConstellationClick}>
 				{name}
 			</Text>
 		</Billboard>
@@ -91,7 +118,7 @@ const ConstellationObject = ({
 	const lines = useMemo(() => {
 		const result: number[][][] = [];
 		connections.forEach((pair) => {
-			// pair looks like this: 1-2
+			// each pair looks like this: 1-2, where they are indexes of the star array
 			const [lineStart, lineEnd] = pair
 				.split("-")
 				.map(
@@ -128,6 +155,7 @@ const ConstellationObject = ({
 				key={name}
 				name={name}
 				starDataArray={starDataArray}
+				selectedConstellation={constellation}
 				setSelectedConstellation={setSelectedConstellation}
 			/>
 		</>

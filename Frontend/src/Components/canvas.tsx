@@ -1,10 +1,10 @@
-import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
+import { CameraControls, PerspectiveCamera } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import axios from "axios";
 import { useEffect, useState, type Dispatch, type SetStateAction } from "react";
 
 import { ConstellationObject } from "./constellationObject";
-import { MOUSE, Vector3 } from "three";
+import { PerspectiveCamera as PerspectiveCameraType, Vector3 } from "three";
 import type { Constellation } from "../types/types";
 
 const getConstellations = async () => {
@@ -30,6 +30,7 @@ const ConstellationCanvas = ({
 	setSelectedConstellation: Dispatch<SetStateAction<string>>;
 }) => {
 	const [constellations, setConstellations] = useState(Array<Constellation>);
+	const [mycam, setMyCam] = useState<PerspectiveCameraType | null>(null);
 
 	useEffect(() => {
 		getConstellations().then((constellations) => {
@@ -41,7 +42,6 @@ const ConstellationCanvas = ({
 
 	//distance to sun - sun diameter = approx distance to solar system barycenter in pc
 	const approxEarthLocation = new Vector3(0.000004861 - 0.000000045, 0, 0);
-
 	return (
 		<div className="canvas-container">
 			<Canvas
@@ -56,24 +56,24 @@ const ConstellationCanvas = ({
 				))}
 
 				<PerspectiveCamera
-					name="camera"
+					ref={setMyCam}
 					makeDefault
 					near={0.01}
 					fov={60}
 					far={20000}
-					position={[0, 0, 0]}
+					position={approxEarthLocation}
 				/>
 
-				<OrbitControls
-					reverseOrbit={true}
-					enablePan={false}
-					enableZoom={false}
-					rotateSpeed={0.185}
-					target={approxEarthLocation}
-					mouseButtons={{
-						MIDDLE: MOUSE.ROTATE,
-					}}
-				/>
+				{mycam && (
+					<CameraControls
+						camera={mycam}
+						makeDefault
+						azimuthRotateSpeed={-0.2}
+						polarRotateSpeed={-0.2}
+						dolly={false}
+						truck={false}
+					/>
+				)}
 			</Canvas>
 		</div>
 	);

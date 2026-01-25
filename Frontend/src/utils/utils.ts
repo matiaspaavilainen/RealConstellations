@@ -19,4 +19,16 @@ const calculateProjectedCenter = (starDataArray: Star[]) => {
 	return center;
 };
 
-export { calculateProjectedCenter, sortByName };
+const calculateCenter = (starDataArray: Star[]) => {
+	const center = new Vector3(0, 0, 0);
+	starDataArray
+		.map((star) => {
+			return new Vector3(...star.cartesian);
+		})
+		.forEach((p) => {
+			center.add(p.divideScalar(starDataArray.length));
+		});
+	return center;
+};
+
+export { calculateCenter, calculateProjectedCenter, sortByName };

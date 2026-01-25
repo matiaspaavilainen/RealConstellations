@@ -1,12 +1,26 @@
-#search-bar {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    z-index: 2;
+#search-bar__form {
+    height: 3.5em;
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    width: 16em;
 }
 
-#search-bar__form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#search-bar__form-input,
+#search-bar__form-button {
+    all: unset;
+}
+
+#search-bar__form-input {
+    margin: 0 1em;
+    height: 100%;
+}
+
+#search-bar__form-button {
+    text-align: center;
+    border: 1px solid;
+    border-radius: 0.5em;
+    height: 2.5em;
+    width: 2.5em;
+    margin: 0 0.5em;
 }
