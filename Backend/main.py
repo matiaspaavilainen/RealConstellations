@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Request
 from typing import Optional, List
 from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pymongo import AsyncMongoClient
 from pydantic import BaseModel, Field
@@ -44,6 +45,9 @@ favicon_path = "favicon.ico"
 @app.get("/favicon.ico", include_in_schema=False)
 async def favicon():
     return FileResponse(favicon_path)
+
+
+app.mount("/assets", StaticFiles(directory="static/assets"), name="assets")
 
 
 @app.get("/")

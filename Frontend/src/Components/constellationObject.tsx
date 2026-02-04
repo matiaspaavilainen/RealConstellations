@@ -1,10 +1,4 @@
-import {
-	Billboard,
-	CameraControls,
-	Line,
-	Text,
-	type TextProps,
-} from "@react-three/drei";
+import { Billboard, CameraControls, Line, Text } from "@react-three/drei";
 
 import { Mesh, Vector3 } from "three";
 import {

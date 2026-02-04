@@ -1,13 +1,4 @@
-import { type Dispatch, type SetStateAction } from "react";
-import type { Constellation } from "../types/types";
-
-const SearchBar = ({
-	constellationsArray,
-	setSelectedConstellationName,
-}: {
-	constellationsArray: Constellation[];
-	setSelectedConstellationName: Dispatch<SetStateAction<string>>;
-}) => {
+const SearchBar = () => {
 	return (
 		<form
 			style={{ gridTemplateAreas: "search-bar" }}

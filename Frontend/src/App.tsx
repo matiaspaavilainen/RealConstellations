@@ -96,10 +96,7 @@ const App = () => {
 		<div className="main-content">
 			<div className="top-container">
 				<BurgerMenu />
-				<SearchBar
-					constellationsArray={constellationsArray}
-					setSelectedConstellationName={setSelectedConstellationName}
-				/>
+				<SearchBar />
 				<ConstellationInfo
 					selectedConstellationName={selectedConstellationName}
 					setSelectedConstellationName={setSelectedConstellationName}
