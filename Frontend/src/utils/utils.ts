@@ -7,6 +7,12 @@ const sortByName = (a: Star, b: Star) => {
 	else return 0;
 };
 
+const sortByDistance = (a: Star, b: Star) => {
+	if (a.distance > b.distance) return 1;
+	if (b.distance > a.distance) return -1;
+	else return 0;
+};
+
 const calculateProjectedCenter = (starDataArray: Star[]) => {
 	const center = new Vector3(0, 0, 0);
 	starDataArray
@@ -31,4 +37,28 @@ const calculateCenter = (starDataArray: Star[]) => {
 	return center;
 };
 
-export { calculateCenter, calculateProjectedCenter, sortByName };
+const distanceToLyFormat = (distance: number, digits: number = 2) => {
+	return (distance * 3.26156).toFixed(digits) + " ly";
+};
+
+const formatDistanceInfo = (stars: Star[]) => {
+	const averageDistance =
+		stars.reduce((sum, star) => sum + star.distance, 0) / stars.length;
+	const sortedByDistance = stars.toSorted(
+		(a: Star, b: Star) => a.distance - b.distance,
+	);
+
+	// stars can't be null when this function is called
+	const nearestStar = sortedByDistance.at(0)!.distance;
+	const farthestStar = sortedByDistance.at(-1)!.distance;
+	return [averageDistance, nearestStar, farthestStar];
+};
+
+export {
+	calculateCenter,
+	calculateProjectedCenter,
+	sortByName,
+	sortByDistance,
+	distanceToLyFormat,
+	formatDistanceInfo,
+};

@@ -8,4 +8,4 @@ const BurgerMenu = () => {
 	);
 };
 
-export default BurgerMenu;
+export { BurgerMenu };

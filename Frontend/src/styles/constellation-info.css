@@ -4,7 +4,6 @@
     height: fit-content;
     max-height: 80%;
     overflow: scroll;
-    anchor-name: --constellation-info;
     position: relative;
 }
 
@@ -58,16 +57,16 @@
     }
 
     &::after {
-        content: "Estimated from parallax, large distances are likely inaccurate.";
+        content: "Estimated from parallax, possibly inaccurate.";
         background-color: var(--background-color);
         color: var(--text-color);
         padding: 0.5em;
         border-radius: 0.25em;
         position: absolute;
-        width: max-content;
-        max-width: 200px;
-        top: -200%;
-        left: 0;
+        font-size: small;
+        width: fit-content;
+        top: -32px;
+        left: -16px;
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s;

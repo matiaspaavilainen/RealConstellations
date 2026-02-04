@@ -17,4 +17,8 @@ interface Constellation {
 	connections: string[];
 }
 
-export type { Constellation, Star };
+interface CameraControlsHandle {
+	resetToDefault: () => void;
+}
+
+export type { Constellation, Star, CameraControlsHandle };

@@ -1,9 +1,12 @@
-import type { Dispatch, SetStateAction } from "react";
+import { type Dispatch, type SetStateAction } from "react";
+import type { Constellation } from "../types/types";
 
 const SearchBar = ({
-	setSelectedConstellation,
+	constellationsArray,
+	setSelectedConstellationName,
 }: {
-	setSelectedConstellation: Dispatch<SetStateAction<string>>;
+	constellationsArray: Constellation[];
+	setSelectedConstellationName: Dispatch<SetStateAction<string>>;
 }) => {
 	return (
 		<form

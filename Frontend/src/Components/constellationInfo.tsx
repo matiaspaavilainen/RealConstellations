@@ -1,28 +1,15 @@
 import axios from "axios";
-import type { Constellation, Star } from "../types/types";
 import { useEffect, useState, type Dispatch, type SetStateAction } from "react";
-import { sortByName } from "../utils/utils";
-
-const distanceToLyFormat = (distance: number, digits: number = 2) => {
-	return (distance * 3.26156).toFixed(digits) + " ly";
-};
-
-const formatDistanceInfo = (stars: Star[]) => {
-	const averageDistance =
-		stars.reduce((sum, star) => sum + star.distance, 0) / stars.length;
-	const sortedByDistance = stars.toSorted(
-		(a: Star, b: Star) => a.distance - b.distance,
-	);
-
-	// stars can't be null when this function is called
-	const nearestStar = sortedByDistance.at(0)!.distance;
-	const farthestStar = sortedByDistance.at(-1)!.distance;
-	return [averageDistance, nearestStar, farthestStar];
-};
+import type { Constellation, Star } from "../types/types";
+import {
+	distanceToLyFormat,
+	formatDistanceInfo,
+	sortByName,
+} from "../utils/utils";
 
 const embedButtonsToText = (
 	text: string,
-	setSelectedConstellation: Dispatch<SetStateAction<string>>,
+	setSelectedConstellationName: Dispatch<SetStateAction<string>>,
 ) => {
 	const matches = [...text.matchAll(/<([^>]+)>/g)];
 	const buttonWords = matches.map((match) => match[0]);
@@ -55,7 +42,7 @@ const embedButtonsToText = (
 				continue;
 			}
 			buttonsEmbedded.push(
-				<button onClick={() => setSelectedConstellation(name)}>
+				<button onClick={() => setSelectedConstellationName(name)}>
 					{name}
 				</button>,
 			);
@@ -77,26 +64,30 @@ const getConstellationInfo = async (constellationName: string) => {
 };
 
 const ConstellationInfo = ({
-	currentConstellation,
-	setSelectedConstellation,
+	selectedConstellationName,
+	setSelectedConstellationName,
+	setDetailedView,
+	onResetCamera,
 }: {
-	currentConstellation: string;
-	setSelectedConstellation: Dispatch<SetStateAction<string>>;
+	selectedConstellationName: string;
+	setSelectedConstellationName: Dispatch<SetStateAction<string>>;
+	setDetailedView: Dispatch<SetStateAction<boolean>>;
+	onResetCamera: () => void;
 }) => {
-	const [constellation, setConstellation] = useState<Constellation>();
+	const [constellationData, setConstellationData] = useState<Constellation>();
 
 	useEffect(() => {
-		if (currentConstellation) {
-			getConstellationInfo(currentConstellation).then(
+		if (selectedConstellationName) {
+			getConstellationInfo(selectedConstellationName).then(
 				(constellation: Constellation) => {
-					setConstellation(constellation);
+					setConstellationData(constellation);
 				},
 			);
 		}
-	}, [currentConstellation]);
+	}, [selectedConstellationName]);
 
-	if (constellation?.general_info && currentConstellation) {
-		const stars: Star[] = constellation.astronomical_data;
+	if (constellationData?.general_info && selectedConstellationName) {
+		const stars: Star[] = constellationData.astronomical_data;
 
 		const [averageDistance, nearestStar, farthestStar] = [
 			...formatDistanceInfo(stars),
@@ -104,12 +95,14 @@ const ConstellationInfo = ({
 
 		return (
 			<div id="constellation-info">
-				<h1 id="constellation-info__name">{constellation.name}</h1>
+				<h1 id="constellation-info__name">{constellationData.name}</h1>
 
 				<button
 					id="constellation-info__close"
 					onClick={() => {
-						setSelectedConstellation("");
+						onResetCamera();
+						setSelectedConstellationName("");
+						setDetailedView(false);
 					}}>
 					X
 				</button>
@@ -120,26 +113,28 @@ const ConstellationInfo = ({
 
 				<div id="constellation-info__text">
 					{...embedButtonsToText(
-						constellation.general_info,
-						setSelectedConstellation,
+						constellationData.general_info,
+						setSelectedConstellationName,
 					)}
 				</div>
-				{stars.toSorted(sortByName).map((star) => {
-					return (
-						<p
-							className="constellation-info__star"
-							key={star.name}>
-							{star.name} {distanceToLyFormat(star.distance)}{" "}
-							<span id="constellation-info__star--estimated">
-								{star.distance_estimated ? "*" : ""}
-							</span>
-						</p>
-					);
-				})}
+				<ul>
+					{stars.toSorted(sortByName).map((star) => {
+						return (
+							<li
+								className="constellation-info__star"
+								key={star.name}>
+								{star.name} {distanceToLyFormat(star.distance)}{" "}
+								<span id="constellation-info__star--estimated">
+									{star.distance_estimated ? "*" : ""}
+								</span>
+							</li>
+						);
+					})}
+				</ul>
 				<p id="constellation-info__source">
 					Sources:{" "}
 					<a
-						href={`https://en.wikipedia.org/wiki/${currentConstellation}_(constellation)`}
+						href={`https://en.wikipedia.org/wiki/${selectedConstellationName}_(constellation)`}
 						target="_blank">
 						Wikipedia
 					</a>
