@@ -17,13 +17,11 @@ A project to visualize how constellations look in 3D space. As the stars that ar
 - Visualizes all 88 constellations
 - Decent orbital controls
 - Current view is based at the barycenter of the solar system. It shouldn't affect the shapes basically at all (a few million km vs. lightyears)
+- 3D visualization works, needs some polishing in transitions and such, and more controls
 
 ## Necessary features
 
-- Possibility to click on the constellation to zoom into it
-  - Projection outline and 3D shape
-  - Projection as a plane facing earth
-  - Can rotate the view to see the actual shape from different angles
+- Projection of the constellation towards Earth in the 3D view
 - Search box
   - Constellations
   - Stars
@@ -39,3 +37,4 @@ A project to visualize how constellations look in 3D space. As the stars that ar
 - Other skycultures, should be relatively simple from a technical standpoint, just need the data
 - Better models for the stars in the detailed view
 - Realistic size for the star, not sure how possible in terms of making it visible, based on apparent magnitude maybe
+  - Does the data exist in simbad?
