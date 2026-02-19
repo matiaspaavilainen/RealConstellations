@@ -30,7 +30,7 @@ app = FastAPI()
 templates = Jinja2Templates(directory="templates")
 
 load_dotenv(".env")
-ENV = os.getenv("ENV", "development")  # Set ENV=production in .env for prod
+ENV = os.getenv("ENV")
 is_dev = ENV == "development"
 db_user = os.getenv("MONGO_DEV_USER") if is_dev else os.getenv("MONGO_PROD_USER")
 db_pass = os.getenv("MONGO_DEV_PASS") if is_dev else os.getenv("MONGO_PROD_PASS")
