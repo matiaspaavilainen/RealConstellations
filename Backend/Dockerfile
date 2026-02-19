@@ -1,6 +1,7 @@
 # syntax=docker/dockerfile:1
 
 ARG NODE_VERSION=25.2.1
+ARG PYTHON_VERSION=3.14.3
 
 # Build frontend
 FROM node:${NODE_VERSION}-alpine AS frontend-build
@@ -11,7 +12,6 @@ COPY Frontend/ ./
 RUN npm run build
 
 # Backend
-ARG PYTHON_VERSION=3.14.3
 FROM python:${PYTHON_VERSION} AS base
 
 ENV PYTHONDONTWRITEBYTECODE=1
