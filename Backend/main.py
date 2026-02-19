@@ -43,7 +43,7 @@ client = AsyncMongoClient(db_url, username=db_user, password=db_pass)
 database = client.get_database("constellations")
 collection = database.get_collection("constellations")
 
-favicon_path = "favicon.ico"
+favicon_path = "static/favicon.ico"
 
 
 @app.get("/favicon.ico", include_in_schema=False)
