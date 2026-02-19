@@ -30,10 +30,14 @@ app = FastAPI()
 templates = Jinja2Templates(directory="templates")
 
 load_dotenv(".env")
-db_user = os.getenv("MONGO_PROD_USER")
-db_pass = os.getenv("MONGO_PROD_PASS")
-db_url = os.getenv("MONGO_DB_URL_LOCAL")
-print(f"Logging in as {db_user}:{db_pass}")
+ENV = os.getenv("ENV", "development")  # Set ENV=production in .env for prod
+is_dev = ENV == "development"
+db_user = os.getenv("MONGO_DEV_USER") if is_dev else os.getenv("MONGO_PROD_USER")
+db_pass = os.getenv("MONGO_DEV_PASS") if is_dev else os.getenv("MONGO_PROD_PASS")
+db_url = os.getenv("MONGO_DB_URL_LOCAL") if is_dev else os.getenv("MONGO_DB_URL")
+
+print(f"Logging in as {db_user}")
+print(f"Running in {'development' if is_dev else 'production'} mode")
 
 client = AsyncMongoClient(db_url, username=db_user, password=db_pass)
 database = client.get_database("constellations")
