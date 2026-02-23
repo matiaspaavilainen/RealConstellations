@@ -1,21 +1,16 @@
 import "./styles/App.css";
 import axios from "axios";
-import {
-	forwardRef,
-	useEffect,
-	useImperativeHandle,
-	useRef,
-	useState,
-} from "react";
+import { useEffect, useRef, useState } from "react";
 import { PerspectiveCamera as PerspectiveCameraType, Vector3 } from "three";
 import { CameraControls, PerspectiveCamera } from "@react-three/drei";
-import { Canvas, useThree } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 
 import { SearchBar } from "./Components/searchBar";
 import { BurgerMenu } from "./Components/burgerMenu";
 import { ConstellationInfo } from "./Components/constellationInfo";
 import { ConstellationObject } from "./Components/constellationObject";
-import type { CameraControlsHandle, Constellation } from "./types/types";
+import type { CameraControlsHandle, Constellation, Star } from "./types/types";
+import { CameraControlsExposer } from "./utils/utils";
 
 const getConstellations = async () => {
 	try {
@@ -34,32 +29,6 @@ const getConstellations = async () => {
 	}
 };
 
-const CameraControlsExposer = forwardRef<CameraControlsHandle, object>(
-	(_, ref) => {
-		const { controls } = useThree<{ controls: CameraControls }>();
-
-		useImperativeHandle(
-			ref,
-			() => ({
-				resetToDefault: () => {
-					controls.setLookAt(
-						0.000004861 - 0.000000045,
-						0,
-						0,
-						0,
-						0,
-						0,
-						true,
-					);
-				},
-			}),
-			[controls],
-		);
-
-		return null;
-	},
-);
-
 const App = () => {
 	const [selectedConstellationName, setSelectedConstellationName] =
 		useState("");
@@ -76,6 +45,10 @@ const App = () => {
 
 	const handleResetCamera = () => {
 		cameraControlsRef.current?.resetToDefault();
+	};
+
+	const handleMoveToConstellation = (starDataArray: Star[]) => {
+		cameraControlsRef.current?.moveToConstellation(starDataArray);
 	};
 
 	useEffect(() => {
@@ -102,6 +75,7 @@ const App = () => {
 					setSelectedConstellationName={setSelectedConstellationName}
 					setDetailedView={setDetailedView}
 					onResetCamera={handleResetCamera}
+					onMoveToConstellation={handleMoveToConstellation}
 				/>
 			</div>
 			<Canvas

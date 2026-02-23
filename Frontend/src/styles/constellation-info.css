@@ -1,24 +1,54 @@
-#constellation-info {
-    padding: 0 1em;
+.constellation-info {
     justify-self: end;
     height: fit-content;
     max-height: 80%;
     overflow: scroll;
-    position: relative;
+    border: 1px solid;
+    border-radius: 1em;
+    transition: all 0.4s;
+    background-color: transparent;
+    backdrop-filter: blur(1em);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &:hover {
+        color: var(--background-color);
+        background-color: var(--text-color);
+        border-radius: 0;
+        transition: all 0.4s;
+    }
 }
 
-#constellation-info__close {
+.constellation-info.small {
+    height: 3.5em;
+}
+
+
+#constellation-info__controls {
+    margin: 0.5em 0.5em 0.5em 1em;
+    display: grid;
+    grid-template-columns: 1fr 2.5em 2.5em 2.5em;
+    align-items: baseline;
+    gap: 1em;
+    background-color: transparent;
+}
+
+#constellation-info__name {
+    align-self: center;
+    text-decoration: underline;
+    margin: 0;
+}
+
+#constellation-info__controls button {
     all: unset;
-    position: absolute;
-    top: 0.5em;
-    right: 0;
+    justify-self: end;
     text-align: center;
     border: 1px solid;
     border-radius: 0.5em;
-    height: 2.5em;
-    width: 2.5em;
-    margin: 0 0.5em;
-    border-color: var(--text-color);
+    height: 2.4em;
+    width: 2.4em;
     transition: all 0.4s;
 
     &:hover {
@@ -26,14 +56,47 @@
         border-radius: 0;
         color: var(--text-color);
         transition: all 0.4s;
+        cursor: pointer;
+    }
+
+    &:hover>#refresh-button {
+        transition: all 0.4s;
+        scale: 1.2;
+        rotate: 180deg
+    }
+
+    &:hover>#default-button {
+        transition: all 0.4s;
+        scale: 1.2;
+    }
+
+    &:hover>#hide-button,
+    &:hover>#show-button {
+        transition: all 0.4s;
+        scale: 1.2;
     }
 }
 
-#constellation-info__text {
+#constellation-info__controls i {
+    transition: all 0.4s;
+}
+
+#constellation-info__box {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0 1em 1em;
+}
+
+#constellation-info__box p {
+    margin: 0;
+}
+
+#constellation-info__general {
     text-wrap: pretty;
 }
 
-#constellation-info__text button {
+#constellation-info__general button {
     all: unset;
     color: inherit;
     text-decoration-line: underline;
@@ -41,13 +104,18 @@
     text-decoration-color: attr(color);
 }
 
-#constellation-info__text button:hover {
+#constellation-info__general button:hover {
     cursor: pointer;
     text-decoration-style: solid;
 }
 
 .constellation-info__star {
     position: relative;
+}
+
+#constellation-info__box-stars {
+    margin: 0;
+    padding-left: 1.5em;
 }
 
 #constellation-info__star--estimated {
@@ -78,7 +146,6 @@
         visibility: visible;
     }
 }
-
 
 #constellation-info__source a {
     color: inherit;

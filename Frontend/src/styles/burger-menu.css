@@ -1,7 +1,27 @@
+#side {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
 #burger-menu {
     height: 3.5em;
     width: 3.5em;
     font-size: medium;
+    border: 1px solid;
+    border-radius: 1em;
+    background-color: transparent;
+    backdrop-filter: blur(1em);
+    color: var(--text-color);
+    ;
+
+    &:hover {
+        color: var(--background-color);
+        background-color: var(--text-color);
+        border-radius: 0;
+        transition: all 0.4s;
+        cursor: pointer;
+    }
 }
 
 

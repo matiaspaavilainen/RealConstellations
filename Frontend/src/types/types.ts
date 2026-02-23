@@ -19,6 +19,7 @@ interface Constellation {
 
 interface CameraControlsHandle {
 	resetToDefault: () => void;
+	moveToConstellation: (starDataArray: Star[]) => void;
 }
 
 export type { Constellation, Star, CameraControlsHandle };

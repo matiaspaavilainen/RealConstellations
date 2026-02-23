@@ -35,17 +35,5 @@ body,
 
 .top-container>* {
     z-index: 2;
-    background-color: transparent;
-    backdrop-filter: blur(1em);
-    color: var(--text-color);
-    border: 1px solid;
-    border-radius: 1em;
     transition: all 0.4s;
-
-    &:hover {
-        color: var(--background-color);
-        background-color: var(--text-color);
-        border-radius: 0;
-        transition: all 0.4s;
-    }
 }

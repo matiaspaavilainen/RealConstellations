@@ -9,11 +9,7 @@ import {
 	type SetStateAction,
 } from "react";
 
-import {
-	calculateCenter,
-	calculateProjectedCenter,
-	sortByDistance,
-} from "../utils/utils";
+import { calculateProjectedCenter } from "../utils/utils";
 import { type Constellation, type Star } from "../types/types";
 import { useFrame, useThree } from "@react-three/fiber";
 
@@ -38,31 +34,33 @@ const StarObject = ({
 	const baseFontSize = 0.015;
 
 	useFrame(() => {
-		const distanceToCamera = controls
-			?.getPosition(new Vector3())
-			?.distanceTo(position);
-		if (meshRef.current) {
+		if (!meshRef.current) return;
+
+		if (nameVisible) {
+			const distanceToCamera = controls
+				?.getPosition(new Vector3())
+				?.distanceTo(position);
 			const scale = distanceToCamera * baseStarSize;
 			meshRef.current.scale.setScalar(scale);
-		}
-
-		if (textRef.current) {
 			textRef.current.fontSize = distanceToCamera * baseFontSize;
+		} else {
+			// Reset to default size when not in detailed view
+			meshRef.current.scale.setScalar(1);
 		}
 	});
 
-	if (nameVisible) {
-		const textPos = new Vector3().copy(position).add(new Vector3(0, 0, 0));
+	const textPos = new Vector3().copy(position).addScalar(0);
 
-		return (
-			<>
-				<mesh
-					ref={meshRef}
-					position={position}
-					visible={visible}>
-					<sphereGeometry args={[1]} />
-					<meshBasicMaterial color={"white"} />
-				</mesh>
+	return (
+		<>
+			<mesh
+				ref={meshRef}
+				position={position}
+				visible={visible}>
+				<sphereGeometry args={[nameVisible ? 1 : distance / 300]} />
+				<meshBasicMaterial color={"white"} />
+			</mesh>
+			{nameVisible && (
 				<Billboard
 					position={textPos}
 					visible={nameVisible}>
@@ -72,35 +70,27 @@ const StarObject = ({
 						{name}
 					</Text>
 				</Billboard>
-			</>
-		);
-	} else {
-		return (
-			<mesh
-				position={position}
-				visible={visible}>
-				{/* normalized size */}
-				<sphereGeometry args={[distance / 300]} />
-				<meshBasicMaterial color={"white"} />
-			</mesh>
-		);
-	}
+			)}
+		</>
+	);
 };
 
 const ConnectingLine = ({
 	start,
 	end,
 	visible,
+	hovered,
 }: {
 	start: Vector3;
 	end: Vector3;
 	visible: boolean;
+	hovered: boolean;
 }) => {
 	return (
 		<mesh visible={visible}>
 			<Line
 				points={[start, end]}
-				lineWidth={1}
+				lineWidth={hovered ? 2 : 1}
 			/>
 			<lineBasicMaterial color={"white"} />
 		</mesh>
@@ -110,52 +100,26 @@ const ConnectingLine = ({
 const ConstellationMarker = ({
 	name,
 	visible,
-	controls,
 	starDataArray,
+	hovered,
+	setHovered,
 	setSelectedConstellation,
 	setDetailedView,
 }: {
 	name: string;
 	visible: boolean;
-	controls: CameraControls;
 	starDataArray: Star[];
+	hovered: boolean;
+	setHovered: Dispatch<SetStateAction<boolean>>;
 	setSelectedConstellation: Dispatch<SetStateAction<string>>;
 	setDetailedView: Dispatch<SetStateAction<boolean>>;
 }) => {
-	const [hovered, setHovered] = useState(false);
 	// the point where the text should be at
 	const projectedCenter: Vector3 = calculateProjectedCenter(starDataArray);
 
 	const handleConstellationClick = () => {
 		setSelectedConstellation(name);
 		setDetailedView(true);
-		// center point of the constellation to orbit around
-		const calculatedConstellationCenter: Vector3 =
-			calculateCenter(starDataArray);
-		// Direction of Earth
-		const viewFromEarthVec: Vector3 = new Vector3().copy(
-			calculatedConstellationCenter,
-		);
-
-		const furthestStarPosition =
-			starDataArray.toSorted(sortByDistance)[0].cartesian;
-
-		// set the lenght of the vector to be the same as the furthest star from center
-		const lookFromEarth: Vector3 = viewFromEarthVec.setLength(
-			calculatedConstellationCenter.distanceTo(
-				new Vector3(...furthestStarPosition),
-			) / 2,
-		);
-
-		controls.setLookAt(
-			lookFromEarth.x,
-			lookFromEarth.y,
-			lookFromEarth.z,
-			calculatedConstellationCenter.x,
-			calculatedConstellationCenter.y,
-			calculatedConstellationCenter.z,
-			true,
-		);
 	};
 
 	return (
@@ -200,6 +164,8 @@ const ConstellationObject = ({
 	const starDataArray = constellation.astronomical_data;
 	const name = constellation.name;
 
+	const [hovered, setHovered] = useState(false);
+
 	const {
 		controls,
 	}: {
@@ -229,10 +195,12 @@ const ConstellationObject = ({
 		objectVisible = false;
 	}
 
+	// show star names when in detailed view
 	if (detailedView && selectedConstellationName == name) {
 		starNameVisible = true;
 	}
 
+	// hide the constellation name
 	if (detailedView) {
 		constellationMarkerVisible = false;
 	}
@@ -255,6 +223,7 @@ const ConstellationObject = ({
 					start={new Vector3(...pair[0])}
 					end={new Vector3(...pair[1])}
 					visible={objectVisible}
+					hovered={hovered}
 				/>
 			))}
 
@@ -262,8 +231,9 @@ const ConstellationObject = ({
 				key={name}
 				name={name}
 				visible={constellationMarkerVisible}
-				controls={controls}
 				starDataArray={starDataArray}
+				hovered={hovered}
+				setHovered={setHovered}
 				setSelectedConstellation={setSelectedConstellationName}
 				setDetailedView={setDetailedView}
 			/>
