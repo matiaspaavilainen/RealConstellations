@@ -3,7 +3,7 @@
     height: fit-content;
     max-height: 80%;
     min-width: fit-content;
-    overflow: hidden;
+    overflow: scroll;
     border: 1px solid;
     border-radius: 1em;
     transition: all 0.4s;
