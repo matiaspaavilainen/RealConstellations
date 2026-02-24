@@ -2,6 +2,8 @@
 
 A project to visualize how constellations look in 3D space. As the stars that are part of constellations are not at the same distance from Earth, we only see the flat projection. Work in progress.
 
+Self-hosted with Docker and Traefik on [realconstellations.com](https://realconstellations.com)
+
 ## Technologies used
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
@@ -12,20 +14,14 @@ A project to visualize how constellations look in 3D space. As the stars that ar
 [![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![React Three Fiber](https://img.shields.io/badge/React%20Three%20Fiber-000000?style=for-the-badge&logo=threedotjs&logoColor=white)](https://docs.pmnd.rs/react-three-fiber/)
 
-## Current features
+## Current status
 
-- Visualizes all 88 constellations
-- Decent orbital controls
-- Current view is based at the barycenter of the solar system. It shouldn't affect the shapes basically at all (a few million km vs. lightyears)
-- 3D visualization works, needs some polishing in transitions and such, and more controls
+- Core functionality works, more or less done.
 
 ## Necessary features
 
-- Projection of the constellation towards Earth in the 3D view
-- Search box
-  - Constellations
-  - Stars
 - Some sort of loading screen maybe needed?
+- Mobile experience works, but needs polishing
 
 ## Would be cool
 
@@ -35,6 +31,5 @@ A project to visualize how constellations look in 3D space. As the stars that ar
 - Or view from other stars
 
 - Other skycultures, should be relatively simple from a technical standpoint, just need the data
-- Better models for the stars in the detailed view
-- Realistic size for the star, not sure how possible in terms of making it visible, based on apparent magnitude maybe
-  - Does the data exist in simbad?
+- Better models for the stars in the detailed view?
+- Realistic colors for stars, does data exist?
