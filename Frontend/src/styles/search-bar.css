@@ -1,14 +1,17 @@
-#search-bar__form {
-    height: 3.5em;
+#search-bar {
     display: flex;
+    height: fit-content;
+    max-width: 20em;
+    min-height: 3.5em;
+    min-width: 3.5em;
+    flex-direction: row;
     justify-self: start;
-    align-items: center;
-    width: 16em;
     border: 1px solid;
     border-radius: 1em;
     background-color: transparent;
     backdrop-filter: blur(1em);
     color: var(--text-color);
+    overflow: hidden;
 
     &:hover {
         color: var(--background-color);
@@ -16,23 +19,62 @@
         border-radius: 0;
         transition: all 0.4s;
     }
+
+    &:hover>#search-bar__results hr {
+        background-color: red;
+    }
 }
 
-#search-bar__form-input,
-#search-bar__form-button {
-    all: unset;
+
+#search-bar i {
+    align-self: baseline;
+    align-content: center;
+    scale: 1.5;
+    width: 3.5em;
+    height: 3.5em;
+}
+
+#search-bar__form {
+    min-height: 3.5em;
+    display: flex;
+    align-items: center;
 }
 
 #search-bar__form-input {
-    margin: 0 1em;
-    height: 100%;
+    all: unset;
+    margin: 0 0.5em;
+    padding: 4px 0;
+    height: fit-content;
+    width: 80%;
+    border-bottom: 1px solid;
 }
 
-#search-bar__form-button {
-    text-align: center;
-    border: 1px solid;
+#search-bar__results {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.search-bar__result {
+    all: unset;
+    padding: 0.5em;
     border-radius: 0.5em;
-    height: 2.5em;
-    width: 2.5em;
-    margin: 0 0.5em;
+    width: 80%;
+
+    &:hover {
+        background-color: var(--background-color);
+        color: var(--text-color);
+        cursor: pointer;
+    }
+
+    &:last-child {
+        margin-bottom: 1em;
+    }
+}
+
+@media (width <=42em) {
+    #search-bar {
+        grid-area: search-bar;
+        
+    }
 }

@@ -1,0 +1,68 @@
+#help-center {
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid;
+    border-radius: 1em;
+    background-color: transparent;
+    backdrop-filter: blur(1em);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: row;
+
+    &:hover {
+        color: var(--background-color);
+        background-color: var(--text-color);
+        border-radius: 0;
+        transition: all 0.4s;
+        cursor: pointer;
+    }
+}
+
+#help-center__button {
+    all: unset;
+    height: 3.5em;
+    width: 3.5em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover>#help-center__button-icon {
+        scale: 1.8;
+        transition: all 0.4s;
+    }
+}
+
+#help-center__button-icon {
+    scale: 1.5;
+    transition: all 0.4s;
+}
+
+#help-center__instructions h3,
+#help-center__instructions p,
+#help-center__instructions ul,
+#help-center__instructions li {
+    margin: 0;
+}
+
+#help-center__instructions p {
+    padding: 2px;
+}
+
+#help-center__instructions ul {
+    padding-left: 1.5em;
+}
+
+#help-center__instructions {
+    margin: 0.5em;
+}
+
+#help-center__instructions-content {
+    width: 20em;
+}
+
+@media (width <=42em) {
+    #help-center {
+        grid-area: help-center;
+    }
+}

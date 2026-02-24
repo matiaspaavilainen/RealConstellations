@@ -6,11 +6,11 @@ import { CameraControls, PerspectiveCamera } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
 import { SearchBar } from "./Components/searchBar";
-import { BurgerMenu } from "./Components/burgerMenu";
 import { ConstellationInfo } from "./Components/constellationInfo";
 import { ConstellationObject } from "./Components/constellationObject";
 import type { CameraControlsHandle, Constellation, Star } from "./types/types";
 import { CameraControlsExposer } from "./utils/utils";
+import { HelpButton } from "./Components/helpButton";
 
 const getConstellations = async () => {
 	try {
@@ -68,8 +68,12 @@ const App = () => {
 	return (
 		<div className="main-content">
 			<div className="top-container">
-				<BurgerMenu />
-				<SearchBar />
+				<HelpButton />
+				<SearchBar
+					setSelectedConstellationName={setSelectedConstellationName}
+					setDetailedView={setDetailedView}
+					constellationsArray={constellationsArray}
+				/>
 				<ConstellationInfo
 					selectedConstellationName={selectedConstellationName}
 					setSelectedConstellationName={setSelectedConstellationName}

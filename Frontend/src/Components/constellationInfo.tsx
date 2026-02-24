@@ -7,6 +7,8 @@ import {
 	sortByName,
 } from "../utils/utils";
 
+import { AnimatePresence, motion } from "motion/react";
+
 const embedButtonsToText = (
 	text: string,
 	setSelectedConstellationName: Dispatch<SetStateAction<string>>,
@@ -103,8 +105,7 @@ const ConstellationInfo = ({
 		];
 
 		return (
-			<div
-				className={`constellation-info ${showInfoBox ? "large" : "small"}`}>
+			<div className="constellation-info">
 				<div id="constellation-info__controls">
 					<h1 id="constellation-info__name">
 						{constellationData.name}
@@ -140,62 +141,80 @@ const ConstellationInfo = ({
 						)}
 					</button>
 				</div>
-				{showInfoBox ? (
-					<div id="constellation-info__box">
-						<div id="constellation-info__stats">
-							<p>
-								Average distance:{" "}
-								{distanceToLyFormat(averageDistance)}
-							</p>
-							<p>
-								Nearest star: {distanceToLyFormat(nearestStar)}
-							</p>
-							<p>
-								Farthest star:{" "}
-								{distanceToLyFormat(farthestStar)}
-							</p>
-						</div>
+				<AnimatePresence>
+					{showInfoBox && (
+						<motion.div
+							layoutId="modal"
+							id="constellation-info__box"
+							initial={{ height: "3.5em" }}
+							animate={{ height: "auto" }}
+							exit={{ height: "3.5em" }}
+							transition={{
+								type: "tween",
+								duration: 0.4,
+								ease: "easeInOut",
+							}}
+							key="box">
+							<div id="constellation-info__stats">
+								<p>
+									Average distance:{" "}
+									{distanceToLyFormat(averageDistance)}
+								</p>
+								<p>
+									Nearest star:{" "}
+									{distanceToLyFormat(nearestStar)}
+								</p>
+								<p>
+									Farthest star:{" "}
+									{distanceToLyFormat(farthestStar)}
+								</p>
+							</div>
 
-						<div id="constellation-info__general">
-							{...embedButtonsToText(
-								constellationData.general_info,
-								setSelectedConstellationName,
-								setDetailedView,
-							)}
-						</div>
-						<ul id="constellation-info__box-stars">
-							{starDataArray.toSorted(sortByName).map((star) => {
-								return (
-									<li
-										className="constellation-info__star"
-										key={star.name}>
-										{star.name}{" "}
-										{distanceToLyFormat(star.distance)}{" "}
-										<span id="constellation-info__star--estimated">
-											{star.distance_estimated ? "*" : ""}
-										</span>
-									</li>
-								);
-							})}
-						</ul>
-						<p id="constellation-info__source">
-							Sources:{" "}
-							<a
-								href={`https://en.wikipedia.org/wiki/${selectedConstellationName}_(constellation)`}
-								target="_blank">
-								Wikipedia
-							</a>
-							{", "}
-							<a
-								href="https://stellarium-web.org/"
-								target="_blank">
-								Stellarium
-							</a>
-						</p>
-					</div>
-				) : (
-					<div></div>
-				)}
+							<div id="constellation-info__general">
+								{...embedButtonsToText(
+									constellationData.general_info,
+									setSelectedConstellationName,
+									setDetailedView,
+								)}
+							</div>
+							<ul id="constellation-info__box-stars">
+								{starDataArray
+									.toSorted(sortByName)
+									.map((star) => {
+										return (
+											<li
+												className="constellation-info__star"
+												key={star.name}>
+												{star.name}{" "}
+												{distanceToLyFormat(
+													star.distance,
+												)}{" "}
+												<span id="constellation-info__star--estimated">
+													{star.distance_estimated
+														? "*"
+														: ""}
+												</span>
+											</li>
+										);
+									})}
+							</ul>
+							<p id="constellation-info__source">
+								Sources:{" "}
+								<a
+									href={`https://en.wikipedia.org/wiki/${selectedConstellationName}_(constellation)`}
+									target="_blank">
+									Wikipedia
+								</a>
+								{", "}
+								<a
+									href="https://stellarium-web.org/"
+									target="_blank">
+									Stellarium
+								</a>
+							</p>
+						</motion.div>
+					)}
+				</AnimatePresence>
 			</div>
 		);
 	} else {
