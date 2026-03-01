@@ -16,20 +16,17 @@ Self-hosted with Docker and Traefik on [realconstellations.com](https://realcons
 
 ## Current status
 
-- Core functionality works, more or less done.
+- Core functionality implemented, and I consider the project more or less complete.
 
-## Necessary features
+## Useful features
 
 - Some sort of loading screen maybe needed?
 - Mobile experience works, but needs polishing
+- Toggle for northern vs. southern hemisphere
 
 ## Would be cool
 
-- Realistic view based on location
-  - Maybe detect user location from IP <https://dev.maxmind.com/geoip/geolocate-an-ip/databases/>
-  - If Earth simulated, user can select the location <https://github.com/dr5hn/countries-states-cities-database>
-- Or view from other stars
-
+- Realistic view based on location on Earth or view from other star systems
 - Other skycultures, should be relatively simple from a technical standpoint, just need the data
-- Better models for the stars in the detailed view?
-- Realistic colors for stars, does data exist?
+- Better models for the stars in the detailed view
+- Realistic colors for stars, does data exist
