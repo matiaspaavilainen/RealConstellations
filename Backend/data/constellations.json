@@ -11,7 +11,7 @@
 				"Alpheratz"
 			],
 			"connections": ["0-1", "1-4", "4-5", "1-2", "2-3"],
-			"info": "Andromeda is one of the 48 constellations listed by Ptolemy. The Andromeda Galaxy (M31) is located next to Nu Andromedae, appearing just outside the constellation. It is named after Andromeda, the daughter of <Cassiopeia>, from Greek mythology."
+			"info": "Andromeda is one of the 48 constellations listed by Ptolemy. The nearest galaxy to us, Andromeda Galaxy (M31) is located next to Nu Andromedae, appearing just outside the constellation. It is named after Andromeda, the daughter of <Cassiopeia> and <Cepheus>, from Greco-Roman mythology. She was chained to a rock by Poseidon, to be killed by <Cetus>. <Perseus> saved her, and they got married. In Babylonian astronomy, the stars that make up <Pisces> and the middle portion of Andromeda, formed a constellation representing a fertility Goddess."
 		},
 
 		{
@@ -95,7 +95,7 @@
 				"6-7",
 				"3-8"
 			],
-			"info": "Aquila means eagle in Latin, and it represents the bird that carried Zeus/Jupiter's thunderbolts. Aquila is one of the 48 constellations listed by Ptolemy. It had been mentioned earlier in the 4th century BC. The Greek Aquila is likely based on the Babylonian constellation of the Eagle."
+			"info": "Aquila means eagle in Latin, and it represents the bird that carried Zeus/Jupiter's thunderbolts. Aquila is one of the 48 constellations listed by Ptolemy. It had been mentioned earlier in the 4th century BC. The Greek Aquila is likely based on the Babylonian constellation of the Eagle. The brightest star Altair, is one vertex of the Summer Triangle asterism. The Hercules-Corona Borealis Great Wall is within Aquila, which is possibly the single largest mass concentration of galaxies in the known Universe, making it the most massive structure we know of. NASA's Pioneer 11 space probe is expected to pass near Lambda Aquilae in about 4 million years."
 		},
 
 		{
@@ -123,7 +123,7 @@
 				"41 Arietis"
 			],
 			"connections": ["0-1", "1-2", "2-3"],
-			"info": "Aries is one of the 12 zodiacs, and it means ram (male sheep) in Latin. Aries is one of the 48 constellations listed by Ptolemy. It has represented a ram since late Babylonian times. Before that, it formed a farmhand. Aries is a relatively dim constellation."
+			"info": "Aries is one of the 12 zodiacs, and it means ram (male sheep) in Latin. Aries is one of the 48 constellations listed by Ptolemy. It has represented a ram since late Babylonian times. Before that, it was known as \"The Agrarian Worker\" or \"The Hired Man\". Aries is a relatively dim constellation with only two stars above the 3rd magnitude."
 		},
 
 		{
@@ -151,7 +151,7 @@
 				"4-5",
 				"6-7"
 			],
-			"info": "Auriga is Latin for \"charioteer\". It is one of the 48 constellations listed by Ptolemy. The brightest star Capella, is an unusual multi-star system. The first record of Auriga was in Mesopotamia as a constellation called GAM, depictinga scimitar. It might have represented only Capella, or the whole constellation."
+			"info": "Auriga is Latin for \"charioteer\". It is one of the 48 constellations listed by Ptolemy. In Greek mythology Auriga is often identified as the hero Erichthonius of Athens, who was raised by Athena. He was credited to be the inventor of the quadriga, the four horse chariot. Auriga is also identified as Phaethon in late antiquity by the poets Claudian and Nonnus. The first record of Auriga was in Mesopotamia as a constellation called GAM, depicting a scimitar. It might have represented only Capella, or the whole constellation. The brightest star Capella, is an unusual multi-star system and is one of the brightest in the night sky. Given its brightness, it was important for multiple other cultures."
 		},
 
 		{
@@ -185,7 +185,7 @@
 				"9-11",
 				"10-11"
 			],
-			"info": "Boötes means ox-driver in Latin and Greek. It is one of the 48 constellations listed by Ptolemy. The constellation was known by the ancient Babylonians, and it is mentioned in Homer's Odyssey."
+			"info": "Boötes means ox-driver in Latin and Greek. It is one of the 48 constellations listed by Ptolemy. The constellation was known by the ancient Babylonians as the god Enlil, and it is mentioned in Homer's Odyssey. It is not clear who Boötes is supposed to depict in Greek mythology, and is associated with at least Philomenus, Icarius and Arcas. The 4th brightest star in the night sky, the orange giant Arcturus, is a part of Boötes. The annual Qaudrantic meteor shower appears to radiate from Boötes in early January, but the meteors are very dim."
 		},
 
 		{
@@ -224,7 +224,7 @@
 				"Iota Cancri"
 			],
 			"connections": ["0-2", "1-2", "2-3", "3-4", "3-5"],
-			"info": "Cancer means \"crab\" in Latin, and is depicted as such. It is one of the 12 zodiacs, and the dimmest of them with only two stars above the 3rd magnitude. At the center of the astrum  lies the open cluster Praesepe (M44) or the Beehive Cluster. The constellation also has 10 stars with known planets."
+			"info": "Cancer means \"crab\" in Latin, and is depicted as such. It is one of the 12 zodiacs, and the dimmest of them with only two stars above the 3rd magnitude. It was also depicted as a scarab by the ancient Egyptians, and both a crab and a snapping turtle by the Babylonians. At the center of the astrum lies the open cluster Praesepe (M44) or the Beehive Cluster. The constellation also has 10 stars with known planets."
 		},
 
 		{
@@ -280,7 +280,7 @@
 			"name": "Canis Minor",
 			"shape_stars": ["Procyon", "Gomeisa"],
 			"connections": ["0-1"],
-			"info": "Canis Minor is Latin for \"lesser dog\". It is one of the 48 constellations listed by Ptolemy. Along with <Canis Major>, they are often depicted following <Orion> the hunter. In contrast to <Canis Major>, Canis Minor is quite small, and contains only two bright stars, which make up it's asterism. Procyon is the 8th brigtest star in the night sky. Interestingly the stars of the asterism are only 1.12 light years away from each other."
+			"info": "Canis Minor is Latin for \"lesser dog\". It is one of the 48 constellations listed by Ptolemy. Along with <Canis Major>, they are often depicted following <Orion> the hunter. In contrast to <Canis Major>, Canis Minor is quite small, and contains only two bright stars, which make up its asterism. Procyon is the 8th brightest star in the night sky. Interestingly the stars of the asterism are only 1.12 light years away from each other."
 		},
 
 		{
@@ -307,7 +307,7 @@
 				"6-7",
 				"7-8"
 			],
-			"info": "Capricornus is Latin for \"horned goat\". It is one of the 48 constellations listed by Ptolemy. It is often depicted as a mythical creature sea goat; half goat, half fish."
+			"info": "Capricornus is Latin for \"horned goat\" or \"goat horn\". It is one of the 48 constellations listed by Ptolemy. It has been depicted as a mythical creature sea goat; half goat, half fish, since the Middle Bronze Age. It is a faint constellation with only one star above the 3rd magnitude. Even though it's faint, it was depicted as early as the 21st century BCE, and was explicitly recorded by the Babylonians before 1000 BCE as a symbol for their god Ea."
 		},
 
 		{
@@ -358,7 +358,7 @@
 				"Segin"
 			],
 			"connections": ["0-1", "1-2", "2-3", "3-4"],
-			"info": "Cassiopeia is named after the queen Cassiopeia, mother of <Andromeda>, in Greek mythology. It is one of the 48 constellations listed by Ptolemy. Cassiopeia was the wife of King <Cepheus>, a constellation next to it. Cassiopeia and it's stars have formed constellations in multilple cultures. Cassiopeia also contains numerous deep space objects, such as open clusters and supernova remnants."
+			"info": "Cassiopeia is named after the queen Cassiopeia, mother of <Andromeda>, in Greek mythology. It is one of the 48 constellations listed by Ptolemy. Cassiopeia was the wife of King <Cepheus>, a constellation next to it. Cassiopeia and its stars have formed constellations in multilple cultures. Cassiopeia also contains numerous deep space objects, such as open clusters and supernova remnants."
 		},
 
 		{
@@ -413,7 +413,7 @@
 				"Zeta Cephei"
 			],
 			"connections": ["0-1", "0-4", "1-2", "1-3", "2-3", "3-4"],
-			"info": "Cepheus represents the king of Aethiopia in Greek Mythology. It is one of the 48 constellations listed by Ptolemy. Cepheus is the husband of <Cassiopeia> and the father of <Andromeda>. Cepheus contains the hyperluminous quasar S5 0014+81, which hosts one of the largest known supermassive black holes (40 billion solar masses) at it's center. This quasar is said to be one of the most powerful objects in the known universe."
+			"info": "Cepheus represents the king of Aethiopia in Greek Mythology. It is one of the 48 constellations listed by Ptolemy. Cepheus is the husband of <Cassiopeia> and the father of <Andromeda>. Cepheus contains the hyperluminous quasar S5 0014+81, which hosts one of the largest known supermassive black holes (40 billion solar masses) at its center. This quasar is said to be one of the most powerful objects in the known universe."
 		},
 
 		{
@@ -482,7 +482,7 @@
 			"name": "Circinus",
 			"shape_stars": ["Beta Circini", "Xami", "Gamma Circini"],
 			"connections": ["0-1", "1-2"],
-			"info": "Circinus is Latin for compass the drafting tool to draw circles. It was defined by Nicolas-Louis de Lacaille in 1756. Circinus is quite dim, with it's brightest star reaching a magnitude of 3.19. "
+			"info": "Circinus is Latin for compass the drafting tool to draw circles. It was defined by Nicolas-Louis de Lacaille in 1756. Circinus is quite dim, with its brightest star reaching a magnitude of 3.19. "
 		},
 
 		{
@@ -632,7 +632,7 @@
 				"Delta Delphini"
 			],
 			"connections": ["0-1", "1-2", "1-4", "2-3", "3-4"],
-			"info": "Delphinus is the Latinized Greek word for \"dolphin\". It is one of the 48 constellations listed by Ptolemy. Delphinus is associated with two stories in Greek Mythology. The stars of Delphinus correspond to constellations in Hindu and Polynesian cultures. It is a dim constellation, with only two stars above the 4th magnitude. "
+			"info": "Delphinus is the Latinized Greek word for \"dolphin\". It is one of the 48 constellations listed by Ptolemy. Delphinus is associated with two stories in Greek Mythology. In the first one, Delphinus was sent by Poseidon to find Amphitrite, and persuaded her to accept Poseidons proposal for marriage. In the second story, a dolphin saved the Greek poet Arion of Lesbos, enchanted by his music. The stars of Delphinus also correspond to constellations in Hindu and Polynesian cultures. It is a dim constellation, with only two stars above the 4th magnitude."
 		},
 
 		{
@@ -645,7 +645,7 @@
 				"Delta Doradus"
 			],
 			"connections": ["0-1", "1-2", "2-3", "2-4", "3-4"],
-			"info": "Dorado is Spanish for \"golden\", and it referst to mahi-mahi or dolphinfish. It was named in the late 16th century by Petrus Plancius. Most of the Large Magellanic Cloud is within Dorado's borders. Even though the name isn't Latin it is treated as such when naming it's stars, using the genitive Doradus."
+			"info": "Dorado is Spanish for \"golden\", and it refers to mahi-mahi or dolphinfish. It was named in the late 16th century by Petrus Plancius. Most of the Large Magellanic Cloud is within Dorado's borders. Even though the name isn't Latin it's treated as such when naming its stars, using the genitive Doradus."
 		},
 
 		{
@@ -760,7 +760,7 @@
 				"25-26",
 				"26-27"
 			],
-			"info": "Eridanus represents a river, and it's name was taken as a Latin name for the River Po in Italy. It is one of the 48 constellations listed by Ptolemy. In Roman mythology it is linked to Phaethon's myth. It is said to depict the route he drove with Helios' sky chariot. Later it was also considered to be a path of souls. It has also been conflated with the Nile River."
+			"info": "Eridanus represents a river, and its name was taken as a Latin name for the River Po in Italy. It is one of the 48 constellations listed by Ptolemy. In Roman mythology it is linked to Phaethon's myth. It is said to depict the route he drove with Helios' sky chariot. Later it was also considered to be a path of souls. It has also been conflated with the Nile River."
 		},
 
 		{
@@ -809,7 +809,7 @@
 				"14-15",
 				"15-16"
 			],
-			"info": "Gemini is Latin for \"twins\", and is one of the 12 zodiacs. The twins it is associated are Castor and Pollux, which are also the brightest stars in the constellation. It is one of the 48 constellations listed by Ptolemy. The stars Pollux and Castor were also known in Babylon as the Great Twins, depicting minor gods Meshlamtaea and Lugalirra."
+			"info": "Gemini is Latin for \"twins\", and is one of the 12 zodiacs. The twins it is associated with are Castor and Pollux, the brightest stars in the constellation. It is one of the 48 constellations listed by Ptolemy. The stars Pollux and Castor were also known in Babylon as the Great Twins, depicting minor gods Meshlamtaea and Lugalirra."
 		},
 
 		{
@@ -880,7 +880,7 @@
 				"15-16",
 				"16-17"
 			],
-			"info": "Hercules is a Roman mythology hero, adapted from the Greek hero Heracles, and he is the son of Jupiter. It is one of the 48 constellations listed by Ptolemy. One of Hercules' 12 labours was killing the multi-headed monster <Hydra>. Hercules could be a distorted version of the Babyloninan constellation Standing Gods. Hercules is the largest constellation with no 1st or 2nd magnitude stars, and there are 15 stars known to have planets."
+			"info": "Hercules is a Roman mythology hero, adapted from the Greek hero Heracles, and he is the son of Jupiter. It is one of the 48 constellations listed by Ptolemy. One of Hercules' 12 labours was killing the multi-headed monster <Hydra>. Hercules could be a distorted version of the Babyloninan constellation \"Standing Gods\". Hercules is the largest constellation with no 1st or 2nd magnitude stars, and it contains 15 stars with known planets."
 		},
 
 		{
@@ -936,7 +936,7 @@
 				"15-16",
 				"16-17"
 			],
-			"info": "Hydra represents a female water snake in opposition to the small <Hydrus>, the male water snake. It is the largest and also the longest of the 88 constellations. It is one of the 48 constellations listed by Ptolemy. It is likely an adaptation of the Babylonian constellation \"serpent\". It is also associated with the monster Hydra, which was killed by <Hercules>. Despite it's size, it only contains two stars brighter than the 3rd magnitude."
+			"info": "Hydra represents a female water snake in opposition to the small <Hydrus>, the male water snake. It is the largest and also the longest of the 88 constellations. It is one of the 48 constellations listed by Ptolemy. It is likely an adaptation of the Babylonian constellation \"serpent\". It is also associated with the monster Hydra, which was killed by <Hercules>. Despite its size, it only contains two stars brighter than the 3rd magnitude."
 		},
 
 		{
@@ -949,7 +949,7 @@
 				"Beta Hydri"
 			],
 			"connections": ["0-1", "1-2", "2-3", "3-4"],
-			"info": "Hydrus represents a male water snake in opposition to the massive <Hydra>, the female water snake. It was created by Petrus Plancius in the late 1500s. The brightest star is Beta Hydri, which is also the closest reasonably bright star to the south celestial pole, making it useful for navigation. Four star systems have been fouind to have planets."
+			"info": "Hydrus represents a male water snake in opposition to the massive <Hydra>, the female water snake. It was created by Petrus Plancius in the late 1500s. The brightest star is Beta Hydri, which is also the closest reasonably bright star to the south celestial pole, making it useful for navigation. Four star systems have been found to have planets."
 		},
 
 		{
@@ -970,7 +970,7 @@
 				"Alpha Lacertae"
 			],
 			"connections": ["0-1", "1-2", "2-3", "2-5", "3-4", "4-5"],
-			"info": "Lacerta is Latin for \"lizard\". It was defined in 1687 by Johannes Hevelius. The constellation is small and dim, which probably explains why it wasn't of interest to the ancient western astronomers. It's stars were included in a Chinese constellation \"Flying Serpent\"."
+			"info": "Lacerta is Latin for \"lizard\". It was defined in 1687 by Johannes Hevelius. The constellation is small and dim, which probably explains why it wasn't of interest to the ancient western astronomers. Its stars were included in a Chinese constellation \"Flying Serpent\"."
 		},
 
 		{
@@ -1093,7 +1093,7 @@
 				"9-10",
 				"10-11"
 			],
-			"info": "Lupus is Latin for \"wolf\". It is one of the 48 constellations listed by Ptolemy. It was considered an asterism belonging to <Centaurus> by the ancient Greeks, and was considered to be an arbitrary animal killed or about to be killed by <Centaurus>. It is probably based on a Babylonian figure known as Mad Dog."
+			"info": "Lupus is Latin for \"wolf\". It is one of the 48 constellations listed by Ptolemy. It was considered an asterism belonging to <Centaurus> by the ancient Greeks, and was considered to be an arbitrary animal killed or about to be killed by <Centaurus>. It is probably based on a Babylonian figure known as \"Mad Dog.\""
 		},
 
 		{
@@ -1122,7 +1122,7 @@
 				"Sheliak"
 			],
 			"connections": ["0-1", "1-2", "1-4", "2-3", "3-4"],
-			"info": "Lyra is Latin for \"lyre\". It is one of the 48 constellations listed by Ptolemy. It was often represented as a vulture or and eagle carrying a lyre. In Greek mythology Lyra represents the lyre of Orpheus. The brightest star Vega, is also one of the brightest on the night sky and overall one of the most important stars. Vega was the pole star in 12 000 BCE and will become the pole again in 14000 CE. Lyra also hosts the Ring Nebula, the best known planetary nebula."
+			"info": "Lyra is Latin for \"lyre\". It is one of the 48 constellations listed by Ptolemy. It was often represented as a vulture or and eagle carrying a lyre. In Greek mythology Lyra represents the lyre of Orpheus. The brightest star Vega, is also one of the brightest on the night sky and overall one of the most important stars. Vega was the pole star in 12 000 BCE and will become the pole again in 14 000 CE. Lyra also hosts the Ring Nebula, the best known planetary nebula."
 		},
 
 		{
@@ -1140,7 +1140,7 @@
 				"Epsilon Microscopii"
 			],
 			"connections": ["0-1", "1-2"],
-			"info": "Microscopium is Latin for \"microscope\" named by Nicolas-Louis de Lacaille in the 18th century. It is small and dim, with it's brightest star having the apparent magnitude of 4.68. There aren't really any deep sky objects in it either, and it was described as \"totally unremarkable\" by Sir Patrick Alfred Caldwell-Moore."
+			"info": "Microscopium is Latin for \"microscope\" named by Nicolas-Louis de Lacaille in the 18th century. It is small and dim, with its brightest star having the apparent magnitude of 4.68. There aren't really any deep sky objects in it either, and it was described as \"totally unremarkable\" by Sir Patrick Alfred Caldwell-Moore."
 		},
 
 		{
@@ -1155,7 +1155,7 @@
 				"Alpha Monocerotis"
 			],
 			"connections": ["0-1", "1-2", "2-3", "2-5", "3-4", "5-6"],
-			"info": "Monoceros is Latinized Greek for \"unicorn\". Its definition is attributed to Petrus Plancius. It is a dim constellations, and hard to see with the naked eye. There is a star system with two Super-Earth exoplanets. Monoceros also hosts one of the nearest black holes to the Solar System. It with its star companion form the A0620-00 binary system."
+			"info": "Monoceros is Latinized Greek for \"unicorn\". Its definition is attributed to Petrus Plancius. It is a dim constellations, and hard to see with the naked eye. There is a star system with two Super-Earth exoplanets. Monoceros also hosts one of the nearest black holes to the Solar System. The black hole with its star companion form the A0620-00 binary system."
 		},
 
 		{
@@ -1167,7 +1167,7 @@
 				"Beta Muscae"
 			],
 			"connections": ["0-1", "1-2", "2-3", "0-3"],
-			"info": "Musca us Latin for \"fly\" (insect). It was created by Petrus Plancius, and first appeared on a celestial globe in 1597. It was also known as \"Apis\", \"the bee\" for 200 years. Some of the stars were also known in Brazil as the \"Ornate Hawk-Eagle's double flutes\", and in Australia multiple peoples had definitions for them. Three star systems have been found to have exoplanets. "
+			"info": "Musca us Latin for \"fly\" (insect). It was created by Petrus Plancius, and first appeared on a celestial globe in 1597. It was also known as \"Apis\", \"the bee\" for 200 years. Some of the stars were also known in Brazil as the \"Ornate Hawk-Eagle's double flutes\", and in Australia multiple peoples had definitions for them. Three star systems have been found to have exoplanets."
 		},
 
 		{
@@ -1179,7 +1179,7 @@
 				"Eta Normae"
 			],
 			"connections": ["0-1", "1-2", "1-3", "2-3", "0-3"],
-			"info": "Norma is Latin for \"normal\" referring to a right angle or a carpenter's square. It was drawn by Nicolas-Louis de Lacaille in the 18th century. Mu Normae, a blue supergiant, is one of the most luminous stars known. It as bright as 339 000 suns, and weighs 40 solar masses. But given it's distance at 3260 light years, it only has an apparent magnitude of approximately 4.94. There are four stars with known exoplanets."
+			"info": "Norma is Latin for \"normal\" referring to a right angle or a carpenter's square. It was drawn by Nicolas-Louis de Lacaille in the 18th century. Mu Normae, a blue supergiant, is one of the most luminous stars known. It as bright as 339 000 suns, and weighs 40 solar masses. But given its distance at 3260 light years, it only has an apparent magnitude of approximately 4.94. There are four stars with known exoplanets."
 		},
 
 		{
@@ -1201,7 +1201,7 @@
 				"Cebalrai"
 			],
 			"connections": ["0-1", "1-2", "1-6", "2-3", "3-4", "4-5", "5-6"],
-			"info": "Ophiuchus comes from Ancient Greek, meaning \"serpent-bearer\". It is often depicted as a man grasping a snake, <Serpens>. It is one of the 48 constellations listed by Ptolemy. On the 9th of October 1604, a supernova was observed within Ophiuchus. It was studied extensively by Johannes Kepler, and was also called Kepler's Supernova. It is the most recent supernova, confirmed to be observed with the naked eye. Galileo used its appearance to counter the Aristotelian Dogma that heavens are changeless. The 3rd nearest star, Barnard's Star at 5.96 light-years, is also within Ophiuchus."
+			"info": "Ophiuchus comes from Ancient Greek, meaning \"serpent-bearer\". It is often depicted as a man grasping a snake, <Serpens>. It is one of the 48 constellations listed by Ptolemy. On the 9th of October 1604, a supernova was observed within Ophiuchus. It was studied extensively by Johannes Kepler, and was also called Kepler's Supernova. It is the most recent supernova, confirmed to be observed with the naked eye. Galileo used its appearance to counter the Aristotelian Dogma that heavens are changeless. The 3rd nearest star to us, Barnard's Star at 5.96 light-years, is also within Ophiuchus."
 		},
 
 		{
