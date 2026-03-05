@@ -6,7 +6,7 @@ from astropy.coordinates import SkyCoord, Distance
 from astropy import units as u
 
 
-class Star(TypedDict):
+class StarFull(TypedDict):
     name: str
     ra: float | None
     dec: float | None
@@ -15,7 +15,13 @@ class Star(TypedDict):
     distance: float | None
     distance_estimated: bool
     cartesian: list[float] | None
-    cartesian_velocity: list[float] | None
+
+
+class Star(TypedDict):
+    name: str
+    distance: float | None
+    distance_estimated: bool
+    cartesian: list[float] | None
 
 
 class ConstellationJSON(TypedDict):
@@ -145,7 +151,7 @@ def name_processing(simbad_id: str, star_name: str):
 
 
 def get_simbad_data(
-    star_dict: Star,
+    star_dict: StarFull,
 ):
     """
     Queries SIMBAD for the star. Attempts to find the RA, DEC, PM_RA, PM_DEC, and distance.
@@ -230,7 +236,7 @@ def estimate_dist_with_parallax(star: str) -> float | None:
         return Distance(parallax=result["plx"][0] * u.mas).value
 
 
-def manual_data_entry(star_dict: Star):
+def manual_data_entry(star_dict: StarFull):
     """
     The last option in data entry, only used when SIMBAD has no data at all.
 
@@ -252,7 +258,7 @@ def manual_data_entry(star_dict: Star):
     star_dict["distance_estimated"] = True
 
 
-def calculate_cartesian(star_dict: Star):
+def calculate_cartesian(star_dict: StarFull):
     """
     Calculates the cartesian (x,y,z) coordinates and velocities for a given star.
     Requires proper motions, and a distance.
@@ -279,11 +285,6 @@ def calculate_cartesian(star_dict: Star):
         float(sc.cartesian.z.to_value()),  # type: ignore
         float(-sc.cartesian.y.to_value()),  # type: ignore
     ]
-    star_dict["cartesian_velocity"] = [
-        float(sc.velocity.d_x.to_value()),  # type: ignore
-        float(sc.velocity.d_z.to_value()),  # type: ignore
-        float(-sc.velocity.d_y.to_value()),  # type: ignore
-    ]
 
 
 def get_star_data(star_name: str):
@@ -294,7 +295,7 @@ def get_star_data(star_name: str):
     :param star_name: Star name
     :type star_name: str
     """
-    star_dict: Star = {
+    star_dict: StarFull = {
         "name": star_name,
         "ra": None,
         "dec": None,
@@ -303,7 +304,6 @@ def get_star_data(star_name: str):
         "distance": None,
         "distance_estimated": False,
         "cartesian": None,
-        "cartesian_velocity": None,
     }
 
     get_simbad_data(star_dict)
@@ -314,8 +314,6 @@ def get_star_data(star_name: str):
     if not star_dict["ra"]:
         manual_data_entry(star_dict)
 
-    # If simbad doesn't have distance, try GAIA
-    # Basically never has data that isn't in SIMBAD
     if not star_dict["distance"]:
         print(f"Estimating distance with parallax for {star_dict["name"]}")
         # use the unformatted version which works with simbad
@@ -332,4 +330,12 @@ def get_star_data(star_name: str):
     # calculate the cartesian coordinates
     calculate_cartesian(star_dict)
 
-    return star_dict
+    # Reduce the amount of data in the database, to make loading faster
+    star_dict_final: Star = {
+        "name": star_dict["name"],
+        "distance": star_dict["distance"],
+        "distance_estimated": star_dict["distance_estimated"],
+        "cartesian": star_dict["cartesian"],
+    }
+
+    return star_dict_final

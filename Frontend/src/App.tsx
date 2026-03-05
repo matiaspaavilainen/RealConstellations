@@ -17,7 +17,7 @@ const getConstellations = async () => {
 		const response = await axios.get("/api/constellations");
 		const constellations = response.data["constellations"];
 
-		const constellationArr: Array<Constellation> = [];
+		const constellationArr: Constellation[] = [];
 
 		constellations.forEach((constellation: Constellation) => {
 			constellationArr.push(constellation);

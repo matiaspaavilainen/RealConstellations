@@ -39,7 +39,7 @@ const SearchBar = ({
 		return constellationsArray.map((constellation) => constellation.name);
 	}, [constellationsArray]);
 
-	const [searchResult, setSearchResult] = useState<Array<string>>();
+	const [searchResult, setSearchResult] = useState<string[]>();
 	const [searchQuery, setSearchQuery] = useState("");
 	const [expanded, setExpanded] = useState(false);
 
