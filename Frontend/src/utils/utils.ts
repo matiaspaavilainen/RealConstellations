@@ -40,7 +40,7 @@ const calculateCenter = (starDataArray: Star[]) => {
 	return center;
 };
 
-const distanceToLyFormat = (distance: number, digits: number = 2) => {
+const distanceToLyFormat = (distance: number, digits = 2) => {
 	return (distance * 3.26156).toFixed(digits) + " ly";
 };
 

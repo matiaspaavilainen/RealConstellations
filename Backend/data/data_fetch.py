@@ -5,6 +5,9 @@ from astroquery.simbad import Simbad
 from astropy.coordinates import SkyCoord, Distance
 from astropy import units as u
 
+simbad = Simbad()
+simbad.server = "simbad.harvard.edu"
+
 
 class StarFull(TypedDict):
     name: str
@@ -89,7 +92,7 @@ def load_constellations_json(
     return constellations
 
 
-def name_processing(simbad_id: str, star_name: str):
+def name_processing(simbad_id: str, star_name: str, ids: str):
     """
     Formats the SIMBAD id properly. Querying SIMBAD doesn't work with the nice formattings all the time,
     so they can't be used directly in the JSON.
@@ -104,14 +107,22 @@ def name_processing(simbad_id: str, star_name: str):
     # NAME name name
     # NAME -IAU Larawag
 
-    if simbad_id.startswith("NAME"):
-        split = simbad_id.split()
-        try:
-            split.remove("-IAU")
-        except ValueError:
-            pass
-        # return the last part of the name
-        return " ".join(split[1:])
+    # override for Polaris, has 3 names in Simbad, code returns the first name, which is Lodestar, which I dont want
+    if star_name == "Polaris":
+        return "Polaris"
+
+    for id in ids.split("|"):
+        if id.startswith("NAME"):
+            return " ".join(id.split()[1:])
+
+    # if simbad_id.startswith("NAME"):
+    #     split = simbad_id.split()
+    #     try:
+    #         split.remove("-IAU")
+    #     except ValueError:
+    #         pass
+    #     # return the last part of the name
+    #     return " ".join(split[1:])
 
     if simbad_id.startswith("*"):
         constellation = " ".join(star_name.split(" ")[1:])
@@ -166,20 +177,21 @@ def get_simbad_data(
     star_name = star_dict["name"]
 
     # attempt to query with distance first, more often than not distance exists
-    result = Simbad.query_tap(
-        f"""
-        SELECT ident.id, basic.ra, mesPM.pmra, basic.dec, mesPM.pmde, mesDistance.dist, mesDistance.bibcode as distbib, mesPM.bibcode as pmbib
+    result = simbad.query_tap(f"""
+        SELECT ident.id, ids.ids, basic.ra, mesPM.pmra, basic.dec, mesPM.pmde, mesDistance.dist, mesDistance.bibcode as distbib, mesPM.bibcode as pmbib
         FROM basic
         JOIN ident ON ident.oidref = basic.oid
+        JOIN ids ON ids.oidref = basic.oid
         JOIN mesPM ON mesPM.oidref = basic.oid
         JOIN mesDistance ON mesDistance.oidref = ident.oidref
         WHERE ident.id = '{star_name}'
         ORDER BY pmbib DESC, distbib DESC
-        """
-    )
+        """)
 
     if len(result) > 0:
-        star_dict["name"] = name_processing(result["id"][0], star_dict["name"])
+        star_dict["name"] = name_processing(
+            result["id"][0], star_dict["name"], result["ids"][0]
+        )
         star_dict["ra"] = float(result["ra"][0])
         star_dict["dec"] = float(result["dec"][0])
         star_dict["pm_ra"] = float(result["pmra"][0])
@@ -189,19 +201,20 @@ def get_simbad_data(
         return
 
     # Most common reason to fail a query is missing distance
-    result = Simbad.query_tap(
-        f"""
-        SELECT ident.id, basic.ra, mesPM.pmra, basic.dec, mesPM.pmde
+    result = simbad.query_tap(f"""
+        SELECT ident.id, ids.ids, basic.ra, mesPM.pmra, basic.dec, mesPM.pmde
         FROM basic
         JOIN ident ON ident.oidref = basic.oid
+        JOIN ids ON ids.oidref = basic.oid
         JOIN mesPM ON mesPM.oidref = basic.oid
         WHERE ident.id = '{star_name}'
         ORDER BY bibcode DESC
-        """
-    )
+        """)
 
     if len(result) > 0:
-        star_dict["name"] = name_processing(result["id"][0], star_dict["name"])
+        star_dict["name"] = name_processing(
+            result["id"][0], star_dict["name"], result["ids"][0]
+        )
         star_dict["ra"] = float(result["ra"][0])
         star_dict["dec"] = float(result["dec"][0])
         star_dict["pm_ra"] = float(result["pmra"][0])
@@ -222,15 +235,13 @@ def estimate_dist_with_parallax(star: str) -> float | None:
     :rtype: float | None
     """
 
-    result = Simbad.query_tap(
-        f"""
+    result = simbad.query_tap(f"""
         SELECT mesPLX.plx
         FROM mesPLX
         JOIN ident ON ident.oidref = mesPLX.oidref
         WHERE ident.id = '{star}'
         ORDER BY bibcode DESC
-        """
-    )
+        """)
 
     if len(result) > 0:
         return Distance(parallax=result["plx"][0] * u.mas).value
@@ -290,7 +301,7 @@ def calculate_cartesian(star_dict: StarFull):
 def get_star_data(star_name: str):
     """
     Finds the data for a star and fills out the dictionary specified by the Star class. A "star" in a constellation can be a multi-star system,
-    in which case the name for that is used, and the average of the values is used.
+    in which case the name for that is used, and the average of the values (ra, dec, distance, ...) is used.
 
     :param star_name: Star name
     :type star_name: str
@@ -327,7 +338,6 @@ def get_star_data(star_name: str):
 
         star_dict["distance"] = float(dist)
 
-    # calculate the cartesian coordinates
     calculate_cartesian(star_dict)
 
     # Reduce the amount of data in the database, to make loading faster

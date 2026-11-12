@@ -480,7 +480,7 @@
 
 		{
 			"name": "Circinus",
-			"shape_stars": ["Beta Circini", "Xami", "Gamma Circini"],
+			"shape_stars": ["Beta Circini", "Alpha Circini", "Gamma Circini"],
 			"connections": ["0-1", "1-2"],
 			"info": "Circinus is Latin for compass the drafting tool to draw circles. It was defined by Nicolas-Louis de Lacaille in 1756. Circinus is quite dim, with its brightest star reaching a magnitude of 3.19. "
 		},
@@ -518,7 +518,7 @@
 				"Zeta Coronae Australis",
 				"Delta Coronae Australis",
 				"Beta Coronae Australis",
-				"Meridiana",
+				"Alpha Coronae Australis",
 				"Gamma Coronae Australis A",
 				"Epsilon Coronae Australis",
 				"V686 Coronae Australis",
@@ -773,7 +773,7 @@
 		{
 			"name": "Gemini",
 			"shape_stars": [
-				"Alzirr",
+				"Xi Geminorum",
 				"Lambda Geminorum",
 				"Wasat",
 				"Mekbuda",
@@ -913,7 +913,7 @@
 				"Rho Hydrae",
 				"Epsilon Hydrae",
 				"Delta Hydrae",
-				"Minchir",
+				"Sigma Hydrae",
 				"Eta Hydrae"
 			],
 			"connections": [
@@ -1718,7 +1718,7 @@
 				"Dubhe",
 				"Phi Ursae Majoris",
 				"Theta Ursae Majoris",
-				"Alkaphrah",
+				"Kappa Ursae Majoris",
 				"Iota Ursae Majoris A",
 				"Upsilon Ursae Majoris",
 				"Muscida",
